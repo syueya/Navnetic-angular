@@ -1,0 +1,14 @@
+/* 基础布局样式 */
+.sidenav-container {
+  display: flex;
+  height: 100%; /* 确保容器占满可用高度 */
+  margin: 12px;
+}
+
+/* 侧边栏样式 */
+mat-sidenav {
+  width: 250px; /* 根据需要设置侧边栏宽度 */
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24); /* 添加阴影效果 */
+  height: 100%; /* 侧边栏占满高度 */
+  overflow-y: auto; /* 如果内容过多，允许垂直滚动 */
+}

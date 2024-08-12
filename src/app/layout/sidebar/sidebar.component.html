@@ -1,1 +1,26 @@
-<p>sidebar works!</p>
+<mat-toolbar>侧边栏logo</mat-toolbar>
+
+    <mat-nav-list>
+      <ng-container *ngFor="let item of mainMenuList">
+
+        <!-- 父菜单项 -->
+        <mat-list-item (click)=toggleSubMenu(item)>
+
+          <mat-icon>{{ item.iconName }}</mat-icon>
+          <span>{{ item.displayName }}</span>
+
+          <!-- 只有有子菜单的时候，才有图标，并动态添加rotate样式类 -->
+          <mat-icon class=sub-menu-arrow *ngIf="item.children" [ngClass]="{'rotate': item.expanded}">
+            expand_more
+          </mat-icon>
+        </mat-list-item>
+
+        <!-- 子菜单 -->
+        <div *ngIf="item.expanded && item.children" class="submenu" [style.margin-top]="item.expanded ? '10px' : '0'">
+          <a mat-list-item *ngFor="let child of item.children" [routerLink]="child.route">
+            <mat-icon>{{ child.iconName }}</mat-icon>
+            <span class=child-item>{{ child.displayName }}</span>
+          </a>
+        </div>
+      </ng-container>
+    </mat-nav-list>

@@ -6,7 +6,12 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+
+  ],
+  exports: [
+    CommonModule,
+
   ]
 })
-export class CommonModule { }
+export class CommonuseModule { }

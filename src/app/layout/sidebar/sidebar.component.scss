@@ -1,0 +1,39 @@
+
+
+/* 工具栏样式 */
+mat-toolbar {
+  background: #ffffff; /* 工具栏背景色 */
+  color: #000000; /* 工具栏文本颜色 */
+  font-size: 20px; /* 工具栏字体大小 */
+}
+
+
+/* 列表项样式 */
+mat-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* 列表项字体大小 */
+  padding: 0 10px; /* 列表项内边距 */
+  height: 48px; /* 列表项高度 */
+}
+
+
+
+/* 展开/收起图标 */
+.sub-menu-arrow {
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+/* 图标下箭头旋转 */
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* 子菜单样式 */
+.submenu {
+  background-color: #ffffff; /* 子菜单背景色 */
+  padding-left: 20px; /* 根据需要调整 */
+  overflow: hidden;
+  font-size: 14px; /* 子菜单项字体大小 */
+}

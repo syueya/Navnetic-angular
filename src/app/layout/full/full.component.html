@@ -1,0 +1,11 @@
+<mat-sidenav-container class="sidenav-container"  [hasBackdrop]="false">
+  <mat-sidenav #sidenav [mode]="'side'" class=sidenav opened>
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header>
+    </app-header>
+    <button mat-raised-button (click)="sidenav.toggle()">切换侧边栏</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
