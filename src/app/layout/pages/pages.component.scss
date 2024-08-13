@@ -1,0 +1,70 @@
+/* 分类卡片样式 */
+mat-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: none; /* 去除所有阴影，包括下边框线 */
+  width: 100%;
+}
+
+
+/* 网址卡片容器样式 */
+.urlCard-container {
+  display: flex;
+  flex-wrap: wrap;  /* 允许换行 */
+  gap: 16px; /* 卡片之间的间距 */
+}
+
+
+/* 网址卡片样式 */
+.urlCard {
+  flex: 1 1 24%; /* 每个卡片占24%的宽度 */
+  max-width: calc(25% - 16px); /* 最大宽度固定为25%减去间距 */
+  height: 96px;
+  border: 1px solid #e4ecf3;
+  margin: 16px 0;;
+}
+
+
+/* 去掉卡片内容的上边距 */
+.mat-mdc-card-content:first-child {
+  padding-top: 0;
+}
+
+
+/* 网址卡片头部样式 */
+.urlHeader {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  font-size: 14px;
+  font-weight: bold;
+  color: #3273dc;
+  padding-top: 10px;
+}
+
+/* 网址卡片头部图片样式 */
+.urlHeader img {
+  margin-right: 8px; /* 图片和标题之间的间距 */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+
+
+/* 图标按钮样式 */
+.iconButton {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color:#3273dc;
+}
+
+/* 网址卡片描述样式 */
+.urlDescription {
+  font-size: 12px;
+  color: #999;
+  padding: 10px 0;
+}
+

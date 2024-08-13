@@ -1,14 +1,24 @@
-/* 基础布局样式 */
-.sidenav-container {
+
+mat-sidenav-container {
+  height: 100vh; /* 确保容器占满可用高度 */
+  width: 100vw; /* 占据整个视口宽度 */
+}
+
+
+/* 确保 mat-sidenav-content 占据除了侧边栏外的剩余部分 */
+mat-sidenav-content {
   display: flex;
-  height: 100%; /* 确保容器占满可用高度 */
-  margin: 12px;
+  flex-direction: column;
+  height: 100%; /* 占据父容器的剩余高度 */
+  background-color: #F3F6F8;
 }
 
 /* 侧边栏样式 */
 mat-sidenav {
   width: 250px; /* 根据需要设置侧边栏宽度 */
-  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24); /* 添加阴影效果 */
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.24); /* 添加阴影效果 */
   height: 100%; /* 侧边栏占满高度 */
   overflow-y: auto; /* 如果内容过多，允许垂直滚动 */
+  border-radius: 0; /* 右边不设圆角 */
 }
+
