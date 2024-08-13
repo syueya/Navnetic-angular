@@ -1,2 +1,9 @@
-
-<app-full></app-full>
+<!-- 你的组件模板 -->
+<div *ngFor="let category of data">
+  <h2>{{ category.category_name }}</h2>
+  <div *ngFor="let urlItem of category.url">
+    <a >{{ urlItem.name }}</a>
+    <p>{{ urlItem.description }}</p>
+    <!-- 其他 URL 项信息 -->
+  </div>
+</div>

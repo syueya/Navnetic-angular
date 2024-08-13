@@ -4,7 +4,6 @@ import { MaterialModule } from '../../common/material/material.module';
 import { IconsModule } from '../../common/icons/icons.module';
 
 
-
 @Component({
   selector: 'app-pages',
   standalone: true,
