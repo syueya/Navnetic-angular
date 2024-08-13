@@ -1,12 +1,12 @@
 <mat-toolbar color="primary">
-  <button mat-raised-button matTooltip="切换侧边栏" (click)="toggleSidenav()">
+  <button class="iconButton" matTooltip="切换侧边栏" (click)="toggleSidenav()">
     <i-tabler name="menu-2"></i-tabler>
   </button>
 
 
 
-  <mat-form-field appearance="fill">
+  <div class="toolbar-search">
     <mat-icon matPrefix>search</mat-icon>
     <input matInput formControlName="name" type="text" placeholder="搜索网址" />
-  </mat-form-field>
+  </div>
 </mat-toolbar>
