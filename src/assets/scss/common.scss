@@ -5,10 +5,18 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  color:#3273dc;
-  margin-right: 8px;
+  color: #AFAFAF;
+  margin-right: 5px;
 
   &:hover {
-    background-color: #3273dc;
+    color: #3273dc;
+    font: bold;
   }
+}
+
+
+
+
+.mt-16 {
+  margin-top: 16px;
 }

@@ -1,12 +1,12 @@
-<mat-sidenav-container [hasBackdrop]="false">
-  <mat-sidenav #sidenav [mode]="'side'" class=sidenav opened>
+<mat-sidenav-container [hasBackdrop]="false" >
+  <mat-sidenav #sidenav [mode]="'side'" opened >
     <app-sidebar></app-sidebar>
   </mat-sidenav>
 
   <mat-sidenav-content>
     <app-header  [sidenav]="sidenav"></app-header>
 
-    <app-pages></app-pages>
+    <app-pages class="mt-16"></app-pages>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

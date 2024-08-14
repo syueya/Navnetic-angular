@@ -2,23 +2,35 @@ mat-toolbar {
   display: flex;
   justify-content: space-between; /* 可选：根据需要调整主轴对齐方式 */
   align-items: center; /* 垂直居中对齐 */
+  background-color: #fff;
+
 }
 
 .toolbar-search{
   display: flex;
   align-items: center;  /* 垂直居中 */
-  border-radius: 5px;
-  background-color: #fff;
+  border-radius: 32px;
+  border: 1px solid #e6e6e6;
   padding: 5px;
   margin: 0 10px;
-  width: 200px;
+  width: 180px;
   margin-left: auto; /* 推到右侧 */
 }
 
-
+.toolbar-search mat-icon{
+  color: #AAAAAA;
+  padding: 0 5px;
+}
 
 .toolbar-search input{
   border: none;
+  height: 20px;
+  width: 120px;
   margin-left: 8px;
+
+  &:focus{
+    outline: none;  /* 去除输入框获得焦点时的默认外边框 */
+  }
+
 }
 

@@ -3,7 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from '@common/material/material.module';
-import { MenuList, MenuItem } from '@common/menu-list';
+
+
+import { OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { takeUntil, Subject } from 'rxjs';
+import { Category } from '@common/interfaces/dataJson';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -17,11 +23,22 @@ import { MenuList, MenuItem } from '@common/menu-list';
   styleUrl: './sidebar.component.scss'
 })
 
-export class SidebarComponent {
-  mainMenuList: MenuItem[] = MenuList;
-  /* 点击菜单，expanded状态取反 */
-  toggleSubMenu(item: MenuItem): void {
-    item.expanded = !item.expanded;
+export class SidebarComponent implements OnInit {
+  data: Category[] = [];
+  private destroy$ = new Subject<void>();
+  constructor(private httpClient: HttpClient) {}
+
+  ngOnInit() {
+    this.loadData();
+  }
+
+  loadData() {
+    this.httpClient.get<Category[]>(`/api/read`)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((res) => {
+        this.data = res;
+        console.log(this.data);
+      });
   }
 
 }

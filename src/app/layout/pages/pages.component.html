@@ -1,41 +1,43 @@
-<!-- 分类卡片 -->
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>常用</mat-card-title>
-    <ng-container class="urlHeader-buttons">
-      <button class="iconButton" matTooltip="编辑">
-        <i-tabler name="edit"></i-tabler>
-      </button>
-      <button class="iconButton" matTooltip="删除">
-        <i-tabler name="trash"></i-tabler>
-      </button>
-    </ng-container>
-  </mat-card-header>
+<ng-container *ngFor="let category of data">
+  <!-- 分类卡片 -->
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ category.category_name }}</mat-card-title>
+      <div class="edButtons">
+        <button class="iconButton" (click)="editCategory(category.category_id)" matTooltip="编辑">
+          <i-tabler name="edit"></i-tabler>
+        </button>
+        <button class="iconButton" (click)="deleteCategory(category.category_id)" matTooltip="删除">
+          <i-tabler name="trash"></i-tabler>
+        </button>
+      </div>
+    </mat-card-header>
 
-  <!-- 网址卡片 -->
-  <mat-card-content class="urlCard-container">
-    <mat-card class="urlCard">
-      <mat-card-content>
-        <div class="urlHeader">
-          <img src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-          <span>夏夏子博客</span>
-          <ng-container class="urlHeader-buttons">
-            <button class="iconButton" matTooltip="编辑">
-              <i-tabler name="edit"></i-tabler>
-            </button>
-            <button class="iconButton" matTooltip="删除">
-              <i-tabler name="trash"></i-tabler>
-            </button>
-          </ng-container>
-        </div>
-        <div class="urlDescription">
-          基于vue-cli与subconverter后端实现的配置自动生成
-        </div>
-      </mat-card-content>
-    </mat-card>
+    <!-- 网址卡片 -->
+    <mat-card-content class="urlCard-container" >
+      <ng-container *ngFor="let url of category.url">
+        <mat-card class="urlCard">
+          <mat-card-content>
+            <div class="urlHeader">
+              <img src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <span>{{ url.name }}</span>
+              <div class="edButtons">
+                <button class="iconButton" (click)="editUrl()" matTooltip="编辑">
+                  <i-tabler name="edit"></i-tabler>
+                </button>
+                <button class="iconButton"  (click)="deleteUrl()" matTooltip="删除">
+                  <i-tabler name="trash"></i-tabler>
+                </button>
+              </div>
+            </div>
+            <div class="urlDescription">
+              {{ url.description }}
+            </div>
 
-
-  </mat-card-content>
-</mat-card>
-
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
 

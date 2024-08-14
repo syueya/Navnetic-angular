@@ -1,3 +1,5 @@
+
+
 /* 分类卡片样式 */
 mat-card {
   margin-bottom: 16px;
@@ -13,18 +15,19 @@ mat-card {
   display: flex;
   flex-wrap: wrap;  /* 允许换行 */
   gap: 16px; /* 卡片之间的间距 */
+  flex-direction: row; /* 水平排列 */
 }
 
 
 /* 网址卡片样式 */
 .urlCard {
-  flex: 1 1 24%; /* 每个卡片占24%的宽度 */
-  max-width: calc(25% - 16px); /* 最大宽度固定为25%减去间距 */
+  flex: 1 1 calc(25% - 16px); /* 修正计算公式以确保间距被考虑到 */
+  max-width: calc(25% - 16px); /* 确保每个卡片的最大宽度为25% */
+  box-sizing: border-box; /* 确保内边距和边框被包含在宽度内 */
   height: 96px;
   border: 1px solid #e4ecf3;
-  margin: 16px 0;;
+  margin: 16px 0;
 }
-
 
 /* 去掉卡片内容的上边距 */
 .mat-mdc-card-content:first-child {
@@ -36,7 +39,7 @@ mat-card {
 .urlHeader {
   display: flex;
   align-items: center; /* 垂直居中 */
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: #3273dc;
   padding-top: 10px;
@@ -51,6 +54,12 @@ mat-card {
 }
 
 
+/* 编辑删除按钮样式 */
+.edButtons {
+  margin-left: auto;
+  display: flex; /* 确保内部按钮水平排列 */
+  gap: 8px; /* 按钮之间的间距 */
+}
 
 
 
