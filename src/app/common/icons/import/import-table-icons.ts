@@ -1,9 +1,9 @@
 import {
-  IconMenu2,  // 菜单图标
-  IconSearch,  // 搜索图标
-  IconEdit,   // 编辑图标
-  IconTrash,   // 删除图标
-
+  IconMenu2,  // 菜单
+  IconSearch,  // 搜索
+  IconEdit,   // 编辑
+  IconTrash,   // 删除
+  IconPlus,   // 新增
 
 } from 'angular-tabler-icons/icons';
 
@@ -13,6 +13,7 @@ export const ImportTableIcons = {
   IconSearch,
   IconEdit,
   IconTrash,
+  IconPlus,
 
 
 }

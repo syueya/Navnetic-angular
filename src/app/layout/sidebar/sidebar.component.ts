@@ -33,7 +33,7 @@ export class SidebarComponent implements OnInit {
   }
 
   loadData() {
-    this.httpClient.get<Category[]>(`/api/read`)
+    this.httpClient.get<Category[]>(`/read`)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         this.data = res;

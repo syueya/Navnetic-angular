@@ -24,4 +24,10 @@ export class HeaderComponent {
       this.sidenav.toggle();
     }
   }
+
+
+  // 添加分类
+  addCategory() {
+
+  }
 }

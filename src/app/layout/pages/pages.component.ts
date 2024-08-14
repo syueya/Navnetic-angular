@@ -41,7 +41,7 @@ export class PagesComponent implements OnInit {
 
   // 加载数据
   loadData() {
-    this.httpClient.get<Category[]>(`/api/read`)
+    this.httpClient.get<Category[]>(`/read`)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         this.data = res;
@@ -59,14 +59,15 @@ export class PagesComponent implements OnInit {
   deleteCategory(categoryId:string) {
     this.dataCategory = this.data.find(category => category.category_id === categoryId) || null;
     console.log(this.dataCategory);
-    this.httpClient.get<Category[]>(`/api/delete`)
+    this.httpClient.get<Category[]>(`/deletCategory`)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         this.data = res;
       });
   }
 
-
+  // 添加分类
+  addUrl() { }
 
   // 编辑网址
   editUrl() {
