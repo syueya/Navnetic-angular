@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 
-import { MaterialModule } from '../../common/material/material.module';
-import { IconsModule } from '../../common/icons/icons.module';
+import { MaterialModule } from '@common/material/material.module';
+import { IconsModule } from '@common/icons/icons.module';
 
 @Component({
   selector: 'app-header',

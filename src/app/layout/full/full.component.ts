@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { MatIconModule } from '@angular/material/icon';
-import { MaterialModule } from '../../common/material/material.module';
+import { MaterialModule } from '@common/material/material.module';
 
 import { SidebarComponent } from '../sidebar/sidebar.component';
 import { HeaderComponent } from '../header/header.component';

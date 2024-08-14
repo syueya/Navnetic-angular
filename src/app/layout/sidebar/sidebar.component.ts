@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { MaterialModule } from '../../common/material/material.module';
-import { MenuList, MenuItem } from '../../common/menu-list';
+import { MaterialModule } from '@common/material/material.module';
+import { MenuList, MenuItem } from '@common/menu-list';
 
 @Component({
   selector: 'app-sidebar',

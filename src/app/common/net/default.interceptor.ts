@@ -1,4 +1,4 @@
-import { environment } from '../../../environments/environment';
+import { environment } from '@env/environment';
 import { Injector, inject } from '@angular/core';
 import { Observable, of, throwError, mergeMap, catchError } from 'rxjs';
 import {
@@ -12,16 +12,13 @@ import {
 } from '@angular/common/http';
 
 
-
-
-
 // 处理URL
 function processUrl(reqUrl: string, backEndUrl: string): string {
-  // 统一处理URL，提高代码的清晰度和可维护性
+  // 处理静态资源路径
   if (reqUrl.substring(0, 6) === 'assets') {
     return `./${reqUrl.startsWith('/') ? reqUrl.substring(1) : reqUrl}`;
   } else if (!reqUrl.startsWith('https://') && !reqUrl.startsWith('http://')) {
-    // 确保backEndUrl是安全的，避免潜在的注入风险
+    // 处理后端请求URL
     if (typeof backEndUrl !== 'string' || backEndUrl.trim() === '') {
       throw new Error('Invalid backend URL');
     }
@@ -33,7 +30,7 @@ function processUrl(reqUrl: string, backEndUrl: string): string {
   return reqUrl;
 }
 
-// 处理数据
+// 处理HTTP响应的数据
 function handleData(injector: Injector, ev: HttpResponseBase, req: HttpRequest<any>, next: HttpHandlerFn): Observable<any> {
   if (ev instanceof HttpResponse) {
     const body = ev.body;
@@ -65,10 +62,8 @@ export const defaultInterceptor: HttpInterceptorFn = (req: HttpRequest<any>, nex
   // 统一加上服务端前缀
   const url = processUrl(req.url, environment.backEndUrl);
 
-    // 将请求发送给下一个拦截器或后端服务
-    const newReq = req.clone({
-      url, headers: req.headers.set('Authorization', 'Bearer your-token-here')
-    });
+    // 克隆出一个带有新的URL的请求
+    const newReq = req.clone({ url });
 
 
     // 统一错误处理
@@ -83,7 +78,4 @@ export const defaultInterceptor: HttpInterceptorFn = (req: HttpRequest<any>, nex
       }),
       catchError((err: HttpErrorResponse) => handleData(injector, err, newReq, next))
     );
-
-
-
 }

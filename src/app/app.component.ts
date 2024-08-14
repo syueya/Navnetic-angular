@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FullComponent } from './layout/full/full.component';
-import { MaterialModule } from './common/material/material.module';
+import { MaterialModule } from '@common/material/material.module';
 
 import { CommonModule } from '@angular/common';
 import { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../environments/environment';
-import { takeUntil } from 'rxjs/operators';
-import { Subject } from 'rxjs';
-import { UrlItem,Category } from './common/interfaces/dataJson';
+import { takeUntil, Subject } from 'rxjs';
+import { UrlItem,Category } from '@common/interfaces/dataJson';
 
 
 @Component({
@@ -30,7 +28,7 @@ import { UrlItem,Category } from './common/interfaces/dataJson';
 
 export class AppComponent implements OnInit {
   data: Category[] = [];
-  baseUrl: string = environment.backEndUrl + '/api';
+
 
   private destroy$ = new Subject<void>();
 
@@ -41,7 +39,7 @@ export class AppComponent implements OnInit {
   }
 
   loadData() {
-    this.httpClient.get<Category[]>(`${this.baseUrl}/read`)
+    this.httpClient.get<Category[]>(`/api/read`)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         this.data = res;
