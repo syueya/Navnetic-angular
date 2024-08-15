@@ -24,12 +24,34 @@ func HandleAddCategory(w http.ResponseWriter, r *http.Request) {
 	// 读取数据文件
 	categories, err := readDataFromFile()
 	if err != nil {
-		http.Error(w, "Error reading data", http.StatusInternalServerError)
+		http.Error(w, "读取数据失败", http.StatusInternalServerError)
 		return
 	}
 
-	// 添加新的分类
-	categories = append(categories, newCategory)
+	// 检查是否已经存在
+	updated := false
+
+	for i, category := range categories {
+		if category.CategoryID == newCategory.CategoryID {
+			// 更新分类数据，保留原有的URL列表
+			newCategory.URLs = category.URLs
+			// 发现了具有相同ID的分类，进行更新
+			categories[i] = newCategory
+			updated = true
+			break
+		}
+	}
+	if !updated {
+		// 没有找到具有相同ID的分类，是新增的分类
+		maxID := 0
+		for _, category := range categories {
+			if category.CategoryID > maxID {
+				maxID = category.CategoryID
+			}
+		}
+		newCategory.CategoryID = maxID + 1 // 设置新的 ID 为当前最大 ID + 1
+		categories = append(categories, newCategory)
+	}
 
 	// 写入数据文件
 	err = writeDataToFile(categories)
@@ -41,8 +63,9 @@ func HandleAddCategory(w http.ResponseWriter, r *http.Request) {
 	// 写入数据文件成功后，发送 JSON 响应体
 	w.Header().Set("Content-Type", "application/json") // 设置响应头
 	response := map[string]interface{}{
-		"message":  "Category added successfully",
-		"category": newCategory,
+		"message":  "成功添加数据",
+		"code":     20000,
+		"category": newCategory, // 返回添加的分类
 	}
 	json.NewEncoder(w).Encode(response) // 发送 JSON 响应体
 }

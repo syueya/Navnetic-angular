@@ -37,7 +37,6 @@ export class SidebarComponent implements OnInit {
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         this.data = res;
-        console.log(this.data);
       });
   }
 

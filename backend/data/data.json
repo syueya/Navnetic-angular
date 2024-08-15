@@ -1,58 +1,49 @@
 [
   {
+    "category_id": 1,
     "category_name": "常用",
-    "category_id": "1",
     "category_icon": "common.png",
     "url": [
       {
-        "name": "夏夏子1",
+        "id": 0,
+        "name": "1",
         "icon": "myblog.png",
         "href": "https://vdoing.246855.xyz/",
         "description": "这是一长串描述"
       },
       {
-        "name": "驴1",
-        "icon": "alist.png",
-        "href": "https://alist.mediasaber.cn:10010/",
-        "description": "这是一长串描述"
-      },
-      {
-        "name": "卷1",
-        "icon": "alist.png",
-        "href": "https://al.635346.xyz:66/",
-        "description": "这是一长串描述"
+        "id": 123,
+        "name": "示例URL",
+        "icon": "示例图标URL",
+        "href": "示例链接",
+        "description": "示例描述"
       }
     ]
   },
   {
-    "category_name": "常用2",
-    "category_id": "2",
-    "category_icon": "common.png",
+    "category_id": 2,
+    "category_name": "3",
+    "category_icon": "3",
     "url": [
       {
-        "name": "夏夏子2",
-        "icon": "myblog.png",
-        "href": "https://vdoing.246855.xyz/",
-        "description": "这是一长串描述"
-      },
-      {
-        "name": "驴2",
-        "icon": "alist.png",
-        "href": "https://alist.mediasaber.cn:10010/",
-        "description": "这是一长串描述"
-      },
-      {
-        "name": "卷2",
-        "icon": "alist.png",
-        "href": "https://al.635346.xyz:66/",
-        "description": "这是一长串描述"
+        "id": 1,
+        "name": "4",
+        "icon": "4",
+        "href": "4",
+        "description": "4"
       }
     ]
   },
   {
-    "category_name": "示例分类",
-    "category_id": "123",
-    "category_icon": "http://example.com/icon.png",
+    "category_id": 3,
+    "category_name": "4",
+    "category_icon": "4",
+    "url": null
+  },
+  {
+    "category_id": 4,
+    "category_name": "5",
+    "category_icon": "5",
     "url": null
   }
 ]

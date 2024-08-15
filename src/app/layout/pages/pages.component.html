@@ -4,10 +4,10 @@
     <mat-card-header>
       <mat-card-title>{{ category.category_name }}</mat-card-title>
       <div class="edButtons">
-        <button class="iconButton" (click)="addUrl()" matTooltip="添加网址">
+        <button class="iconButton" (click)="openUrlDialog(category.category_id)" matTooltip="添加网址">
           <i-tabler name="plus"></i-tabler>
         </button>
-        <button class="iconButton" (click)="editCategory(category.category_id)" matTooltip="编辑分类">
+        <button class="iconButton" (click)="openCategoryDialog(category)" matTooltip="编辑分类">
           <i-tabler name="edit"></i-tabler>
         </button>
         <button class="iconButton" (click)="deleteCategory(category.category_id)" matTooltip="删除分类">
@@ -25,10 +25,10 @@
               <img src="https://material.angular.io/assets/img/examples/shiba2.jpg">
               <span>{{ url.name }}</span>
               <div class="edButtons">
-                <button class="iconButton" (click)="editUrl()" matTooltip="编辑">
+                <button class="iconButton" (click)="openUrlDialog(category.category_id,url)" matTooltip="编辑">
                   <i-tabler name="edit"></i-tabler>
                 </button>
-                <button class="iconButton"  (click)="deleteUrl()" matTooltip="删除">
+                <button class="iconButton"  (click)="deleteUrl(category.category_id,url.id)" matTooltip="删除">
                   <i-tabler name="trash"></i-tabler>
                 </button>
               </div>

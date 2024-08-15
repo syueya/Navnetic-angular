@@ -14,10 +14,21 @@ func HandleReadCategories(w http.ResponseWriter, r *http.Request) {
 
 	categories, err := readDataFromFile()
 	if err != nil {
-		http.Error(w, "Error reading data", http.StatusInternalServerError)
+		http.Error(w, "读取数据失败", http.StatusInternalServerError)
 		return
 	}
 
+	// 发送成功响应
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(categories)
+
+	// 构建包含成功消息和数据的响应体
+	response := map[string]interface{}{
+		"message": "成功获取数据",
+		"data":    categories,
+		"code":    20000, // 可选的返回状态码
+	}
+
+	// 发送响应
+	json.NewEncoder(w).Encode(response)
+
 }

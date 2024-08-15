@@ -1,7 +1,9 @@
 package handlers
 
 import (
+	"encoding/json"
 	"net/http"
+	"strconv"
 )
 
 // 删除分类
@@ -11,15 +13,22 @@ func HandleDeleteCategory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	categoryID := r.URL.Query().Get("category_id")
-	if categoryID == "" {
-		http.Error(w, "Category ID is required", http.StatusBadRequest)
+	categoryIDStr := r.URL.Query().Get("category_id")
+	if categoryIDStr == "" {
+		http.Error(w, "category_id 是必须的", http.StatusBadRequest)
+		return
+	}
+
+	// 将 categoryID 从 string 类型转换为 int 类型
+	categoryID, err := strconv.Atoi(categoryIDStr)
+	if err != nil {
+		http.Error(w, "转换失败", http.StatusBadRequest)
 		return
 	}
 
 	categories, err := readDataFromFile()
 	if err != nil {
-		http.Error(w, "Error reading data", http.StatusInternalServerError)
+		http.Error(w, "读取数据失败", http.StatusInternalServerError)
 		return
 	}
 
@@ -33,9 +42,16 @@ func HandleDeleteCategory(w http.ResponseWriter, r *http.Request) {
 
 	err = writeDataToFile(categories)
 	if err != nil {
-		http.Error(w, "Error writing data", http.StatusInternalServerError)
+		http.Error(w, "写入数据失败", http.StatusInternalServerError)
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
+	// 发送成功响应
+	w.Header().Set("Content-Type", "application/json")
+	response := map[string]interface{}{
+		"message":     "URL删除成功",
+		"code":        20000,
+		"category_id": categoryID, // 返回删除的分类ID
+	}
+	json.NewEncoder(w).Encode(response)
 }
