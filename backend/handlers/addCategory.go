@@ -63,9 +63,9 @@ func HandleAddCategory(w http.ResponseWriter, r *http.Request) {
 	// 写入数据文件成功后，发送 JSON 响应体
 	w.Header().Set("Content-Type", "application/json") // 设置响应头
 	response := map[string]interface{}{
-		"message":  "成功添加数据",
-		"code":     20000,
-		"category": newCategory, // 返回添加的分类
+		"message": "成功添加数据",
+		"code":    20000,
+		"data":    newCategory, // 返回添加的分类
 	}
 	json.NewEncoder(w).Encode(response) // 发送 JSON 响应体
 }

@@ -49,9 +49,9 @@ func HandleDeleteCategory(w http.ResponseWriter, r *http.Request) {
 	// 发送成功响应
 	w.Header().Set("Content-Type", "application/json")
 	response := map[string]interface{}{
-		"message":     "URL删除成功",
-		"code":        20000,
-		"category_id": categoryID, // 返回删除的分类ID
+		"message": "URL删除成功",
+		"code":    20000,
+		"data":    categoryID, // 返回删除的分类ID
 	}
 	json.NewEncoder(w).Encode(response)
 }

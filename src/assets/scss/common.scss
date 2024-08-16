@@ -14,6 +14,21 @@
   }
 }
 
+/* 按钮组样式 */
+.edButtons {
+  margin-left: auto;
+  display: flex; /* 确保内部按钮水平排列 */
+  gap: 8px; /* 按钮之间的间距 */
+}
+
+
+/* 网址卡片头部图片样式 */
+.url-log {
+  margin-right: 8px; /* 图片和标题之间的间距 */
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
 
 
 

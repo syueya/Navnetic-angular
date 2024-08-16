@@ -1,0 +1,53 @@
+<ng-container *ngFor="let category of data">
+  <!-- 分类卡片 -->
+  <mat-card>
+    <mat-card-header>
+      <div class="urlHeader">
+        <img class="url-log" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+        <span>{{ category.category_name }}</span>
+        <div class="edButtons">
+          <button class="iconButton" (click)="openUrlDialog(category.category_id)" matTooltip="添加网址">
+            <i-tabler name="plus"></i-tabler>
+          </button>
+          <button class="iconButton" (click)="openCategoryDialog(category)" matTooltip="编辑分类">
+            <i-tabler name="edit"></i-tabler>
+          </button>
+          <button class="iconButton" (click)="deleteCategory(category.category_id)" matTooltip="删除分类">
+            <i-tabler name="trash"></i-tabler>
+          </button>
+      </div>
+
+      </div>
+    </mat-card-header>
+
+    <!-- 网址卡片 -->
+    <mat-card-content class="urlCard-container" >
+      <ng-container *ngFor="let url of category.url">
+
+        <a href="{{ url.href }}" target="_blank" class="urlhref">
+          <mat-card class="urlCard">
+            <mat-card-content>
+              <div class="urlHeader">
+                <img class="url-log" [src]=iconPath(url.icon)>
+                <span>{{ url.name }}</span>
+                <div class="edButtons">
+                  <button class="iconButton" (click)="openUrlDialog(category.category_id,url)" matTooltip="编辑">
+                    <i-tabler name="edit"></i-tabler>
+                  </button>
+                  <button class="iconButton"  (click)="deleteUrl(category.category_id,url.id)" matTooltip="删除">
+                    <i-tabler name="trash"></i-tabler>
+                  </button>
+                </div>
+              </div>
+              <div class="urlDescription">
+                {{ url.description }}
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </a>
+
+      </ng-container>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+

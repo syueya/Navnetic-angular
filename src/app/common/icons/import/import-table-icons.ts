@@ -4,6 +4,10 @@ import {
   IconEdit,   // 编辑
   IconTrash,   // 删除
   IconPlus,   // 新增
+  IconBrandGithub,  // github
+  IconLayoutSidebarLeftCollapse, // 侧边栏收起
+  IconLayoutSidebarLeftExpand, // 侧边栏展开
+  IconBrandTelegram, // 发送信息
 
 } from 'angular-tabler-icons/icons';
 
@@ -14,7 +18,9 @@ export const ImportTableIcons = {
   IconEdit,
   IconTrash,
   IconPlus,
-
-
+  IconBrandGithub,
+  IconLayoutSidebarLeftCollapse,
+  IconLayoutSidebarLeftExpand,
+  IconBrandTelegram,
 }
 

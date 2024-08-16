@@ -4,9 +4,51 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <app-header  [sidenav]="sidenav"></app-header>
+    <mat-toolbar>
+      <button class="iconButton" matTooltip="切换侧边栏" (click)="toggleSidebar()">
+        <i-tabler [name]="isSidebarCollapsed ? 'layout-sidebar-left-collapse' : 'layout-sidebar-left-expand'"></i-tabler>
+      </button>
 
-    <app-pages class="mt-16"></app-pages>
+      <!-- 右边的内容 -->
+      <div class="toolbar-right">
+        <div class="toolbar-search">
+          <mat-icon matPrefix>search</mat-icon>
+          <input matInput formControlName="name" type="text" placeholder="搜索" />
+        </div>
+
+        <div class="edButtons">
+          <button class="iconButton" matTooltip="切换页面" (click)="toggleComponent()">
+            <i-tabler name="menu-2"></i-tabler>
+          </button>
+          <!-- 根据 currentComponent 渲染添加分类按钮 -->
+          <ng-container>
+            <ng-container *ngIf="currentComponent === 'pages'">
+            </ng-container>
+            <ng-container *ngIf="currentComponent === 'manage'">
+              <button class="iconButton" (click)="openCategoryDialog()" matTooltip="添加分类">
+                <i-tabler name="plus"></i-tabler>
+              </button>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+
+
+    </mat-toolbar>
+
+
+    <!-- 根据 currentComponent 渲染不同的组件 -->
+    <ng-container>
+      <ng-container *ngIf="currentComponent === 'pages'">
+        <app-pages class="mt-16"></app-pages>
+      </ng-container>
+      <ng-container *ngIf="currentComponent === 'manage'">
+        <app-manage class="mt-16"></app-manage>
+      </ng-container>
+    </ng-container>
+
+
+
 
   </mat-sidenav-content>
 </mat-sidenav-container>

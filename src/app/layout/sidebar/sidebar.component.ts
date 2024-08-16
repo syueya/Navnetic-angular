@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { MaterialModule } from '@common/material/material.module';
+import { IconsModule } from '@common/icons/icons.module';
+import { MaterialModule } from '@common/modules/material.module';
 
+import { DataService } from '@common/service/data.service';
+import { Subscription } from 'rxjs';
 
-import { OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { takeUntil, Subject } from 'rxjs';
 import { Category } from '@common/interfaces/dataJson';
+
 
 
 @Component({
@@ -17,27 +18,41 @@ import { Category } from '@common/interfaces/dataJson';
   imports: [
     CommonModule,
     RouterModule,
+    IconsModule,
     MaterialModule
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
 
-export class SidebarComponent implements OnInit {
+export class SidebarComponent{
   data: Category[] = [];
-  private destroy$ = new Subject<void>();
-  constructor(private httpClient: HttpClient) {}
 
+  // 订阅 DataService 提供的数据流
+  private dataSubscription: Subscription | null = null;
+  constructor(
+    private dataService: DataService
+  ) {}
+
+
+
+  // 加载数据
   ngOnInit() {
-    this.loadData();
+    // 订阅 DataService 提供的数据流
+    this.dataSubscription = this.dataService.data$.subscribe(
+      (categories) => {
+        this.data = categories;
+      }
+    );
+    // 加载数据
+    this.dataService.loadData();
   }
 
-  loadData() {
-    this.httpClient.get<Category[]>(`/read`)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((res) => {
-        this.data = res;
-      });
+  ngOnDestroy() {
+    // 取消订阅以避免内存泄漏
+    if (this.dataSubscription) {
+      this.dataSubscription.unsubscribe();
+    }
   }
 
 }

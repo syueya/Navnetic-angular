@@ -5,7 +5,7 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
-import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 import { defaultInterceptor } from '@common/net/default.interceptor';
 
 
@@ -16,6 +16,6 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     provideAnimationsAsync(),
 
-    provideHttpClient( withInterceptors([defaultInterceptor])), // 使用 withFetch 启用 fetch API
+    provideHttpClient(withFetch(), withInterceptors([defaultInterceptor])), // 使用 withFetch 启用 fetch API
   ]
 };

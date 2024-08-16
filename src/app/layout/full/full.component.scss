@@ -12,9 +12,9 @@ mat-sidenav {
   height: 100%; /* 侧边栏占满高度 */
   overflow-y: auto; /* 如果内容过多，允许垂直滚动 */
   border-radius: 0; /* 右边不设圆角 */
-  background-color: #fff;
-  padding: 5px 20px;
-  margin: 10px 10px
+  background-color: #222831;
+  padding: 0px 20px;
+  margin-right: 10px;
 }
 
 /* 确保 mat-sidenav-content 占据除了侧边栏外的剩余部分 */
@@ -26,5 +26,44 @@ mat-sidenav-content {
   padding:10px 30px;
 }
 
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between; /* 可选：根据需要调整主轴对齐方式 */
+  align-items: center; /* 垂直居中对齐 */
+  background-color: #fff;
+
+}
+
+.toolbar-right{
+  display: flex;
+  margin-left: auto; /* 推到右侧 */
+}
+.toolbar-search{
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  border-radius: 32px;
+  border: 1px solid #e6e6e6;
+  padding: 5px;
+  margin: 0 10px;
+  width: 180px;
+}
+
+.toolbar-search mat-icon{
+  color: #AAAAAA;
+  padding: 0 5px;
+}
+
+.toolbar-search input{
+  border: none;
+  height: 20px;
+  width: 120px;
+  margin-left: 8px;
+
+  &:focus{
+    outline: none;  /* 去除输入框获得焦点时的默认外边框 */
+  }
+
+}
 
 

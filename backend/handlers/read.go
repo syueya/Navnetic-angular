@@ -27,7 +27,6 @@ func HandleReadCategories(w http.ResponseWriter, r *http.Request) {
 		"data":    categories,
 		"code":    20000, // 可选的返回状态码
 	}
-
 	// 发送响应
 	json.NewEncoder(w).Encode(response)
 
