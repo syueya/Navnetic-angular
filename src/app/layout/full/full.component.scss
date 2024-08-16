@@ -26,7 +26,7 @@ mat-sidenav-content {
   padding:10px 30px;
 }
 
-
+/* 标题栏 */
 mat-toolbar {
   display: flex;
   justify-content: space-between; /* 可选：根据需要调整主轴对齐方式 */
@@ -35,10 +35,13 @@ mat-toolbar {
 
 }
 
+/* 标题栏右侧内容 */
 .toolbar-right{
   display: flex;
   margin-left: auto; /* 推到右侧 */
 }
+
+/* 搜索框 */
 .toolbar-search{
   display: flex;
   align-items: center;  /* 垂直居中 */
@@ -49,11 +52,17 @@ mat-toolbar {
   width: 180px;
 }
 
+/* 搜索图标 */
 .toolbar-search mat-icon{
   color: #AAAAAA;
   padding: 0 5px;
 }
 
+/* 搜索输入框 */
+.toolbar-search form {
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+}
 .toolbar-search input{
   border: none;
   height: 20px;

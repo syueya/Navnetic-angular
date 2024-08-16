@@ -11,29 +11,42 @@
 
       <!-- 右边的内容 -->
       <div class="toolbar-right">
+
         <div class="toolbar-search">
           <mat-icon matPrefix>search</mat-icon>
-          <input matInput formControlName="name" type="text" placeholder="搜索" />
+          <form [formGroup]="searchForm">
+            <input type="text" formControlName="searchKeyword" (blur)="clearSearchTerm()" placeholder="搜索" />
+          </form>
         </div>
+
+        <!-- 搜索结果 -->
+<!--         <!--
+        <div *ngIf="data.length"; else noResults>
+          <div class=url-item *ngFor="let item of data">
+            <a [href]="item.href" target="_blank">
+              {{ item.name }}
+            </a>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+        <ng-template #noResults>
+          <div>No results found.</div>
+        </ng-template>
+      --> -->
+
 
         <div class="edButtons">
           <button class="iconButton" matTooltip="切换页面" (click)="toggleComponent()">
             <i-tabler name="menu-2"></i-tabler>
           </button>
           <!-- 根据 currentComponent 渲染添加分类按钮 -->
-          <ng-container>
-            <ng-container *ngIf="currentComponent === 'pages'">
-            </ng-container>
-            <ng-container *ngIf="currentComponent === 'manage'">
-              <button class="iconButton" (click)="openCategoryDialog()" matTooltip="添加分类">
-                <i-tabler name="plus"></i-tabler>
-              </button>
-            </ng-container>
+          <ng-container *ngIf="currentComponent === 'manage'">
+            <button class="iconButton" (click)="openCategoryDialog()" matTooltip="添加分类">
+              <i-tabler name="plus"></i-tabler>
+            </button>
           </ng-container>
         </div>
       </div>
-
-
     </mat-toolbar>
 
 
@@ -46,9 +59,6 @@
         <app-manage class="mt-16"></app-manage>
       </ng-container>
     </ng-container>
-
-
-
 
   </mat-sidenav-content>
 </mat-sidenav-container>

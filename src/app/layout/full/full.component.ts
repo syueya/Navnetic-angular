@@ -11,11 +11,13 @@ import { ViewChild } from '@angular/core';
 
 import { DataService } from '@common/service/data.service';
 import { Subscription } from 'rxjs';
-import { Category } from '@common/interfaces/dataJson';
+import { Category, UrlItem } from '@common/interfaces/dataJson';
 
 import { MatDialog } from '@angular/material/dialog';
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
 
+import { FormBuilder,FormControl, FormGroup,ReactiveFormsModule } from '@angular/forms';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-full',
@@ -26,7 +28,8 @@ import { CategoryDialogComponent } from '../manage/category-dialog/category-dial
     MaterialModule,
     IconsModule,
     ManageComponent,
-    PagesComponent
+    PagesComponent,
+    ReactiveFormsModule
   ],
   templateUrl: './full.component.html',
   styleUrl: './full.component.scss'
@@ -37,6 +40,9 @@ export class FullComponent {
 
   currentComponent: string = 'pages'; // 默认显示 pages 组件
 
+  // 搜索表单
+  searchForm: FormGroup;
+
   // json数据
   data: Category[] = [];
 
@@ -46,11 +52,17 @@ export class FullComponent {
   // 订阅 DataService 提供的数据流
   private dataSubscription: Subscription | null = null;
 
+
   // 构造函数
   constructor(
     public dialog: MatDialog,
+    private fb: FormBuilder,
     private dataService: DataService
-  ) {}
+  ) {
+    this.searchForm = this.fb.group({
+      searchKeyword: [''], // 初始化 searchKeyword 控件为空字符串
+    });
+  }
 
 
   ngOnInit() {
@@ -62,8 +74,51 @@ export class FullComponent {
     );
     // 加载数据
     this.dataService.loadData();
+
+    // 订阅搜索表单的值变化
+    this.searchForm.get('searchKeyword')?.valueChanges.subscribe((value) => {
+      this.filterDataBySearchTerm(value);
+
+    });
   }
 
+  // 根据搜索词过滤数据
+  filterDataBySearchTerm(term: string): void {
+    if (term) {
+      console.log('Search term:', term);
+
+      // 过滤数据，只处理 category.url 不为空的项，并只返回匹配的 url 数据
+      const filteredUrls = this.data
+        .flatMap(category => {
+          // 确保 category.url 存在且不为空
+          if (category.url && category.url.length > 0) {
+            // 过滤当前分类下的 url 数组
+            return category.url.filter(urlItem => {
+              return (
+                urlItem.name.toString().toLowerCase().includes(term.toLowerCase()) ||
+                urlItem.href.includes(term) ||
+                urlItem.description.includes(term)
+              );
+            });
+          }
+          // 如果 category.url 为空或不存在，则返回空数组
+          return [];
+        });
+      console.log('Filtered URLs:', filteredUrls);
+      // filteredUrls 是一个扁平化的数组，只包含匹配搜索词的 UrlItem 对象
+
+    }
+  }
+
+  // 清空搜索词
+  clearSearchTerm() {
+    const searchControl = this.searchForm.get('searchKeyword');
+    if (searchControl) {
+      searchControl.setValue('');
+    } else {
+      console.error('Search form control not found');
+    }
+  }
 
   // 切换侧边栏
   toggleSidebar() {
@@ -92,6 +147,10 @@ export class FullComponent {
 
     });
   }
+
+
+
+
 
   ngOnDestroy() {
     // 取消订阅以避免内存泄漏
