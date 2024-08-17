@@ -2,29 +2,24 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@common/modules/material.module';
 import { IconsModule } from '@common/icons/icons.module';
-import { SidebarComponent } from '../sidebar/sidebar.component';
 import { ManageComponent } from '../manage/manage.component';
 import { PagesComponent } from '../pages/pages.component';
-
 import { MatSidenav } from '@angular/material/sidenav';
 import { ViewChild } from '@angular/core';
-
 import { DataService } from '@common/service/data.service';
 import { Subscription } from 'rxjs';
 import { Category, UrlItem } from '@common/interfaces/dataJson';
-
 import { MatDialog } from '@angular/material/dialog';
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
+import { FormBuilder, FormGroup,ReactiveFormsModule } from '@angular/forms';
 
-import { FormBuilder,FormControl, FormGroup,ReactiveFormsModule } from '@angular/forms';
-import { Observable, of } from 'rxjs';
+
 
 @Component({
   selector: 'app-full',
   standalone: true,
   imports: [
     CommonModule,
-    SidebarComponent,
     MaterialModule,
     IconsModule,
     ManageComponent,
@@ -60,7 +55,8 @@ export class FullComponent {
   constructor(
     public dialog: MatDialog,
     private fb: FormBuilder,
-    private dataService: DataService
+    private dataService: DataService,
+
   ) {
     this.searchForm = this.fb.group({
       searchKeyword: [''], // 初始化 searchKeyword 控件为空字符串
@@ -87,6 +83,9 @@ export class FullComponent {
       }
     });
   }
+
+
+
 
 
   // 根据搜索词过滤数据

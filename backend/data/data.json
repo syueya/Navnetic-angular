@@ -7,77 +7,77 @@
       {
         "id": 1,
         "name": "夏夏子blog",
-        "icon": "myblog.png",
+        "icon": "myblog",
         "href": "https://vdoing.246855.xyz/",
         "description": ""
       },
       {
         "id": 2,
         "name": "驴alist",
-        "icon": "alist.png",
+        "icon": "alist",
         "href": "https://alist.mediasaber.cn:10010/",
         "description": ""
       },
       {
         "id": 3,
         "name": "卷alist",
-        "icon": "alist.png",
+        "icon": "alist",
         "href": "https://al.635346.xyz:66/",
         "description": ""
       },
       {
         "id": 4,
         "name": "驴jf",
-        "icon": "jellyfin.png",
+        "icon": "jellyfin",
         "href": "https://jf.mediasaber.cn:10010/web/index.html#/home.html",
         "description": "syue"
       },
       {
         "id": 5,
         "name": "驴emby",
-        "icon": "emby.png",
+        "icon": "emby",
         "href": "https://emby.mediasaber.cn:10010/web/index.html#!/home",
         "description": "syue"
       },
       {
         "id": 6,
         "name": "驴ms",
-        "icon": "msaber.png",
+        "icon": "msaber",
         "href": "https://www.mediasaber.cn:10010/web",
         "description": "syue"
       },
       {
         "id": 7,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/",
         "description": ""
       },
       {
         "id": 8,
         "name": "息流",
-        "icon": "flowus.png",
+        "icon": "flowus",
         "href": "https://flowus.cn/094c3e3a-6b0c-4b7b-b7db-afb4e2aebf86",
         "description": ""
       },
       {
         "id": 9,
         "name": "谷歌",
-        "icon": "google.png",
+        "icon": "google",
         "href": "https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl",
         "description": ""
       },
       {
         "id": 10,
         "name": "yandex",
-        "icon": "yandex.png",
+        "icon": "yandex",
         "href": "https://yandex.com/",
         "description": "俄罗斯最大的搜索引擎"
       },
       {
         "id": 11,
         "name": "有道翻译",
-        "icon": "youdao.png",
+        "icon": "youdao",
         "href": "https://fanyi.youdao.com/index.html#/",
         "description": ""
       }
@@ -91,98 +91,98 @@
       {
         "id": 1,
         "name": "qbitorrent",
-        "icon": "qbittorrent.png",
+        "icon": "qbittorrent",
         "href": "https://qb.272331.xyz:1988",
         "description": "PT下载器"
       },
       {
         "id": 2,
         "name": "transmission",
-        "icon": "transmission.png",
+        "icon": "transmission",
         "href": "https://tr.272331.xyz:1988",
         "description": "PT保种"
       },
       {
         "id": 3,
         "name": "Emby",
-        "icon": "emby.png",
+        "icon": "emby",
         "href": "https://emby.272331.xyz:1988",
         "description": "影音服务器"
       },
       {
         "id": 4,
         "name": "npm",
-        "icon": "npm.png",
+        "icon": "npm",
         "href": "https://npm.272331.xyz:1988",
         "description": "反代"
       },
       {
         "id": 5,
         "name": "msaber",
-        "icon": "msaber.png",
+        "icon": "msaber",
         "href": "https://ms.272331.xyz:1988",
         "description": "媒体刮削整理"
       },
       {
         "id": 6,
         "name": "爱快",
-        "icon": "ikuai.png",
+        "icon": "ikuai",
         "href": "https://ak.272331.xyz:1988/#/system-overview",
         "description": "软路由底层"
       },
       {
         "id": 7,
         "name": "Vaultwarden",
-        "icon": "vaultwarden.png",
+        "icon": "vaultwarden",
         "href": "https://mima.272331.xyz:1988/#/vault",
         "description": "保存密码"
       },
       {
         "id": 8,
         "name": "ChineseSubFinder",
-        "icon": "ChineseSubFinder.png",
+        "icon": "ChineseSubFinder",
         "href": "https://zimu.272331.xyz:1988/#/overview",
         "description": "字幕"
       },
       {
         "id": 9,
         "name": "alist",
-        "icon": "alist.png",
+        "icon": "alist",
         "href": "https://alist.272331.xyz:1988/",
         "description": "挂载云盘"
       },
       {
         "id": 10,
         "name": "qiandao",
-        "icon": "qiandao.png",
+        "icon": "qiandao",
         "href": "https://qiandao.272331.xyz:1988/my/",
         "description": "签到框架"
       },
       {
         "id": 11,
         "name": "绿联",
-        "icon": "lvlian.png",
+        "icon": "lvlian",
         "href": "https://lvlian.272331.xyz:1988/desktop/#/",
         "description": "绿联web端"
       },
       {
         "id": 12,
         "name": "dockercopilot",
-        "icon": "dockercopilot.png",
+        "icon": "dockercopilot",
         "href": "https://dc.272331.xyz:1988/manager#/containers",
         "description": "更新容器"
       },
       {
         "id": 13,
         "name": "openclash",
-        "icon": "openclash.png",
+        "icon": "openclash",
         "href": "https://openclash.272331.xyz:1988/ui/yacd/?hostname=openclash.272331.xyz&port=1988&secret=Xll19980226#/proxies",
         "description": ""
       },
       {
         "id": 14,
         "name": "openwrt",
-        "icon": "openwrt.png",
+        "icon": "openwrt",
         "href": "https://openwrt.272331.xyz:1988/cgi-bin/luci/admin/services/openclash",
         "description": ""
       }
@@ -196,91 +196,91 @@
       {
         "id": 1,
         "name": "qbitorrent",
-        "icon": "qbittorrent.png",
+        "icon": "qbittorrent",
         "href": "http://192.168.31.31:8080/",
         "description": "PT下载器"
       },
       {
         "id": 2,
         "name": "transmission",
-        "icon": "transmission.png",
+        "icon": "transmission",
         "href": "http://192.168.31.31:9091/transmission/web/",
         "description": "PT保种"
       },
       {
         "id": 3,
         "name": "msaber",
-        "icon": "msaber.png",
+        "icon": "msaber",
         "href": "http://192.168.31.15:3000/",
         "description": "影音管理"
       },
       {
         "id": 4,
         "name": "openwrt",
-        "icon": "openwrt.png",
+        "icon": "openwrt",
         "href": "http://192.168.31.2/cgi-bin/luci/admin/status/overview",
         "description": "旁路由"
       },
       {
         "id": 5,
         "name": "emby",
-        "icon": "emby.png",
+        "icon": "emby",
         "href": "http://192.168.31.31:8096/",
         "description": "影音播放器"
       },
       {
         "id": 6,
         "name": "qiandao",
-        "icon": "qiandao.png",
+        "icon": "qiandao",
         "href": "http://192.168.31.31:9006/",
         "description": "签到框架"
       },
       {
         "id": 7,
         "name": "绿联云",
-        "icon": "lvlian.png",
+        "icon": "lvlian",
         "href": "http://192.168.31.15:9999",
         "description": "绿联云web端"
       },
       {
         "id": 8,
         "name": "爱快",
-        "icon": "ikuai.png",
+        "icon": "ikuai",
         "href": "http://192.168.31.1/#/system-overview",
         "description": "软路由底层"
       },
       {
         "id": 9,
         "name": "alist",
-        "icon": "alist.png",
+        "icon": "alist",
         "href": "http://192.168.31.31:5244",
         "description": "挂载云盘"
       },
       {
         "id": 10,
         "name": "ariang",
-        "icon": "ariang.png",
+        "icon": "ariang",
         "href": "http://192.168.31.31:6880/",
         "description": "aria2下载器"
       },
       {
         "id": 11,
         "name": "ddns-go",
-        "icon": "ddnsgo.png",
+        "icon": "ddnsgo",
         "href": "http://192.168.31.31:9876",
         "description": "域名解析"
       },
       {
         "id": 12,
         "name": "npm",
-        "icon": "npm.png",
+        "icon": "npm",
         "href": "http://192.168.31.15:82",
         "description": "端口反代+SLL证书"
       },
       {
         "id": 13,
         "name": "dockercopilot",
-        "icon": "dockercopilot.png",
+        "icon": "dockercopilot",
         "href": "http://192.168.31.15:12712",
         "description": "更新容器"
       }
@@ -294,266 +294,266 @@
       {
         "id": 1,
         "name": "chemicalbook",
-        "icon": "chemicalbook.png",
+        "icon": "chemicalbook",
         "href": "https://www.chemicalbook.com/ProductIndex.aspx",
         "description": "化合物化学性质查询"
       },
       {
         "id": 2,
         "name": "仪器信息网",
-        "icon": "instrument.png",
+        "icon": "instrument",
         "href": "https://bbs.instrument.com.cn/forum_738.htm",
         "description": "香精香料论坛、气质论坛"
       },
       {
         "id": 3,
         "name": "化源网",
-        "icon": "chemsrc.png",
+        "icon": "chemsrc",
         "href": "https://www.chemsrc.com/",
         "description": "化合物化学性质查询"
       },
       {
         "id": 4,
         "name": "TGSC",
-        "icon": "thegoodscentscompany.png",
+        "icon": "thegoodscentscompany",
         "href": "http://www.thegoodscentscompany.com/search2.html",
         "description": "化合物化学性质查询"
       },
       {
         "id": 5,
         "name": "AIST",
-        "icon": "aist.png",
+        "icon": "aist",
         "href": "https://sdbs.db.aist.go.jp/sdbs/cgi-bin/direct_frame_top.cgi",
         "description": "有机化合物光谱数据库"
       },
       {
         "id": 6,
         "name": "pubchem",
-        "icon": "pubchem.png",
+        "icon": "pubchem",
         "href": "https://pubchem.ncbi.nlm.nih.gov/",
         "description": "可查询香气口感、光谱信息"
       },
       {
         "id": 7,
         "name": "FlavorDB",
-        "icon": "FlavorDB.png",
+        "icon": "FlavorDB",
         "href": "https://cosylab.iiitd.edu.in/flavordb/search",
         "description": "香气查询，与PubChem相通"
       },
       {
         "id": 8,
         "name": "foodb",
-        "icon": "foodb.png",
+        "icon": "foodb",
         "href": "https://foodb.ca/unearth/advanced/compounds",
         "description": "化合物搜索"
       },
       {
         "id": 9,
         "name": "NIST",
-        "icon": "nist.png",
+        "icon": "nist",
         "href": "https://webbook.nist.gov/chemistry/cas-ser/",
         "description": "化学性质查询,包括保留指数"
       },
       {
         "id": 10,
         "name": "perflavory",
-        "icon": "perflavory.png",
+        "icon": "perflavory",
         "href": "http://www.perflavory.com/search.html",
         "description": "查询化合物香气、风味"
       },
       {
         "id": 11,
         "name": "perflavory",
-        "icon": "perflavory.png",
+        "icon": "perflavory",
         "href": "http://www.perflavory.com/allfm-1.htm",
         "description": "FEMA号排序化合物"
       },
       {
         "id": 12,
         "name": "GRAS出版物",
-        "icon": "femaflavor.png",
+        "icon": "femaflavor",
         "href": "https://www.femaflavor.org/gras-publications",
         "description": "GRAS出版物"
       },
       {
         "id": 13,
         "name": "小木虫",
-        "icon": "muchong.png",
+        "icon": "muchong",
         "href": "http://muchong.com/bbs/",
         "description": "学术科研互动平台"
       },
       {
         "id": 14,
         "name": "ACSP",
-        "icon": "acs.png",
+        "icon": "acs",
         "href": "https://pubs.acs.org/journal/jafcau#",
         "description": "acs期刊"
       },
       {
         "id": 15,
         "name": "爱化学",
-        "icon": "ichemistry.png",
+        "icon": "ichemistry",
         "href": "http://www.ichemistry.cn/cas/FEMA.htm",
         "description": "化合物化学性质查询"
       },
       {
         "id": 16,
         "name": "molbase",
-        "icon": "molbase.png",
+        "icon": "molbase",
         "href": "https://www.molbase.com/cas",
         "description": "化合物化学性质查询"
       },
       {
         "id": 17,
         "name": "食品标准法查询",
-        "icon": "foodcta.png",
+        "icon": "foodcta",
         "href": "http://www.foodcta.com/spbz/list.html",
         "description": "查询食品标准"
       },
       {
         "id": 18,
         "name": "食品伙伴网",
-        "icon": "foodmate.png",
+        "icon": "foodmate",
         "href": "http://down.foodmate.net/standard/",
         "description": "食品标准下载中心"
       },
       {
         "id": 19,
         "name": "北大正元",
-        "icon": "zoteq.png",
+        "icon": "zoteq",
         "href": "http://web.zoteq.com/",
         "description": "北京北达正元科技有限公司"
       },
       {
         "id": 20,
         "name": "安谱实验",
-        "icon": "anpel.png",
+        "icon": "anpel",
         "href": "https://www.anpel.com.cn/ProductCenter.html",
         "description": "上海安谱实验科技"
       },
       {
         "id": 21,
         "name": "芬美意",
-        "icon": "firmenich.png",
+        "icon": "firmenich",
         "href": "https://www.firmenich.com/ingredients/ingredient-flavor-catalog",
         "description": "芬美意firmenich"
       },
       {
         "id": 22,
         "name": "化工字典",
-        "icon": "chemnet.png",
+        "icon": "chemnet",
         "href": "http://cheman.chemnet.com/dict/zd.html",
         "description": "CAS查询"
       },
       {
         "id": 23,
         "name": "中国药典",
-        "icon": "ouryao.png",
+        "icon": "ouryao",
         "href": "https://db.ouryao.com/",
         "description": "中国药典、药品标准和法规"
       },
       {
         "id": 24,
         "name": "chemexper",
-        "icon": "chemexper.png",
+        "icon": "chemexper",
         "href": "http://www.chemexper.com/structure_search.shtml",
         "description": "搜索包含某个结构的化合物"
       },
       {
         "id": 25,
         "name": "FLAVOR LIBRARY",
-        "icon": "femaflavor.png",
+        "icon": "femaflavor",
         "href": "https://www.femaflavor.org/flavor-library",
         "description": "FEMA查询"
       },
       {
         "id": 26,
         "name": "食品百科全书",
-        "icon": "foodbk.png",
+        "icon": "foodbk",
         "href": "http://www.foodbk.com/wiki/%E9%A6%96%E9%A1%B5",
         "description": "全民共同撰写的百科全书"
       },
       {
         "id": 27,
         "name": "有机化学门户",
-        "icon": "organic-chemistry.png",
+        "icon": "organic-chemistry",
         "href": "https://www.organic-chemistry.org/",
         "description": "化学反应和化学物质信息"
       },
       {
         "id": 28,
         "name": "LRI数据库",
-        "icon": "odour.png",
+        "icon": "odour",
         "href": "http://www.odour.org.uk/index.html",
         "description": "LRI记录和化合物的气味信息"
       },
       {
         "id": 29,
         "name": "chemspider",
-        "icon": "chemspider.png",
+        "icon": "chemspider",
         "href": "http://www.chemspider.com/",
         "description": "结构的快速文本和结构搜索访问"
       },
       {
         "id": 30,
         "name": "molview",
-        "icon": "molview.png",
+        "icon": "molview",
         "href": "https://molview.org/",
         "description": "画化学结构式"
       },
       {
         "id": 31,
         "name": "indrawforweb",
-        "icon": "indrawforweb.png",
+        "icon": "indrawforweb",
         "href": "https://indrawforweb.integle.com/",
         "description": "结构式编辑器"
       },
       {
         "id": 32,
         "name": "foodb",
-        "icon": "foodb.png",
+        "icon": "foodb",
         "href": "https://foodb.ca/unearth/advanced/compounds",
         "description": "化学性质、食物来源、食物中的浓度"
       },
       {
         "id": 33,
         "name": "foodtalks",
-        "icon": "foodtalks.png",
+        "icon": "foodtalks",
         "href": "https://www.foodtalks.cn/",
         "description": "食品资讯、食品行业公司信息库"
       },
       {
         "id": 34,
         "name": "flavornet",
-        "icon": "flavornet.png",
+        "icon": "flavornet",
         "href": "http://www.flavornet.org/flavornet.html",
         "description": "DB5等色谱柱上保留指数及香气"
       },
       {
         "id": 35,
         "name": "HPLC柱选择性数据库",
-        "icon": "hplccolumns.png",
+        "icon": "hplccolumns",
         "href": "https://www.hplccolumns.org/database/compare.php",
         "description": "反相HPLC柱柱参数"
       },
       {
         "id": 36,
         "name": "FragmentFinder",
-        "icon": "Fragment.png",
+        "icon": "Fragment",
         "href": "https://www.colby.edu/chemistry/PChem/Fragment.html",
         "description": "用分子量查询化合物"
       },
       {
         "id": 37,
         "name": "食品伙伴网",
-        "icon": "foodmate.png",
+        "icon": "foodmate",
         "href": "http://db.foodmate.net/2760-2011/?mod=b3&q=3178+",
         "description": "可使用的食品用合成香料查询"
       },
       {
         "id": 38,
         "name": "nifdc",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "http://aoc.nifdc.org.cn/sell/home/index.html",
         "description": "国家药品标准物质查询与订购平台"
       }
@@ -567,245 +567,245 @@
       {
         "id": 1,
         "name": "我堡",
-        "icon": "ourbits.png",
+        "icon": "ourbits",
         "href": "https://ourbits.club/index.php",
         "description": ""
       },
       {
         "id": 2,
         "name": "家园",
-        "icon": "hdhome.png",
+        "icon": "hdhome",
         "href": "https://hdhome.org/index.php",
         "description": ""
       },
       {
         "id": 3,
         "name": "观众",
-        "icon": "audiences.png",
+        "icon": "audiences",
         "href": "https://audiences.me/index.php",
         "description": ""
       },
       {
         "id": 4,
         "name": "憨憨",
-        "icon": "hhanclub.png",
+        "icon": "hhanclub",
         "href": "https://hhanclub.top/index.php",
         "description": ""
       },
       {
         "id": 5,
         "name": "不可说",
-        "icon": "springsunday.png",
+        "icon": "springsunday",
         "href": "https://springsunday.net/index.php",
         "description": ""
       },
       {
         "id": 6,
         "name": "天空",
-        "icon": "hdsky.png",
+        "icon": "hdsky",
         "href": "https://hdsky.me/",
         "description": ""
       },
       {
         "id": 7,
         "name": "朋友",
-        "icon": "keepfrds.png",
+        "icon": "keepfrds",
         "href": "https://pt.keepfrds.com/torrents.php",
         "description": ""
       },
       {
         "id": 8,
         "name": "岛",
-        "icon": "ptchdbits.png",
+        "icon": "ptchdbits",
         "href": "https://ptchdbits.co/index.php",
         "description": ""
       },
       {
         "id": 9,
         "name": "馒头",
-        "icon": "m-team.png",
+        "icon": "m-team",
         "href": "https://kp.m-team.cc/",
         "description": ""
       },
       {
         "id": 10,
         "name": "红叶",
-        "icon": "leaves.png",
+        "icon": "leaves",
         "href": "https://wwww.leaves.red/index.php",
         "description": ""
       },
       {
         "id": 11,
         "name": "海豚",
-        "icon": "dicmusic.png",
+        "icon": "dicmusic",
         "href": "https://dicmusic.com/torrents.php",
         "description": ""
       },
       {
         "id": 12,
         "name": "象站",
-        "icon": "ptvicomo.png",
+        "icon": "ptvicomo",
         "href": "https://ptvicomo.net/index.php",
         "description": ""
       },
       {
         "id": 13,
         "name": "聆音",
-        "icon": "soulvoice.png",
+        "icon": "soulvoice",
         "href": "https://pt.soulvoice.club/index.php",
         "description": ""
       },
       {
         "id": 14,
         "name": "uno",
-        "icon": "uno.png",
+        "icon": "uno",
         "href": "https://hawke.uno/",
         "description": ""
       },
       {
         "id": 15,
         "name": "hdv",
-        "icon": "hdvideo.png",
+        "icon": "hdvideo",
         "href": "https://hdvideo.one/index.php",
         "description": ""
       },
       {
         "id": 16,
         "name": "大青虫",
-        "icon": "cyanbug.png",
+        "icon": "cyanbug",
         "href": "https://cyanbug.net/index.php",
         "description": ""
       },
       {
         "id": 17,
         "name": "杜比",
-        "icon": "hddolby.png",
+        "icon": "hddolby",
         "href": "https://www.hddolby.com/index.php",
         "description": ""
       },
       {
         "id": 18,
         "name": "OKpt",
-        "icon": "okpt.png",
+        "icon": "okpt",
         "href": "https://www.okpt.net/",
         "description": ""
       },
       {
         "id": 19,
         "name": "红豆饭",
-        "icon": "hdfans.png",
+        "icon": "hdfans",
         "href": "https://hdfans.org/index.php",
         "description": ""
       },
       {
         "id": 20,
         "name": "学校",
-        "icon": "btschool.png",
+        "icon": "btschool",
         "href": "https://pt.btschool.club/index.php",
         "description": ""
       },
       {
         "id": 21,
         "name": "蝶粉",
-        "icon": "discfan.png",
+        "icon": "discfan",
         "href": "https://discfan.net/",
         "description": ""
       },
       {
         "id": 22,
         "name": "打胶",
-        "icon": "dajiao.png",
+        "icon": "dajiao",
         "href": "https://dajiao.cyou/index.php",
         "description": ""
       },
       {
         "id": 23,
         "name": "咖啡",
-        "icon": "ptcafe.png",
+        "icon": "ptcafe",
         "href": "https://ptcafe.club/index.php",
         "description": ""
       },
       {
         "id": 24,
         "name": "好大",
-        "icon": "hdarea.png",
+        "icon": "hdarea",
         "href": "https://hdarea.club/index.php",
         "description": ""
       },
       {
         "id": 25,
         "name": "PTT",
-        "icon": "pttime.png",
+        "icon": "pttime",
         "href": "https://www.pttime.org/torrents.php",
         "description": ""
       },
       {
         "id": 26,
         "name": "朱雀",
-        "icon": "zhuque.png",
+        "icon": "zhuque",
         "href": "https://zhuque.in/index",
         "description": ""
       },
       {
         "id": 27,
         "name": "ubits",
-        "icon": "ubits.png",
+        "icon": "ubits",
         "href": "https://ubits.club/torrents.php",
         "description": ""
       },
       {
         "id": 28,
         "name": "ICC",
-        "icon": "icc.png",
+        "icon": "icc",
         "href": "https://www.icc2022.com/torrents.php",
         "description": ""
       },
       {
         "id": 29,
         "name": "小蚂蚁",
-        "icon": "hdmayi.png",
+        "icon": "hdmayi",
         "href": "https://hdmayi.com/torrents.php",
         "description": ""
       },
       {
         "id": 30,
         "name": "织梦",
-        "icon": "zmpt.png",
+        "icon": "zmpt",
         "href": "https://zmpt.cc/index.php",
         "description": ""
       },
       {
         "id": 31,
         "name": "车站",
-        "icon": "carpt.png",
+        "icon": "carpt",
         "href": "https://carpt.net/torrents.php",
         "description": ""
       },
       {
         "id": 32,
         "name": "猪猪",
-        "icon": "piggo.png",
+        "icon": "piggo",
         "href": "https://piggo.me/index.php",
         "description": ""
       },
       {
         "id": 33,
         "name": "悟空问道",
-        "icon": "wukongwendao.png",
+        "icon": "wukongwendao",
         "href": "https://wukongwendao.top/index.php",
         "description": ""
       },
       {
         "id": 34,
         "name": "海棠",
-        "icon": "htpt.png",
+        "icon": "htpt",
         "href": "https://www.htpt.cc/index.php",
         "description": ""
       },
       {
         "id": 35,
         "name": "红叶",
-        "icon": "leaves.png",
+        "icon": "leaves",
         "href": "https://leaves.red/index.php",
         "description": ""
       }
@@ -819,133 +819,133 @@
       {
         "id": 1,
         "name": "docsify",
-        "icon": "docsify.png",
+        "icon": "docsify",
         "href": "https://docsify.js.org/#/zh-cn/",
         "description": "生成文档网站"
       },
       {
         "id": 2,
         "name": "hexo",
-        "icon": "hexo.png",
+        "icon": "hexo",
         "href": "https://hexo.io/zh-cn/",
         "description": "博客框架"
       },
       {
         "id": 3,
         "name": "语雀",
-        "icon": "yuque.png",
+        "icon": "yuque",
         "href": "https://www.yuque.com/dashboard",
         "description": ""
       },
       {
         "id": 4,
         "name": "hexo主题",
-        "icon": "hexo-themes.png",
+        "icon": "hexo-themes",
         "href": "https://hexo.io/themes/",
         "description": ""
       },
       {
         "id": 5,
         "name": "金数据",
-        "icon": "jinshuju.png",
+        "icon": "jinshuju",
         "href": "https://jinshuju.net/home",
         "description": ""
       },
       {
         "id": 6,
         "name": "知识星球",
-        "icon": "zsxq.png",
+        "icon": "zsxq",
         "href": "https://wx.zsxq.com",
         "description": ""
       },
       {
         "id": 7,
         "name": "幕布",
-        "icon": "mubu.png",
+        "icon": "mubu",
         "href": "https://mubu.com/app",
         "description": ""
       },
       {
         "id": 8,
         "name": "apption",
-        "icon": "apption.png",
+        "icon": "apption",
         "href": "https://apption.co/",
         "description": "notion组件"
       },
       {
         "id": 9,
         "name": "notion",
-        "icon": "notion.png",
+        "icon": "notion",
         "href": "https://www.notion.so/1c2f77d599584fd88d0ccec5309ed312",
         "description": ""
       },
       {
         "id": 10,
         "name": "wolai",
-        "icon": "wolai.png",
+        "icon": "wolai",
         "href": "https://www.wolai.com/waQcHUYEyfJe8VBsv3gg9z",
         "description": ""
       },
       {
         "id": 11,
         "name": "石墨文档",
-        "icon": "shimo.png",
+        "icon": "shimo",
         "href": "https://shimo.im/desktop",
         "description": ""
       },
       {
         "id": 12,
         "name": "腾讯文档",
-        "icon": "txundocs.png",
+        "icon": "txundocs",
         "href": "https://docs.qq.com/desktop/",
         "description": ""
       },
       {
         "id": 13,
         "name": "vuepress-theme-vdoing官方文档",
-        "icon": "vuepress-theme-vdoing.png",
+        "icon": "vuepress-theme-vdoing",
         "href": "https://doc.xugaoyi.com/pages/52d5c3/",
         "description": ""
       },
       {
         "id": 14,
         "name": "vuepress官方文档",
-        "icon": "vuepress.png",
+        "icon": "vuepress",
         "href": "https://vuepress.vuejs.org/zh/",
         "description": ""
       },
       {
         "id": 15,
         "name": "leancloud",
-        "icon": "leancloud.png",
+        "icon": "leancloud",
         "href": "https://console.leancloud.cn/apps",
         "description": "云服务| vuepress评论"
       },
       {
         "id": 16,
         "name": "评论插件",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/dongyuanxin/vuepress-plugin-comment",
         "description": "vuepress-plugin-comment"
       },
       {
         "id": 17,
         "name": "markdown-it-emoji",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/markdown-it/markdown-it-emoji",
         "description": "md语法表情图"
       },
       {
         "id": 18,
         "name": "awesome-vuepress",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/vuepress/awesome-vuepress",
         "description": "vuepress插件库"
       },
       {
         "id": 19,
         "name": "vuepress-theme-vdoing",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/xugaoyi/vuepress-theme-vdoing",
         "description": ""
       }
@@ -959,154 +959,154 @@
       {
         "id": 1,
         "name": "夸克网盘",
-        "icon": "quark.png",
+        "icon": "quark",
         "href": "https://pan.quark.cn/list#/list/all",
         "description": ""
       },
       {
         "id": 2,
         "name": "百度网盘",
-        "icon": "baidupan.png",
+        "icon": "baidupan",
         "href": "https://pan.baidu.com",
         "description": ""
       },
       {
         "id": 3,
         "name": "阿里网盘",
-        "icon": "aliyunpan.png",
+        "icon": "aliyunpan",
         "href": "https://www.aliyundrive.com/drive/file/backup",
         "description": ""
       },
       {
         "id": 4,
         "name": "天翼云盘",
-        "icon": "cloud189.png",
+        "icon": "cloud189",
         "href": "https://cloud.189.cn/web/main/file/folder/-11",
         "description": ""
       },
       {
         "id": 5,
         "name": "腾讯微云",
-        "icon": "weiyun.png",
+        "icon": "weiyun",
         "href": "https://www.weiyun.com/",
         "description": ""
       },
       {
         "id": 6,
         "name": "文叔叔传文件",
-        "icon": "wenshushu.png",
+        "icon": "wenshushu",
         "href": "https://www.wenshushu.cn/",
         "description": ""
       },
       {
         "id": 7,
         "name": "小雅alist",
-        "icon": "xiaoya.png",
+        "icon": "xiaoya",
         "href": "https://alist.xiaoya.pro/",
         "description": ""
       },
       {
         "id": 8,
         "name": "文件搜",
-        "icon": "wjsou.png",
+        "icon": "wjsou",
         "href": "https://www.wjsou.com/",
         "description": ""
       },
       {
         "id": 9,
         "name": "狸猫盘搜",
-        "icon": "alipansou.png",
+        "icon": "alipansou",
         "href": "https://www.alipansou.com/",
         "description": ""
       },
       {
         "id": 10,
         "name": "盘搜搜",
-        "icon": "pansoso.png",
+        "icon": "pansoso",
         "href": "https://pansoso.com/",
         "description": ""
       },
       {
         "id": 11,
         "name": "网盘小站",
-        "icon": "wpxz.png",
+        "icon": "wpxz",
         "href": "https://wpxz.top/",
         "description": ""
       },
       {
         "id": 12,
         "name": "易搜",
-        "icon": "yiso.png",
+        "icon": "yiso",
         "href": "https://yiso.fun/",
         "description": ""
       },
       {
         "id": 13,
         "name": "黑洞导航",
-        "icon": "hddh.png",
+        "icon": "hddh",
         "href": "https://hddh.link/",
         "description": ""
       },
       {
         "id": 14,
         "name": "我的小站",
-        "icon": "pan666.png",
+        "icon": "pan666",
         "href": "https://pan666.net/",
         "description": "阿里云盘资源共享站"
       },
       {
         "id": 15,
         "name": "万人迷吧",
-        "icon": "wanrenmi8.png",
+        "icon": "wanrenmi8",
         "href": "https://www.wanrenmi8.com/cn/index.html",
         "description": "导航页"
       },
       {
         "id": 16,
         "name": "星火",
-        "icon": "xinghuo.png",
+        "icon": "xinghuo",
         "href": "https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q?tab=1nylx9",
         "description": "阿里云盘资源"
       },
       {
         "id": 17,
         "name": "星火",
-        "icon": "xinghuo.png",
+        "icon": "xinghuo",
         "href": "https://docs.qq.com/sheet/DSndLS0xUaG9WS1Fm?tab=BB08J2",
         "description": "最新文档地址发布页"
       },
       {
         "id": 18,
         "name": "励心缘起",
-        "icon": "ysupan.png",
+        "icon": "ysupan",
         "href": "http://sj.ysupan.com/lixinyuanqi#/",
         "description": "云盘资源站"
       },
       {
         "id": 19,
         "name": "资源帝",
-        "icon": "ziyuandi.png",
+        "icon": "ziyuandi",
         "href": "http://www.ziyuandi.cn/",
         "description": ""
       },
       {
         "id": 20,
         "name": "磁力天堂",
-        "icon": "cilitiantang.png",
+        "icon": "cilitiantang",
         "href": "https://cilitiantang.icu/",
         "description": ""
       },
       {
         "id": 21,
         "name": "云盘资源分享社区",
-        "icon": "yunpan1.png",
+        "icon": "yunpan1",
         "href": "https://yunpan1.cc/",
         "description": ""
       },
       {
         "id": 22,
         "name": "趣盘搜",
-        "icon": "funletu.png",
+        "icon": "funletu",
         "href": "https://pan.funletu.com/#/",
         "description": ""
       }
@@ -1120,112 +1120,112 @@
       {
         "id": 1,
         "name": "youtube",
-        "icon": "youtube.png",
+        "icon": "youtube",
         "href": "https://www.youtube.com/",
         "description": ""
       },
       {
         "id": 2,
         "name": "知乎",
-        "icon": "zhihu.png",
+        "icon": "zhihu",
         "href": "https://www.zhihu.com/follow",
         "description": ""
       },
       {
         "id": 3,
         "name": "微博",
-        "icon": "weibo.png",
+        "icon": "weibo",
         "href": "https://weibo.com",
         "description": ""
       },
       {
         "id": 4,
         "name": "什么值得买",
-        "icon": "smzdm.png",
+        "icon": "smzdm",
         "href": "https://www.smzdm.com/",
         "description": ""
       },
       {
         "id": 5,
         "name": "b站",
-        "icon": "bilibili.png",
+        "icon": "bilibili",
         "href": "https://www.bilibili.com/",
         "description": ""
       },
       {
         "id": 6,
         "name": "豆瓣读书",
-        "icon": "douban.png",
+        "icon": "douban",
         "href": "https://book.douban.com",
         "description": ""
       },
       {
         "id": 7,
         "name": "豆瓣",
-        "icon": "douban.png",
+        "icon": "douban",
         "href": "https://www.douban.com/",
         "description": ""
       },
       {
         "id": 8,
         "name": "淘宝",
-        "icon": "taobao.png",
+        "icon": "taobao",
         "href": "https://www.taobao.com/",
         "description": ""
       },
       {
         "id": 9,
         "name": "当当网",
-        "icon": "dangdang.png",
+        "icon": "dangdang",
         "href": "https://www.dangdang.com/",
         "description": ""
       },
       {
         "id": 10,
         "name": "京东",
-        "icon": "jd.png",
+        "icon": "jd",
         "href": "https://www.jd.com/",
         "description": ""
       },
       {
         "id": 11,
         "name": "百度贴吧",
-        "icon": "tieba.png",
+        "icon": "tieba",
         "href": "https://tieba.baidu.com/",
         "description": ""
       },
       {
         "id": 12,
         "name": "微信读书",
-        "icon": "weread.png",
+        "icon": "weread",
         "href": "https://weread.qq.com/",
         "description": ""
       },
       {
         "id": 13,
         "name": "晋江文学城",
-        "icon": "jjwxc.png",
+        "icon": "jjwxc",
         "href": "https://wap.jjwxc.net/",
         "description": ""
       },
       {
         "id": 14,
         "name": "老福特",
-        "icon": "lofter.png",
+        "icon": "lofter",
         "href": "https://www.lofter.com/",
         "description": ""
       },
       {
         "id": 15,
         "name": "网易云音乐",
-        "icon": "wyunmusic.png",
+        "icon": "wyunmusic",
         "href": "https://music.163.com/",
         "description": ""
       },
       {
         "id": 16,
         "name": "12315平台",
-        "icon": "12315.png",
+        "icon": "12315",
         "href": "https://www.12315.cn/",
         "description": "消费者投诉举报平台"
       }
@@ -1239,84 +1239,84 @@
       {
         "id": 1,
         "name": "xbox",
-        "icon": "xbox.png",
+        "icon": "xbox",
         "href": "https://www.xbox.com/zh-CN?source=lp",
         "description": ""
       },
       {
         "id": 2,
         "name": "Epic",
-        "icon": "epicgames.png",
+        "icon": "epicgames",
         "href": "https://store.epicgames.com/zh-CN/",
         "description": "Epic游戏商城"
       },
       {
         "id": 3,
         "name": "oyunfor",
-        "icon": "oyunfor.png",
+        "icon": "oyunfor",
         "href": "https://www.oyunfor.com/",
         "description": "xbox土耳其礼品卡"
       },
       {
         "id": 4,
         "name": "kinguin",
-        "icon": "kinguin.png",
+        "icon": "kinguin",
         "href": "https://www.kinguin.net/",
         "description": "xbox游戏"
       },
       {
         "id": 5,
         "name": "mtcgame",
-        "icon": "mtcgame.png",
+        "icon": "mtcgame",
         "href": "https://www.mtcgame.com/zh-CN/xbox-gift-cards",
         "description": "xbox游戏礼品卡"
       },
       {
         "id": 6,
         "name": "turgame",
-        "icon": "turgame.png",
+        "icon": "turgame",
         "href": "https://www.turgame.com/brand/xbox/?sfw=pass1703725563",
         "description": "xbox土耳其礼品卡"
       },
       {
         "id": 7,
         "name": "盒心光环",
-        "icon": "xboxfan.png",
+        "icon": "xboxfan",
         "href": "https://xboxfan.com/",
         "description": "xbox比价助手网页端"
       },
       {
         "id": 8,
         "name": "microsoft",
-        "icon": "microsoft.png",
+        "icon": "microsoft",
         "href": "https://account.microsoft.com/profile?lang=zh-CN&refd=account.microsoft.com",
         "description": "个人档案"
       },
       {
         "id": 9,
         "name": "microsoft",
-        "icon": "microsoft.png",
+        "icon": "microsoft",
         "href": "https://account.microsoft.com/billing/redeem?refd=account.microsoft.com",
         "description": "兑换礼品卡"
       },
       {
         "id": 10,
         "name": "NGA玩家社区",
-        "icon": "nga.png",
+        "icon": "nga",
         "href": "https://nga.cn/",
         "description": ""
       },
       {
         "id": 11,
         "name": "xbox-now",
-        "icon": "xbox-now.png",
+        "icon": "xbox-now",
         "href": "https://www.xbox-now.com/zh/games-with-gold",
         "description": "游戏、礼品卡购买"
       },
       {
         "id": 12,
         "name": "xgp会员购买",
-        "icon": "xbox.png",
+        "icon": "xbox",
         "href": "https://www.xbox.com/tr-TR/games/ea-play#join",
         "description": ""
       }
@@ -1330,70 +1330,70 @@
       {
         "id": 1,
         "name": "我不是矿神",
-        "icon": "imnks.png",
+        "icon": "imnks",
         "href": "https://imnks.com/",
         "description": "群晖,OPENWRT等教程"
       },
       {
         "id": 2,
         "name": "GXNAS博客",
-        "icon": "gxnas.png",
+        "icon": "gxnas",
         "href": "https://wp.gxnas.com/",
         "description": "NAS博客"
       },
       {
         "id": 3,
         "name": "隔壁网",
-        "icon": "gebi1.png",
+        "icon": "gebi1",
         "href": "https://www.gebi1.com/",
         "description": "最大的nas论坛"
       },
       {
         "id": 4,
         "name": "pocket_pt",
-        "icon": "pocket.png",
+        "icon": "pocket",
         "href": "https://www.kxmrg.com/archives/category/pocket_pt",
         "description": "远程操作qB、Tr等下载器"
       },
       {
         "id": 5,
         "name": "音流",
-        "icon": "yinliu.png",
+        "icon": "yinliu",
         "href": "https://aqzscn.cn/",
         "description": ""
       },
       {
         "id": 6,
         "name": "药丸",
-        "icon": "invites.png",
+        "icon": "invites",
         "href": "https://invites.fun/",
         "description": ""
       },
       {
         "id": 7,
         "name": "LSP社区",
-        "icon": "lsp.png",
+        "icon": "lsp",
         "href": "https://lsp.ptlsp.com/",
         "description": ""
       },
       {
         "id": 8,
         "name": "绿联官网",
-        "icon": "shooter.png",
+        "icon": "shooter",
         "href": "https://www.ugnas.com/download",
         "description": "下载中心"
       },
       {
         "id": 9,
         "name": "绿联云社区",
-        "icon": "lvlian.png",
+        "icon": "lvlian",
         "href": "https://bbs.ugreengroup.com/?token=OTlBRTM0QjUxNDA0RTJCRTQ3Q0MxMTY2RjVBMzM4Qzc=",
         "description": ""
       },
       {
         "id": 10,
         "name": "docker—hub",
-        "icon": "dockerhub.png",
+        "icon": "dockerhub",
         "href": "https://hub.docker.com/",
         "description": ""
       }
@@ -1407,210 +1407,210 @@
       {
         "id": 1,
         "name": "堡塔",
-        "icon": "baota.png",
+        "icon": "baota",
         "href": "https://www.bt.cn/admin/servers",
         "description": ""
       },
       {
         "id": 2,
         "name": "App Store Connect",
-        "icon": "appstoreconnect.png",
+        "icon": "appstoreconnect",
         "href": "https://appstoreconnect.apple.com/access/users",
         "description": ""
       },
       {
         "id": 3,
         "name": "小米商城",
-        "icon": "xiaomi.png",
+        "icon": "xiaomi",
         "href": "https://www.mi.com/shop",
         "description": ""
       },
       {
         "id": 4,
         "name": "TMDB",
-        "icon": "themoviedb.png",
+        "icon": "themoviedb",
         "href": "https://www.themoviedb.org/",
         "description": ""
       },
       {
         "id": 5,
         "name": "IMDB",
-        "icon": "imdb.png",
+        "icon": "imdb",
         "href": "https://www.imdb.com/",
         "description": ""
       },
       {
         "id": 6,
         "name": "apifox",
-        "icon": "apifox.png",
+        "icon": "apifox",
         "href": "https://app.apifox.com/main/teams/2118540?tab=project",
         "description": ""
       },
       {
         "id": 7,
         "name": "CODING DevOps",
-        "icon": "coding.png",
+        "icon": "coding",
         "href": "https://g-ktrw9430.coding.net/user/projects",
         "description": "一站式研发协作管理平台"
       },
       {
         "id": 8,
         "name": "netlify",
-        "icon": "netlify.png",
+        "icon": "netlify",
         "href": "https://app.netlify.com/teams/syueya/overview",
         "description": "项目部署"
       },
       {
         "id": 9,
         "name": "vercel",
-        "icon": "vercel.png",
+        "icon": "vercel",
         "href": "https://vercel.com/new/syueyas-projects",
         "description": "项目部署"
       },
       {
         "id": 10,
         "name": "pypi",
-        "icon": "pypi.png",
+        "icon": "pypi",
         "href": "https://pypi.org/",
         "description": "python搜索安装库"
       },
       {
         "id": 11,
         "name": "python官网",
-        "icon": "python.png",
+        "icon": "python",
         "href": "https://www.python.org/",
         "description": ""
       },
       {
         "id": 12,
         "name": "gitee",
-        "icon": "gitee.png",
+        "icon": "gitee",
         "href": "https://gitee.com/",
         "description": ""
       },
       {
         "id": 13,
         "name": "风变编程",
-        "icon": "pypypy.png",
+        "icon": "pypypy",
         "href": "https://www.pypypy.cn/app#/",
         "description": ""
       },
       {
         "id": 14,
         "name": "道客巴巴",
-        "icon": "doc88.png",
+        "icon": "doc88",
         "href": "https://www.doc88.com/",
         "description": ""
       },
       {
         "id": 15,
         "name": "今日热榜",
-        "icon": "tophub.png",
+        "icon": "tophub",
         "href": "https://tophub.today/",
         "description": ""
       },
       {
         "id": 16,
         "name": "UC浏览器",
-        "icon": "UC.png",
+        "icon": "UC",
         "href": "http://hao.uc.cn/?uc_param_str=dnfrpfbivecpbtnt",
         "description": ""
       },
       {
         "id": 17,
         "name": "tldraw",
-        "icon": "tldraw.png",
+        "icon": "tldraw",
         "href": "https://www.tldraw.com/",
         "description": "白板"
       },
       {
         "id": 18,
         "name": "teambition",
-        "icon": "teambition.png",
+        "icon": "teambition",
         "href": "https://www.teambition.com/organization/613c54d6d4147ebbe928344c/my",
         "description": "「项目化」管理"
       },
       {
         "id": 19,
         "name": "sharenote",
-        "icon": "sharenote.png",
+        "icon": "sharenote",
         "href": "https://sharenote.app/",
         "description": "笔记分享"
       },
       {
         "id": 20,
         "name": "华为云空间",
-        "icon": "huawei.png",
+        "icon": "huawei",
         "href": "https://cloud.huawei.com/home#/home",
         "description": ""
       },
       {
         "id": 21,
         "name": "阿里云",
-        "icon": "aliyun.png",
+        "icon": "aliyun",
         "href": "https://ecs.console.aliyun.com/home",
         "description": ""
       },
       {
         "id": 22,
         "name": "百度智能云",
-        "icon": "baidu_cloud.png",
+        "icon": "baidu_cloud",
         "href": "https://cloud.baidu.com/",
         "description": ""
       },
       {
         "id": 23,
         "name": "腾讯云",
-        "icon": "dnspod.png",
+        "icon": "dnspod",
         "href": "https://console.dnspod.cn/",
         "description": ""
       },
       {
         "id": 24,
         "name": "DDNSto",
-        "icon": "ddnsto.png",
+        "icon": "ddnsto",
         "href": "https://www.ddnsto.com/app/#/devices",
         "description": ""
       },
       {
         "id": 25,
         "name": "企业微信",
-        "icon": "work_weixin.png",
+        "icon": "work_weixin",
         "href": "https://work.weixin.qq.com/wework_admin/frame#index",
         "description": ""
       },
       {
         "id": 26,
         "name": "ptman2022邮箱",
-        "icon": "ptman2022.png",
+        "icon": "ptman2022",
         "href": "https://mail.ptman2022.com/mail/?_task=mail&_mbox=INBOX",
         "description": "ICC2022邮箱"
       },
       {
         "id": 27,
         "name": "proton邮箱",
-        "icon": "proton.png",
+        "icon": "proton",
         "href": "https://mail.proton.me/u/0/inbox",
         "description": "syueya@proton.me"
       },
       {
         "id": 28,
         "name": "搜狗微信",
-        "icon": "sogou.png",
+        "icon": "sogou",
         "href": "https://weixin.sogou.com/",
         "description": "搜索微信公众号文章"
       },
       {
         "id": 29,
         "name": "线报酷",
-        "icon": "xianbao.png",
+        "icon": "xianbao",
         "href": "http://new.xianbao.fun/",
         "description": "羊毛活动集合"
       },
       {
         "id": 30,
         "name": "番茄小说",
-        "icon": "fanqienovel.png",
+        "icon": "fanqienovel",
         "href": "https://fanqienovel.com/?enter_from=menu",
         "description": ""
       }
@@ -1624,91 +1624,91 @@
       {
         "id": 1,
         "name": "东方财富网",
-        "icon": "eastmoney.png",
+        "icon": "eastmoney",
         "href": "http://quote.eastmoney.com/zixuan/?from=home",
         "description": "自选股"
       },
       {
         "id": 2,
         "name": "东方财富网",
-        "icon": "fund_eastmoney.png",
+        "icon": "fund_eastmoney",
         "href": "https://fund.eastmoney.com/",
         "description": "天天基金网"
       },
       {
         "id": 3,
         "name": "东方财富网",
-        "icon": "eastmoney.png",
+        "icon": "eastmoney",
         "href": "https://data.eastmoney.com/cjsj/",
         "description": "财经数据"
       },
       {
         "id": 4,
         "name": "同花顺问财",
-        "icon": "iwencai.png",
+        "icon": "iwencai",
         "href": "http://www.iwencai.com/unifiedwap/home/index",
         "description": "i问财"
       },
       {
         "id": 5,
         "name": "宁稳网",
-        "icon": "ninwin.png",
+        "icon": "ninwin",
         "href": "https://www.ninwin.cn/index.php?m=cb&c=idx",
         "description": "宁稳可转债指数"
       },
       {
         "id": 6,
         "name": "萝卜投研",
-        "icon": "datayes.png",
+        "icon": "datayes",
         "href": "https://robo.datayes.com/",
         "description": "查看研报"
       },
       {
         "id": 7,
         "name": "理杏仁",
-        "icon": "lixinger.png",
+        "icon": "lixinger",
         "href": "https://www.lixinger.com/",
         "description": "财报数据"
       },
       {
         "id": 8,
         "name": "中证指数",
-        "icon": "csindex.png",
+        "icon": "csindex",
         "href": "https://www.csindex.com.cn/#/indices/family/list?index_series=1",
         "description": "指数基金数据"
       },
       {
         "id": 9,
         "name": "中国十年期国债收益率",
-        "icon": "investing.png",
+        "icon": "investing",
         "href": "https://cn.investing.com/rates-bonds/china-10-year-bond-yield",
         "description": ""
       },
       {
         "id": 10,
         "name": "集思录",
-        "icon": "jisilu.png",
+        "icon": "jisilu",
         "href": "https://www.jisilu.cn/web/data/cb/list",
         "description": "可转债信息"
       },
       {
         "id": 11,
         "name": "雪球",
-        "icon": "xueqiu.png",
+        "icon": "xueqiu",
         "href": "https://xueqiu.com/",
         "description": "雪球"
       },
       {
         "id": 12,
         "name": "晨星网",
-        "icon": "morningstar.png",
+        "icon": "morningstar",
         "href": "https://www.morningstar.cn/quickrank/default.aspx",
         "description": "基金筛选"
       },
       {
         "id": 13,
         "name": "融通金",
-        "icon": "jzj9999.png",
+        "icon": "jzj9999",
         "href": "https://i.jzj9999.com/quoteh5/",
         "description": "黄金白银等行情"
       }
@@ -1722,63 +1722,63 @@
       {
         "id": 1,
         "name": "我不是盐神",
-        "icon": "onehu.png",
+        "icon": "onehu",
         "href": "https://onehu.xyz/",
         "description": "知乎盐选文章"
       },
       {
         "id": 2,
         "name": "盐神阁",
-        "icon": "ysg0.png",
+        "icon": "ysg0",
         "href": "https://www.ysg0.com/",
         "description": "知乎盐选文章"
       },
       {
         "id": 3,
         "name": "酷选网",
-        "icon": "kuxuanw.png",
+        "icon": "kuxuanw",
         "href": "https://www.kuxuanw.com/",
         "description": "知乎盐选文章"
       },
       {
         "id": 4,
         "name": "知乎盐选库",
-        "icon": "yuque.png",
+        "icon": "yuque",
         "href": "https://www.yuque.com/dayuyu-ualcu/azo1ge",
         "description": "密码：rydw"
       },
       {
         "id": 5,
         "name": "盐选",
-        "icon": "yanxuan.png",
+        "icon": "yanxuan",
         "href": "https://www.yanxuan.org/",
         "description": "知乎盐选文章"
       },
       {
         "id": 6,
         "name": "盐选小说网",
-        "icon": "zhxso.png",
+        "icon": "zhxso",
         "href": "https://zhxso.com/",
         "description": "知乎盐选文章"
       },
       {
         "id": 7,
         "name": "盐选文库",
-        "icon": "yanxuanwk.png",
+        "icon": "yanxuanwk",
         "href": "https://www.yanxuanwk.com/",
         "description": "知乎盐选文章"
       },
       {
         "id": 8,
         "name": "盐神居",
-        "icon": "saltsgod.png",
+        "icon": "saltsgod",
         "href": "https://saltsgod.com/archives/",
         "description": "知乎盐选文章"
       },
       {
         "id": 9,
         "name": "书阁星球屋",
-        "icon": "cbge.png",
+        "icon": "cbge",
         "href": "https://yx.cbge.top/",
         "description": "知乎盐选文章"
       }
@@ -1792,105 +1792,105 @@
       {
         "id": 1,
         "name": "BT之家",
-        "icon": "btbtt18.png",
+        "icon": "btbtt18",
         "href": "https://www.btbtt18.com/",
         "description": "综合"
       },
       {
         "id": 2,
         "name": "音范丝",
-        "icon": "yinfans.png",
+        "icon": "yinfans",
         "href": "https://www.yinfans.me/",
         "description": "电影精选"
       },
       {
         "id": 3,
         "name": "动漫花园",
-        "icon": "dmhy.png",
+        "icon": "dmhy",
         "href": "https://dmhy.org/",
         "description": "动漫"
       },
       {
         "id": 4,
         "name": "蜜柑计划",
-        "icon": "mikanani.png",
+        "icon": "mikanani",
         "href": "https://mikanani.me/",
         "description": "动漫"
       },
       {
         "id": 5,
         "name": "天使动漫",
-        "icon": "tsdm39.png",
+        "icon": "tsdm39",
         "href": "https://www.tsdm39.com/forum.php",
         "description": "动漫"
       },
       {
         "id": 6,
         "name": "acg rip",
-        "icon": "acg-rip.png",
+        "icon": "acg-rip",
         "href": "https://acg.rip/",
         "description": "动漫"
       },
       {
         "id": 7,
         "name": "磁力猫",
-        "icon": "clm.png",
+        "icon": "clm",
         "href": "https://xn--yets15cv4k.com/",
         "description": "磁链搜索"
       },
       {
         "id": 8,
         "name": "无极磁力",
-        "icon": "wuji.png",
+        "icon": "wuji",
         "href": "https://wuji.me/",
         "description": "种子分享平台|磁力搜索引擎"
       },
       {
         "id": 9,
         "name": "吴签磁力",
-        "icon": "wuqianun.png",
+        "icon": "wuqianun",
         "href": "https://wuqianun.top/",
         "description": "磁力链接搜索引擎"
       },
       {
         "id": 10,
         "name": "BT4G",
-        "icon": "bt4gprx.png",
+        "icon": "bt4gprx",
         "href": "https://bt4gprx.com/",
         "description": "磁力链接搜索引擎"
       },
       {
         "id": 11,
         "name": "SkrBT",
-        "icon": "skrbtgb.png",
+        "icon": "skrbtgb",
         "href": "https://skrbtgb.top/",
         "description": "种子搜索、磁力链接搜索引擎"
       },
       {
         "id": 12,
         "name": "MagnetDL",
-        "icon": "magnetdl.png",
+        "icon": "magnetdl",
         "href": "https://www.magnetdl.com/",
         "description": "下载软件、电影、游戏、音乐种子"
       },
       {
         "id": 13,
         "name": "TorrentFunk",
-        "icon": "torrentfunk.png",
+        "icon": "torrentfunk",
         "href": "https://www.torrentfunk.com/",
         "description": "磁力链接搜索"
       },
       {
         "id": 14,
         "name": "yourbittorrent",
-        "icon": "yourbittorrent.png",
+        "icon": "yourbittorrent",
         "href": "https://yourbittorrent.com/",
         "description": "磁力链接搜索引擎"
       },
       {
         "id": 15,
         "name": "torrentproject",
-        "icon": "torrentproject.png",
+        "icon": "torrentproject",
         "href": "https://torrentproject.torrentbay.st/",
         "description": "bittorrent搜索引擎"
       }
@@ -1904,182 +1904,182 @@
       {
         "id": 1,
         "name": "音乐磁场",
-        "icon": "hifini.png",
+        "icon": "hifini",
         "href": "https://www.hifini.com/",
         "description": "音乐下载"
       },
       {
         "id": 2,
         "name": "liumingye",
-        "icon": "liumingye.png",
+        "icon": "liumingye",
         "href": "https://tool.liumingye.cn/music/#/",
         "description": "音乐下载"
       },
       {
         "id": 3,
         "name": "中国原创音乐基地",
-        "icon": "5sing.png",
+        "icon": "5sing",
         "href": "http://search.5sing.kugou.com/",
         "description": "音乐下载"
       },
       {
         "id": 4,
         "name": "熊猫无损音乐",
-        "icon": "xmwav.png",
+        "icon": "xmwav",
         "href": "https://www.xmwav.com/",
         "description": "音乐下载"
       },
       {
         "id": 5,
         "name": "HiResAudio",
-        "icon": "cnhifi.png",
+        "icon": "cnhifi",
         "href": "https://cnhifi.com/",
         "description": "音乐下载"
       },
       {
         "id": 6,
         "name": "音乐搜索器",
-        "icon": "music-itzo.png",
+        "icon": "music-itzo",
         "href": "http://music.itzo.cn/",
         "description": "多站合一音乐搜索"
       },
       {
         "id": 7,
         "name": "音乐聚合搜索",
-        "icon": "musicss.png",
+        "icon": "musicss",
         "href": "https://sunpma.com/other/musicss/",
         "description": "在线试听下载"
       },
       {
         "id": 8,
         "name": "downkyi",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/leiurayer/downkyi",
         "description": "哔哩下载姬"
       },
       {
         "id": 9,
         "name": "HiResAudio",
-        "icon": "cnhifi.png",
+        "icon": "cnhifi",
         "href": "https://cnhifi.com/",
         "description": "音乐下载"
       },
       {
         "id": 10,
         "name": "NK资源网",
-        "icon": "nkzy.png",
+        "icon": "nkzy",
         "href": "https://nkzy.top/",
         "description": "女团MV、VR视频"
       },
       {
         "id": 11,
         "name": "不太灵影视",
-        "icon": "7bt0.png",
+        "icon": "7bt0",
         "href": "https://www.7bt0.com/movie/1.html",
         "description": "免费视频网站"
       },
       {
         "id": 12,
         "name": "不太灵影视2",
-        "icon": "3bt0.png",
+        "icon": "3bt0",
         "href": "https://www.3bt0.com/",
         "description": "免费视频网站"
       },
       {
         "id": 13,
         "name": "btnull",
-        "icon": "btnull.png",
+        "icon": "btnull",
         "href": "https://www.btnull.org/",
         "description": "免费视频网站"
       },
       {
         "id": 14,
         "name": "电影天堂",
-        "icon": "dy2018.png",
+        "icon": "dy2018",
         "href": "https://dy2018.com/",
         "description": "免费视频网站"
       },
       {
         "id": 15,
         "name": "4K电影",
-        "icon": "txundocs.png",
+        "icon": "txundocs",
         "href": "https://www.4khdr.cn/",
         "description": "免费视频网站"
       },
       {
         "id": 16,
         "name": "Hao4k",
-        "icon": "hao4k.png",
+        "icon": "hao4k",
         "href": "https://www.hao4k.cn/",
         "description": "家庭影院、HiFi音乐"
       },
       {
         "id": 17,
         "name": "BDshare",
-        "icon": "bdshare.png",
+        "icon": "bdshare",
         "href": "https://bdshare.org/forum.php",
         "description": "高品质影音生活"
       },
       {
         "id": 18,
         "name": "YTS",
-        "icon": "yts.png",
+        "icon": "yts",
         "href": "https://yts.mx/",
         "description": "小文件的高清电影"
       },
       {
         "id": 19,
         "name": "七味",
-        "icon": "pknull.png",
+        "icon": "pknull",
         "href": "https://www.pknull.com/",
         "description": "免费视频网站"
       },
       {
         "id": 20,
         "name": "迷客电影",
-        "icon": "mini4k.png",
+        "icon": "mini4k",
         "href": "https://www.mini4k.com/",
         "description": ""
       },
       {
         "id": 21,
         "name": "视频在线下载",
-        "icon": "v-hi-sy.png",
+        "icon": "v-hi-sy",
         "href": "https://v.hi.sy/",
         "description": "抖音、YouTube等"
       },
       {
         "id": 22,
         "name": "音乐解锁",
-        "icon": "music-unlock.png",
+        "icon": "music-unlock",
         "href": "https://music-unlock.lehinet.com/",
         "description": "移除已购音乐的加密保护"
       },
       {
         "id": 23,
         "name": "openyyy",
-        "icon": "openyyy.png",
+        "icon": "openyyy",
         "href": "https://openyyy.com/",
         "description": "多种云音乐格式转MP3"
       },
       {
         "id": 24,
         "name": "N_m3u8DL-CLI",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/nilaoda/N_m3u8DL-CLI",
         "description": "m3u8下载器"
       },
       {
         "id": 25,
         "name": "superparse",
-        "icon": "superparse.png",
+        "icon": "superparse",
         "href": "https://superparse.com/zh",
         "description": "在线解析并下载油管等视频"
       },
       {
         "id": 26,
         "name": "downsub",
-        "icon": "downsub.png",
+        "icon": "downsub",
         "href": "https://downsub.com/",
         "description": "从Youtube等下载字幕"
       }
@@ -2093,63 +2093,63 @@
       {
         "id": 1,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/syue226/",
         "description": ""
       },
       {
         "id": 2,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://www.csdn.net/",
         "description": ""
       },
       {
         "id": 3,
         "name": "开源中国",
-        "icon": "oschina.png",
+        "icon": "oschina",
         "href": "https://www.oschina.net/",
         "description": "开源技术社区"
       },
       {
         "id": 4,
         "name": "segmentfault",
-        "icon": "segmentfault.png",
+        "icon": "segmentfault",
         "href": "https://segmentfault.com/",
         "description": "开发者技术社区"
       },
       {
         "id": 5,
         "name": "码力全开",
-        "icon": "maliquankai.png",
+        "icon": "maliquankai",
         "href": "https://maliquankai.com/designnav/",
         "description": "资源库"
       },
       {
         "id": 6,
         "name": "IBM",
-        "icon": "ibm.png",
+        "icon": "ibm",
         "href": "https://developer.ibm.com/",
         "description": "IBM开发者社区"
       },
       {
         "id": 7,
         "name": "稀土掘金",
-        "icon": "juejin.png",
+        "icon": "juejin",
         "href": "https://juejin.cn/",
         "description": ""
       },
       {
         "id": 8,
         "name": "简书",
-        "icon": "jianshu.png",
+        "icon": "jianshu",
         "href": "https://www.jianshu.com/",
         "description": ""
       },
       {
         "id": 9,
         "name": "stack overflow",
-        "icon": "stackoverflow.png",
+        "icon": "stackoverflow",
         "href": "https://stackoverflow.com/",
         "description": "在线社区"
       }
@@ -2163,399 +2163,399 @@
       {
         "id": 1,
         "name": "PTPP",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/pt-plugins/PT-Plugin-Plus/releases",
         "description": "PTPP插件"
       },
       {
         "id": 2,
         "name": "transmission-web-control",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/transmission-web-control/transmission-web-control/releases/",
         "description": "tr皮肤"
       },
       {
         "id": 3,
         "name": "vuetorrent",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/WDaan/VueTorrent",
         "description": "qb皮肤"
       },
       {
         "id": 4,
         "name": "Emby豆瓣削刮器",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/AlifeLine/Emby.Plugins.Douban",
         "description": ""
       },
       {
         "id": 5,
         "name": "签到框架har模板库",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/wjf0214/qd-templates",
         "description": ""
       },
       {
         "id": 6,
         "name": "签到框架公共模板",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/qd-today/templates",
         "description": ""
       },
       {
         "id": 7,
         "name": "nexusphp",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/xiaomlove/nexusphp",
         "description": "PT 建站解决方案"
       },
       {
         "id": 8,
         "name": "wizarr",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/wizarrrr/wizarr",
         "description": ""
       },
       {
         "id": 9,
         "name": "music-tag-web",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/xhongc/music-tag-web",
         "description": "音乐标签"
       },
       {
         "id": 10,
         "name": "MoviePilot",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/jxxghp/MoviePilot",
         "description": ""
       },
       {
         "id": 11,
         "name": "PT-Gen",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/BFDZ/PT-Gen",
         "description": "根据豆瓣等链接生成简介"
       },
       {
         "id": 12,
         "name": "trackerslist",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/ngosang/trackerslist",
         "description": "tracker list"
       },
       {
         "id": 13,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/jobbole/awesome-python-cn",
         "description": "Python 资源大全中文版"
       },
       {
         "id": 14,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/r0f1/datascience",
         "description": "Python库"
       },
       {
         "id": 15,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/vinta/awesome-python",
         "description": "Python框架、库、软件和资源列表"
       },
       {
         "id": 16,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/Show-Me-the-Code/show-me-the-code",
         "description": "Python 练习册，每天一个小程序"
       },
       {
         "id": 17,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/justjavac/free-programming-books-zh_CN",
         "description": "免费的编程中文书籍索引"
       },
       {
         "id": 18,
         "name": "SICKCAT2",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/SICKCAT2/Surge/blob/master/rule/directgb.yaml",
         "description": "火子哥pt规则"
       },
       {
         "id": 19,
         "name": "blackmatrix7",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge",
         "description": "代理规则"
       },
       {
         "id": 20,
         "name": "ACL4SSR",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config",
         "description": "代理规则"
       },
       {
         "id": 21,
         "name": "jellyfin-plugin-skin-manager",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/danieladov/jellyfin-plugin-skin-manager",
         "description": "JF皮肤插件"
       },
       {
         "id": 22,
         "name": "msaber-android",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/huangpj0210/msaber-android/tree/101.0.2",
         "description": "MSaber安卓app"
       },
       {
         "id": 23,
         "name": "MediaServerTools",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/sleikang/MediaServerTools",
         "description": "Emby/Jf/Plex 媒体中文自动同步"
       },
       {
         "id": 24,
         "name": "flood",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/jesec/flood",
         "description": "对各种torrent客户端的监控服务"
       },
       {
         "id": 25,
         "name": "jurialmunkey",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/jurialmunkey",
         "description": "kodi地平线皮肤"
       },
       {
         "id": 26,
         "name": "intro-skipper",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/ConfusedPolarBear/intro-skipper",
         "description": "jf跳过开头插件"
       },
       {
         "id": 27,
         "name": "astexplorer",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/fkling/astexplorer/",
         "description": "在线ast生成器"
       },
       {
         "id": 28,
         "name": "gitee",
-        "icon": "gitee.png",
+        "icon": "gitee",
         "href": "https://gitee.com/explore/all/",
         "description": "gitee开源项目推荐列表"
       },
       {
         "id": 29,
         "name": "jellyfin-plugin-metashark",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/cxfksword/jellyfin-plugin-metashark",
         "description": "Jf电影元数据插件"
       },
       {
         "id": 30,
         "name": "jellyfin-plugin-metatube",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/metatube-community/jellyfin-plugin-metatube",
         "description": "Jf/Emby的MetaTube插件"
       },
       {
         "id": 31,
         "name": "radishes-music",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/radishes-music/radishes",
         "description": "无版权音乐平台"
       },
       {
         "id": 32,
         "name": "clash-verge",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/clash-verge-rev/clash-verge-rev/releases",
         "description": "clash-verge软件"
       },
       {
         "id": 33,
         "name": "Cloudflare",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/XIU2/CloudflareSpeedTest",
         "description": "自选优选 IP"
       },
       {
         "id": 34,
         "name": "v2rayN",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/2dust/v2rayN/releases",
         "description": ""
       },
       {
         "id": 35,
         "name": "NekoBoxForAndroid",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/MatsuriDayo/NekoBoxForAndroid",
         "description": "使用 sing-box 的安卓通用代理软件"
       },
       {
         "id": 36,
         "name": "v2rayNG",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/2dust/v2rayNG",
         "description": "Android 版 V2Ray 客户端"
       },
       {
         "id": 37,
         "name": "ClashMetaForAndroid",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/MetaCubeX/ClashMetaForAndroid",
         "description": ""
       },
       {
         "id": 38,
         "name": "Webstack网址导航",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/WebStackPage/WebStackPage.github.io",
         "description": ""
       },
       {
         "id": 39,
         "name": "BYR-Navi",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/BYR-Navi/BYR-Navi",
         "description": "导航网站框架"
       },
       {
         "id": 40,
         "name": "Redis 桌面管理器",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/qishibo/AnotherRedisDesktopManager",
         "description": ""
       },
       {
         "id": 41,
         "name": "pig-ui",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/pig-mesh/pig-ui",
         "description": "权限管理系统"
       },
       {
         "id": 42,
         "name": "pig",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/pig-mesh/pig",
         "description": "权限管理系统"
       },
       {
         "id": 43,
         "name": "Creamplayer",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/Beadd/Creamplayer",
         "description": "音乐播放器"
       },
       {
         "id": 44,
         "name": "team-nav",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/tuituidan/team-nav",
         "description": "导航页"
       },
       {
         "id": 45,
         "name": "onenav",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/helloxz/onenav",
         "description": "书签（导航）管理程序"
       },
       {
         "id": 46,
         "name": "极客猿导航",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/geekape/geek-navigation",
         "description": ""
       },
       {
         "id": 47,
         "name": "ACL4SSR",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini",
         "description": "代理规则"
       },
       {
         "id": 48,
         "name": "自用规则",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://gist.github.com/kimisecond/ae1e08b04c2842f3f20e790fe6642bea",
         "description": "代理规则"
       },
       {
         "id": 49,
         "name": "subconverter",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/tindy2013/subconverter",
         "description": "订阅转换"
       },
       {
         "id": 50,
         "name": "网盘挂载本地",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/thsrite/library_strm",
         "description": "监控多路径文件新增，自动生成strm文件"
       },
       {
         "id": 51,
         "name": "Emby自定义JS及Css",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/Shurelol/Emby.CustomCssJS",
         "description": ""
       },
       {
         "id": 52,
         "name": "Emby增强/美化插件",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/Nolovenodie/emby-crx",
         "description": ""
       },
       {
         "id": 53,
         "name": "sub-web",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/CareyWang/sub-web",
         "description": "基vue-cli与subconverter后端实现的配置自动生成"
       },
       {
         "id": 54,
         "name": "NDU",
-        "icon": "dockerhub.png",
+        "icon": "dockerhub",
         "href": "https://hub.docker.com/r/htnanako/ndu",
         "description": "监测Dockerhub的容器更新并推送通知提醒"
       },
       {
         "id": 55,
         "name": "syncthingtray",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/Martchus/syncthingtray",
         "description": "syncthing的Win客户端"
       },
       {
         "id": 56,
         "name": "syncthing",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/syncthing/syncthing",
         "description": "文件同步程序"
       },
       {
         "id": 57,
         "name": "syncthing",
-        "icon": "dockerhub.png",
+        "icon": "dockerhub",
         "href": "https://hub.docker.com/r/linuxserver/syncthing",
         "description": "文件同步程序docker"
       }
@@ -2569,42 +2569,42 @@
       {
         "id": 1,
         "name": "sass",
-        "icon": "sass.png",
+        "icon": "sass",
         "href": "https://sass.bootcss.com/",
         "description": "稳定的专业级CSS扩展语言"
       },
       {
         "id": 2,
         "name": "stylus",
-        "icon": "stylus.png",
+        "icon": "stylus",
         "href": "https://stylus.bootcss.com/",
         "description": "富于表现力、动态的CSS"
       },
       {
         "id": 3,
         "name": "less",
-        "icon": "less.png",
+        "icon": "less",
         "href": "https://less.bootcss.com/",
         "description": "给 CSS 加点料"
       },
       {
         "id": 4,
         "name": "cssarrowplease",
-        "icon": "cssarrowplease.png",
+        "icon": "cssarrowplease",
         "href": "https://cssarrowplease.com/",
         "description": "对话框css代码"
       },
       {
         "id": 5,
         "name": "image-effects",
-        "icon": "image-effects.png",
+        "icon": "image-effects",
         "href": "https://bennettfeely.com/image-effects/",
         "description": "图片CSS样式控制"
       },
       {
         "id": 6,
         "name": "clippy",
-        "icon": "clippy.png",
+        "icon": "clippy",
         "href": "https://bennettfeely.com/clippy/",
         "description": "各种形状的图形"
       }
@@ -2618,28 +2618,28 @@
       {
         "id": 1,
         "name": "ghproxy",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://mirror.ghproxy.com/",
         "description": "GitHub Proxy 代理加速"
       },
       {
         "id": 2,
         "name": "downgit",
-        "icon": "downgit.png",
+        "icon": "downgit",
         "href": "https://zhoudaxiaa.gitee.io/downgit/#/home",
         "description": "下载github文件"
       },
       {
         "id": 3,
         "name": "网达极客社区",
-        "icon": "gitclone.png",
+        "icon": "gitclone",
         "href": "https://www.gitclone.com/",
         "description": "下载github文件"
       },
       {
         "id": 4,
         "name": "GitHub 加速下载",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.ur1.fun/",
         "description": ""
       }
@@ -2653,70 +2653,70 @@
       {
         "id": 1,
         "name": "opensubtitles",
-        "icon": "forum-opensubtitles.png",
+        "icon": "forum-opensubtitles",
         "href": "https://forum.opensubtitles.org/index.php",
         "description": "字幕"
       },
       {
         "id": 2,
         "name": "opensubtitles",
-        "icon": "opensubtitles.png",
+        "icon": "opensubtitles",
         "href": "https://www.opensubtitles.com/?locale=zh-CN",
         "description": "字幕"
       },
       {
         "id": 3,
         "name": "伪射手网",
-        "icon": "shooter.png",
+        "icon": "shooter",
         "href": "https://secure.assrt.net/xml/list/sub/",
         "description": ""
       },
       {
         "id": 4,
         "name": "伪射手网",
-        "icon": "assrt.png",
+        "icon": "assrt",
         "href": "https://assrt.net/",
         "description": ""
       },
       {
         "id": 5,
         "name": "字幕",
-        "icon": "opensubtitles-org.png",
+        "icon": "opensubtitles-org",
         "href": "https://www.opensubtitles.org/zh",
         "description": "下载电影及剧集字幕"
       },
       {
         "id": 6,
         "name": "点点字幕",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "http://www.ddzimu.com/",
         "description": "字幕"
       },
       {
         "id": 7,
         "name": "字幕库",
-        "icon": "srtku.png",
+        "icon": "srtku",
         "href": "https://srtku.com/",
         "description": "字幕下载网站"
       },
       {
         "id": 8,
         "name": "R3字幕網",
-        "icon": "r3sub.png",
+        "icon": "r3sub",
         "href": "https://r3sub.com/",
         "description": "台版官方字幕交流"
       },
       {
         "id": 9,
         "name": "字幕世界",
-        "icon": "zimushijie.png",
+        "icon": "zimushijie",
         "href": "https://bbs.v2zm.com/",
         "description": ""
       },
       {
         "id": 10,
         "name": "国语视界",
-        "icon": "tooltt.png",
+        "icon": "tooltt",
         "href": "https://cnlang.org/forum-47-1.html",
         "description": ""
       }
@@ -2730,49 +2730,49 @@
       {
         "id": 1,
         "name": "Chrome插件网",
-        "icon": "cnplugins.png",
+        "icon": "cnplugins",
         "href": "https://www.cnplugins.com/",
         "description": ""
       },
       {
         "id": 2,
         "name": "豆瓣资源下载大师",
-        "icon": "greasyfork.png",
+        "icon": "greasyfork",
         "href": "https://greasyfork.org/zh-CN/scripts/329484-%E8%B1%86%E7%93%A3%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E5%A4%A7%E5%B8%88-1%E7%A7%92%E6%90%9E%E5%AE%9A%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1-%E9%9F%B3%E4%B9%90-%E5%9B%BE%E4%B9%A6%E4%B8%8B%E8%BD%BD",
         "description": ""
       },
       {
         "id": 3,
         "name": "auto-feed",
-        "icon": "greasyfork.png",
+        "icon": "greasyfork",
         "href": "https://greasyfork.org/zh-CN/scripts/424132-auto-feed",
         "description": "PT一键转种脚本"
       },
       {
         "id": 4,
         "name": "NexusPHP魔力计算器",
-        "icon": "greasyfork.png",
+        "icon": "greasyfork",
         "href": "https://greasyfork.org/zh-CN/scripts/416471-nexusphp%E9%AD%94%E5%8A%9B%E8%AE%A1%E7%AE%97%E5%99%A8",
         "description": ""
       },
       {
         "id": 5,
         "name": "官种保种统计",
-        "icon": "greasyfork.png",
+        "icon": "greasyfork",
         "href": "https://greasyfork.org/zh-CN/scripts/432969-%E5%AE%98%E7%A7%8D%E4%BF%9D%E7%A7%8D%E7%BB%9F%E8%AE%A1",
         "description": ""
       },
       {
         "id": 6,
         "name": "auto lucky draw",
-        "icon": "greasyfork.png",
+        "icon": "greasyfork",
         "href": "https://greasyfork.org/zh-CN/scripts/472747-auto-lucky-draw",
         "description": "自动大转盘"
       },
       {
         "id": 7,
         "name": "NP一键认领",
-        "icon": "greasyfork.png",
+        "icon": "greasyfork",
         "href": "https://greasyfork.org/zh-CN/scripts/471923-np%E4%B8%80%E9%94%AE%E8%AE%A4%E9%A2%86",
         "description": "适用于NP架构的一键认领"
       }
@@ -2786,84 +2786,84 @@
       {
         "id": 1,
         "name": "低价机场",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://xn--6nq0hk9tdjr.com/#/dashboard",
         "description": "11元/年，100G/月"
       },
       {
         "id": 2,
         "name": "赔钱机场",
-        "icon": "peiqian.png",
+        "icon": "peiqian",
         "href": "https://xn--mes358aby2apfg.com/#/dashboard",
         "description": "14.9元1000G"
       },
       {
         "id": 3,
         "name": "魔戒",
-        "icon": "mojie.png",
+        "icon": "mojie",
         "href": "https://www.mojie.mx/#/dashboard",
         "description": "有土耳其节点，14.9元130G"
       },
       {
         "id": 4,
         "name": "sakuracat",
-        "icon": "sakuracat.png",
+        "icon": "sakuracat",
         "href": "https://sakuracat.link/#/plan",
         "description": "有土耳其节点，19.8元100G"
       },
       {
         "id": 5,
         "name": "speedcat",
-        "icon": "speedcat.png",
+        "icon": "speedcat",
         "href": "https://v0120231228.speedcat.cc/user",
         "description": "20元/月，100G/月"
       },
       {
         "id": 6,
         "name": "ANYLAND",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://any601.cc/#/dashboard",
         "description": "128元200G"
       },
       {
         "id": 7,
         "name": "订阅转换",
-        "icon": "shiuan.png",
+        "icon": "shiuan",
         "href": "https://sub.shiuan.vip/",
         "description": ""
       },
       {
         "id": 8,
         "name": "Subscription Converter",
-        "icon": "amyconvert.png",
+        "icon": "amyconvert",
         "href": "https://amyconvert.com/",
         "description": "订阅转换"
       },
       {
         "id": 9,
         "name": "Subscription Converter",
-        "icon": "nexconvert.png",
+        "icon": "nexconvert",
         "href": "https://nexconvert.com/",
         "description": "订阅转换"
       },
       {
         "id": 10,
         "name": "ACL4SSR",
-        "icon": "acl4ssr-sub.png",
+        "icon": "acl4ssr-sub",
         "href": "https://acl4ssr-sub.github.io/",
         "description": "在线订阅转换"
       },
       {
         "id": 11,
         "name": "VPS购买推荐",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://blog.laoda.de/vps/",
         "description": ""
       },
       {
         "id": 12,
         "name": "赔钱机场",
-        "icon": "peiqian.png",
+        "icon": "peiqian",
         "href": "https://pqjc.site/#/dashboard",
         "description": "备用域名"
       }
@@ -2877,14 +2877,14 @@
       {
         "id": 1,
         "name": "电报狗",
-        "icon": "smsgou.png",
+        "icon": "smsgou",
         "href": "https://smsgou.com/",
         "description": ""
       },
       {
         "id": 2,
         "name": "电报狗",
-        "icon": "congcong0806.png",
+        "icon": "congcong0806",
         "href": "https://congcong0806.github.io/2018/04/24/Telegram/",
         "description": "Telegram群组、频道、机器人汇总"
       }
@@ -2898,14 +2898,14 @@
       {
         "id": 1,
         "name": "gyssi",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://gyssi.link/iptv.php",
         "description": "全国IPTV-账号root，密码baipiao"
       },
       {
         "id": 2,
         "name": "live",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/fanmingming/live",
         "description": "电视/广播图标库|直播源"
       }
@@ -2919,35 +2919,35 @@
       {
         "id": 1,
         "name": "OpenWRT固件",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/xuanranran/OpenWRT-X86_64",
         "description": "基于lede源码建构的"
       },
       {
         "id": 2,
         "name": "OpenWrtLi网盘",
-        "icon": "lidrive.png",
+        "icon": "lidrive",
         "href": "https://lidrive.vip/",
         "description": "OpenWrt网盘资源"
       },
       {
         "id": 3,
         "name": "lede",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/coolsnowwolf/lede",
         "description": "OpenWrt lede 源码"
       },
       {
         "id": 4,
         "name": "openwrt常用软件包",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/kenzok8/openwrt-packages",
         "description": ""
       },
       {
         "id": 5,
         "name": "luci-app-lucky",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/gdy666/luci-app-lucky",
         "description": "lucky核心包"
       }
@@ -2961,91 +2961,91 @@
       {
         "id": 1,
         "name": "Perfumer&Flavorist杂志",
-        "icon": "perfumerflavorist.png",
+        "icon": "perfumerflavorist",
         "href": "https://www.perfumerflavorist.com/magazine/60997de8e84a1620338b45db",
         "description": ""
       },
       {
         "id": 2,
         "name": "arxiv",
-        "icon": "arxiv.png",
+        "icon": "arxiv",
         "href": "https://arxiv.org/",
         "description": "文献下载"
       },
       {
         "id": 3,
         "name": "sci-hub",
-        "icon": "sci-hub.png",
+        "icon": "sci-hub",
         "href": "https://www.sci-hub.ren/",
         "description": "文献下载"
       },
       {
         "id": 4,
         "name": "原创力文档",
-        "icon": "book118.png",
+        "icon": "book118",
         "href": "https://max.book118.com/html/docs/",
         "description": ""
       },
       {
         "id": 5,
         "name": "中国国家图书馆",
-        "icon": "read-nlc.png",
+        "icon": "read-nlc",
         "href": "http://read.nlc.cn/user/index",
         "description": ""
       },
       {
         "id": 6,
         "name": "国家哲学社会科学文献中心",
-        "icon": "ncpssd.png",
+        "icon": "ncpssd",
         "href": "https://www.ncpssd.org/index",
         "description": ""
       },
       {
         "id": 7,
         "name": "广西壮族自治区图书馆",
-        "icon": "gxlib.png",
+        "icon": "gxlib",
         "href": "https://res.gxlib.org.cn/ermsClient/browse.do",
         "description": ""
       },
       {
         "id": 8,
         "name": "四川省图书馆",
-        "icon": "sclib.png",
+        "icon": "sclib",
         "href": "https://portal.sclib.org/interlibSSO/main/main.jsp",
         "description": ""
       },
       {
         "id": 9,
         "name": "广东省立中山图书馆",
-        "icon": "zslib.png",
+        "icon": "zslib",
         "href": "https://www.zslib.com.cn/",
         "description": ""
       },
       {
         "id": 10,
         "name": "国家科技图书文献中心",
-        "icon": "nstl.png",
+        "icon": "nstl",
         "href": "https://www.nstl.gov.cn/",
         "description": ""
       },
       {
         "id": 11,
         "name": "谷粉学术论坛",
-        "icon": "99lb-bbs.png",
+        "icon": "99lb-bbs",
         "href": "https://bbs.99lb.net/",
         "description": ""
       },
       {
         "id": 12,
         "name": "谷粉学术",
-        "icon": "gfsoso.png",
+        "icon": "gfsoso",
         "href": "https://gfsoso.99lb.net/",
         "description": ""
       },
       {
         "id": 13,
         "name": "perfumerflavorist",
-        "icon": "perfumerflavorist.png",
+        "icon": "perfumerflavorist",
         "href": "https://perfumerflavorist.texterity.com/perfumerflavorist/library/",
         "description": "杂志库"
       }
@@ -3059,196 +3059,196 @@
       {
         "id": 1,
         "name": "zlibrary",
-        "icon": "zlibrary.png",
+        "icon": "zlibrary",
         "href": "https://zh.singlelogin.re/",
         "description": ""
       },
       {
         "id": 2,
         "name": "寻书博客",
-        "icon": "xunshu.png",
+        "icon": "xunshu",
         "href": "https://www.xunshu.xyz/#/",
         "description": ""
       },
       {
         "id": 3,
         "name": "无名图书",
-        "icon": "book123.png",
+        "icon": "book123",
         "href": "https://www.book123.info/",
         "description": ""
       },
       {
         "id": 4,
         "name": "zlib镜像",
-        "icon": "zlib.png",
+        "icon": "zlib",
         "href": "https://account.zlib.pro/",
         "description": ""
       },
       {
         "id": 5,
         "name": "知搜",
-        "icon": "zhiso.png",
+        "icon": "zhiso",
         "href": "https://zhiso.cc/",
         "description": "很全的书籍搜索引擎"
       },
       {
         "id": 6,
         "name": "owlook",
-        "icon": "owlook.png",
+        "icon": "owlook",
         "href": "https://www.owlook.com.cn/",
         "description": "网络小说搜索引擎"
       },
       {
         "id": 7,
         "name": "书单",
-        "icon": "ebooklist.png",
+        "icon": "ebooklist",
         "href": "https://ebooklist.mobi/",
         "description": "Mobi|Epub|Pdf|Azw3电子书免费下载"
       },
       {
         "id": 8,
         "name": "资源帝电子书导航",
-        "icon": "ebooklist.png",
+        "icon": "ebooklist",
         "href": "http://shu.ziyuandi.cn/",
         "description": ""
       },
       {
         "id": 9,
         "name": "源仓库",
-        "icon": "yckceo.png",
+        "icon": "yckceo",
         "href": "https://www.yckceo.com/",
         "description": "电子书/漫花源"
       },
       {
         "id": 10,
         "name": "gutenberg",
-        "icon": "gutenberg.png",
+        "icon": "gutenberg",
         "href": "https://www.gutenberg.org/",
         "description": "免费电子书图书馆"
       },
       {
         "id": 11,
         "name": "planetebook",
-        "icon": "planetebook.png",
+        "icon": "planetebook",
         "href": "https://www.planetebook.com/",
         "description": "电子书下载"
       },
       {
         "id": 12,
         "name": "freebookspot",
-        "icon": "freebookspot.png",
+        "icon": "freebookspot",
         "href": "https://freebookspot.eu/default",
         "description": "免费电子书"
       },
       {
         "id": 13,
         "name": "熊猫搜书",
-        "icon": "xmsoushu.png",
+        "icon": "xmsoushu",
         "href": "https://xmsoushu.com/#/",
         "description": ""
       },
       {
         "id": 14,
         "name": "知轩藏书",
-        "icon": "zxcs.png",
+        "icon": "zxcs",
         "href": "https://zxcs.info/",
         "description": ""
       },
       {
         "id": 15,
         "name": "雅书",
-        "icon": "yabook.png",
+        "icon": "yabook",
         "href": "https://yabook.blog/",
         "description": ""
       },
       {
         "id": 16,
         "name": "全国图书馆参考咨询联盟",
-        "icon": "ucdrs.png",
+        "icon": "ucdrs",
         "href": "http://www.ucdrs.superlib.net/",
         "description": ""
       },
       {
         "id": 17,
         "name": "鸠摩搜索",
-        "icon": "jiumodiary.png",
+        "icon": "jiumodiary",
         "href": "https://www.jiumodiary.com/",
         "description": ""
       },
       {
         "id": 18,
         "name": "pythonbooks",
-        "icon": "pythonbooks.png",
+        "icon": "pythonbooks",
         "href": "https://pythonbooks.org/free-books/",
         "description": "python类书"
       },
       {
         "id": 19,
         "name": "libgen",
-        "icon": "libgen.png",
+        "icon": "libgen",
         "href": "https://libgen.gs/",
         "description": "文献书籍搜索"
       },
       {
         "id": 20,
         "name": "书享家",
-        "icon": "shuxiangjia.png",
+        "icon": "shuxiangjia",
         "href": "https://www.shuxiangjia.cn/",
         "description": ""
       },
       {
         "id": 21,
         "name": "onlinebooks",
-        "icon": "onlinebooks.png",
+        "icon": "onlinebooks",
         "href": "http://onlinebooks.library.upenn.edu/",
         "description": "免费书籍"
       },
       {
         "id": 22,
         "name": "freecomputerbooks",
-        "icon": "freecomputerbooks.png",
+        "icon": "freecomputerbooks",
         "href": "https://freecomputerbooks.com/langPythonBooks.html",
         "description": "计算机、数学类书"
       },
       {
         "id": 23,
         "name": "RSC",
-        "icon": "psoc.png",
+        "icon": "psoc",
         "href": "https://books.rsc.org/books/collection/46/1968-2006-ebook-collection",
         "description": "1968-2006书籍收藏"
       },
       {
         "id": 24,
         "name": "找书网",
-        "icon": "findbooks.png",
+        "icon": "findbooks",
         "href": "https://findbooks.eu.org/",
         "description": ""
       },
       {
         "id": 25,
         "name": "易书",
-        "icon": "yibook.png",
+        "icon": "yibook",
         "href": "https://search.yibook.org/#search",
         "description": "书籍检索"
       },
       {
         "id": 26,
         "name": "sobooks",
-        "icon": "sobooks.png",
+        "icon": "sobooks",
         "href": "https://sobooks.net/",
         "description": "书籍下载"
       },
       {
         "id": 27,
         "name": "安娜的档案",
-        "icon": "annas-archive.png",
+        "icon": "annas-archive",
         "href": "https://zh.annas-archive.gs/",
         "description": "电子图书馆"
       },
       {
         "id": 28,
         "name": "「阅读」APP 精品书源",
-        "icon": "yuedu.png",
+        "icon": "yuedu",
         "href": "https://yuedu.xiu2.xyz/",
         "description": ""
       }
@@ -3262,196 +3262,196 @@
       {
         "id": 1,
         "name": "吾爱破解",
-        "icon": "52pojie.png",
+        "icon": "52pojie",
         "href": "https://www.52pojie.cn/",
         "description": ""
       },
       {
         "id": 2,
         "name": "win激活",
-        "icon": "123pan.png",
+        "icon": "123pan",
         "href": "https://www.123pan.com/s/HQeA-an1Sh",
         "description": "W10DigitalActivation官方下载"
       },
       {
         "id": 3,
         "name": "423down",
-        "icon": "423down.png",
+        "icon": "423down",
         "href": "https://www.423down.com/",
         "description": "软件库"
       },
       {
         "id": 4,
         "name": "app热",
-        "icon": "apphot.png",
+        "icon": "apphot",
         "href": "https://apphot.cc/",
         "description": "软件库"
       },
       {
         "id": 5,
         "name": "殁漂遥",
-        "icon": "mpyit.png",
+        "icon": "mpyit",
         "href": "https://www.mpyit.com/",
         "description": "软件库"
       },
       {
         "id": 6,
         "name": "易破解",
-        "icon": "ypojie.png",
+        "icon": "ypojie",
         "href": "https://www.ypojie.com/",
         "description": "软件库"
       },
       {
         "id": 7,
         "name": "羽兔网",
-        "icon": "yutu.png",
+        "icon": "yutu",
         "href": "https://www.yutu.cn/popsoft.html",
         "description": "常用软件下载"
       },
       {
         "id": 8,
         "name": "itellyou",
-        "icon": "itellyou.png",
+        "icon": "itellyou",
         "href": "https://msdn.itellyou.cn/",
         "description": "软件下载-可下win系统"
       },
       {
         "id": 9,
         "name": "cxyhub",
-        "icon": "cxyhub.png",
+        "icon": "cxyhub",
         "href": "https://www.cxyhub.com/",
         "description": "谷歌插件商店-341984"
       },
       {
         "id": 10,
         "name": "快吧软件",
-        "icon": "kb173.png",
+        "icon": "kb173",
         "href": "https://www.kb173.com/list/26_1.html",
         "description": ""
       },
       {
         "id": 11,
         "name": "开源中国",
-        "icon": "oschina.png",
+        "icon": "oschina",
         "href": "https://www.oschina.net/project",
         "description": "开源软件分类数据库"
       },
       {
         "id": 12,
         "name": "jetbra",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://3.jetbra.in/",
         "description": "goland破解网站连通性检查"
       },
       {
         "id": 13,
         "name": "hardbin",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://hardbin.com/ipfs/bafybeia4nrbuvpfd6k7lkorzgjw3t6totaoko7gmvq5pyuhl2eloxnfiri/",
         "description": "goland破解网站"
       },
       {
         "id": 14,
         "name": "golang",
-        "icon": "golang.png",
+        "icon": "golang",
         "href": "https://golang.google.cn/",
         "description": "go官网"
       },
       {
         "id": 15,
         "name": "goland",
-        "icon": "goland.png",
+        "icon": "goland",
         "href": "https://www.jetbrains.com/go/download/#section=windows",
         "description": "goland官网"
       },
       {
         "id": 16,
         "name": "ffmpeg",
-        "icon": "ffmpeg.png",
+        "icon": "ffmpeg",
         "href": "https://ffmpeg.org/download.html",
         "description": "ffmpeg官网"
       },
       {
         "id": 17,
         "name": "pub.dev",
-        "icon": "pub-dev.png",
+        "icon": "pub-dev",
         "href": "https://pub.dev/",
         "description": "Dart和Flutter的官方包存储库"
       },
       {
         "id": 18,
         "name": "jurialmunkey",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://jurialmunkey.github.io/repository.jurialmunkey/",
         "description": "地平线皮肤下载"
       },
       {
         "id": 19,
         "name": "音乐标签pc版",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/vinlxc/p/11347744.html",
         "description": ""
       },
       {
         "id": 20,
         "name": "v2ray",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/v2fly/v2ray-core/releases",
         "description": "v2ray下载"
       },
       {
         "id": 21,
         "name": "v2rayNG",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/2dust/v2rayNG/releases",
         "description": "v2rayNG下载"
       },
       {
         "id": 22,
         "name": "v2rayN",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/2dust/v2rayN/releases",
         "description": "v2rayN下载"
       },
       {
         "id": 23,
         "name": "PowerShell",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/PowerShell/PowerShell/releases/tag/v7.3.9",
         "description": "PowerShell下载"
       },
       {
         "id": 24,
         "name": "hacs",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/hacs/integration/releases/tag/1.6.0",
         "description": "hacs下载"
       },
       {
         "id": 25,
         "name": "BBDown",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/nilaoda/BBDown",
         "description": "BBDown下载"
       },
       {
         "id": 26,
         "name": "youtube-dl-wpf",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/database64128/youtube-dl-wpf",
         "description": "youtube视频下载UI"
       },
       {
         "id": 27,
         "name": "youtube-dl",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/ytdl-org/youtube-dl",
         "description": "油管或其他视频平台下载视频"
       },
       {
         "id": 28,
         "name": "yt-dlp",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/yt-dlp/yt-dlp",
         "description": "youtube-dl分支,添加了新功能"
       }
@@ -3465,182 +3465,182 @@
       {
         "id": 1,
         "name": "looka",
-        "icon": "looka.png",
+        "icon": "looka",
         "href": "https://looka.com/",
         "description": "设计logo"
       },
       {
         "id": 2,
         "name": "openmoji",
-        "icon": "openmoji.png",
+        "icon": "openmoji",
         "href": "https://www.openmoji.org/",
         "description": "表情图"
       },
       {
         "id": 3,
         "name": "illustcenter",
-        "icon": "illustcenter.png",
+        "icon": "illustcenter",
         "href": "https://illustcenter.com/",
         "description": "插图"
       },
       {
         "id": 4,
         "name": "my-icon",
-        "icon": "my-icon.png",
+        "icon": "my-icon",
         "href": "https://heizicao.gitee.io/my-icon/#/",
         "description": "图标"
       },
       {
         "id": 5,
         "name": "iconfinder",
-        "icon": "iconfinder.png",
+        "icon": "iconfinder",
         "href": "https://www.iconfinder.com/",
         "description": "图标插画"
       },
       {
         "id": 6,
         "name": "wannathis",
-        "icon": "wannathis.png",
+        "icon": "wannathis",
         "href": "https://wannathis.one/",
         "description": "3D插画"
       },
       {
         "id": 7,
         "name": "icons8",
-        "icon": "icons8.png",
+        "icon": "icons8",
         "href": "https://icons8.com/icons",
         "description": "icon图标"
       },
       {
         "id": 8,
         "name": "flat-icon-design",
-        "icon": "flat-icon-design.png",
+        "icon": "flat-icon-design",
         "href": "http://flat-icon-design.com/",
         "description": "插画风图标"
       },
       {
         "id": 9,
         "name": "illust",
-        "icon": "illust.png",
+        "icon": "illust",
         "href": "https://zh-tw.ac-illust.com/",
         "description": "免费矢量、剪贴画和插图"
       },
       {
         "id": 10,
         "name": "css-icon",
-        "icon": "css-icon.png",
+        "icon": "css-icon",
         "href": "https://css.gg/app",
         "description": "图标素材"
       },
       {
         "id": 11,
         "name": "草莓图标库",
-        "icon": "chuangzaoshi.png",
+        "icon": "chuangzaoshi",
         "href": "https://chuangzaoshi.com/icon/",
         "description": "图标素材"
       },
       {
         "id": 12,
         "name": "icooon-mono",
-        "icon": "icooon-mono.png",
+        "icon": "icooon-mono",
         "href": "https://icooon-mono.com/#",
         "description": "图标素材"
       },
       {
         "id": 13,
         "name": "graphberry",
-        "icon": "graphberry.png",
+        "icon": "graphberry",
         "href": "https://www.graphberry.com/category/icons",
         "description": "图标素材"
       },
       {
         "id": 14,
         "name": "阿里巴巴矢量图标库",
-        "icon": "iconfont.png",
+        "icon": "iconfont",
         "href": "https://www.iconfont.cn/",
         "description": "图标素材"
       },
       {
         "id": 15,
         "name": "undraw",
-        "icon": "undraw.png",
+        "icon": "undraw",
         "href": "https://undraw.co/illustrations",
         "description": "插画"
       },
       {
         "id": 16,
         "name": "iconpark",
-        "icon": "iconpark.png",
+        "icon": "iconpark",
         "href": "https://iconpark.oceanengine.com/official",
         "description": "图标素材"
       },
       {
         "id": 17,
         "name": "igoutu",
-        "icon": "igoutu.png",
+        "icon": "igoutu",
         "href": "https://igoutu.cn/icons/",
         "description": "图标素材"
       },
       {
         "id": 18,
         "name": "storyset",
-        "icon": "storyset.png",
+        "icon": "storyset",
         "href": "https://storyset.com/",
         "description": "插图素材"
       },
       {
         "id": 19,
         "name": "iradesign",
-        "icon": "iradesign.png",
+        "icon": "iradesign",
         "href": "https://iradesign.io/gallery/illustrations",
         "description": "插图素材"
       },
       {
         "id": 20,
         "name": "opendoodles",
-        "icon": "opendoodles.png",
+        "icon": "opendoodles",
         "href": "https://generator.opendoodles.com/",
         "description": "人物插图素材"
       },
       {
         "id": 21,
         "name": "lukaszadam",
-        "icon": "lukaszadam.png",
+        "icon": "lukaszadam",
         "href": "https://lukaszadam.com/illustrations",
         "description": "插图素材"
       },
       {
         "id": 22,
         "name": "error404",
-        "icon": "error404.png",
+        "icon": "error404",
         "href": "https://error404.fun/",
         "description": "404错误插图"
       },
       {
         "id": 23,
         "name": "pictogram2",
-        "icon": "pictogram2.png",
+        "icon": "pictogram2",
         "href": "https://pictogram2.com/?lang=en",
         "description": "人物动作插图"
       },
       {
         "id": 24,
         "name": "fontawesome",
-        "icon": "fontawesome.png",
+        "icon": "fontawesome",
         "href": "https://fontawesome.dashgame.com/",
         "description": "一套绝佳的图标字体库和CSS框架"
       },
       {
         "id": 25,
         "name": "cssicon",
-        "icon": "cssicon.png",
+        "icon": "cssicon",
         "href": "https://cssicon.space/#/",
         "description": "CSS画的图标库"
       },
       {
         "id": 26,
         "name": "flaticon",
-        "icon": "flaticon.png",
+        "icon": "flaticon",
         "href": "https://www.flaticon.com/icons",
         "description": "图标库"
       }
@@ -3654,182 +3654,182 @@
       {
         "id": 1,
         "name": "lifeofpix",
-        "icon": "lifeofpix.png",
+        "icon": "lifeofpix",
         "href": "https://www.lifeofpix.com/",
         "description": "风景景观图"
       },
       {
         "id": 2,
         "name": "unsplash",
-        "icon": "unsplash.png",
+        "icon": "unsplash",
         "href": "https://unsplash.dogedoge.com/",
         "description": "英文搜索图片"
       },
       {
         "id": 3,
         "name": "kaboompics",
-        "icon": "kaboompics.png",
+        "icon": "kaboompics",
         "href": "https://kaboompics.com/",
         "description": "图片库"
       },
       {
         "id": 4,
         "name": "pxhere",
-        "icon": "pxhere.png",
+        "icon": "pxhere",
         "href": "https://pxhere.com/",
         "description": "免费高清商业图片素材"
       },
       {
         "id": 5,
         "name": "cc0",
-        "icon": "cc0.png",
+        "icon": "cc0",
         "href": "https://cc0.cn/sou/",
         "description": "可商用图片搜索"
       },
       {
         "id": 6,
         "name": "foodiesfeed",
-        "icon": "foodiesfeed.png",
+        "icon": "foodiesfeed",
         "href": "https://www.foodiesfeed.com/",
         "description": "食物图片"
       },
       {
         "id": 7,
         "name": "cupcake",
-        "icon": "cupcake.png",
+        "icon": "cupcake",
         "href": "https://cupcake.nilssonlee.se/",
         "description": "冷调风景图"
       },
       {
         "id": 8,
         "name": "magdeleine",
-        "icon": "magdeleine.png",
+        "icon": "magdeleine",
         "href": "https://magdeleine.co/",
         "description": "文艺风图片"
       },
       {
         "id": 9,
         "name": "picjumbo",
-        "icon": "picjumbo.png",
+        "icon": "picjumbo",
         "href": "https://picjumbo.com/?subscribe-success",
         "description": "风景图"
       },
       {
         "id": 10,
         "name": "skuawk",
-        "icon": "skuawk.png",
+        "icon": "skuawk",
         "href": "https://skuawk.com/",
         "description": "图片"
       },
       {
         "id": 11,
         "name": "freejpg",
-        "icon": "freejpg.png",
+        "icon": "freejpg",
         "href": "https://en.freejpg.com.ar/",
         "description": "图片"
       },
       {
         "id": 12,
         "name": "visualhunt",
-        "icon": "visualhunt.png",
+        "icon": "visualhunt",
         "href": "https://visualhunt.com/",
         "description": "图片"
       },
       {
         "id": 13,
         "name": "stocksnap",
-        "icon": "stocksnap.png",
+        "icon": "stocksnap",
         "href": "https://stocksnap.io/",
         "description": "图片"
       },
       {
         "id": 14,
         "name": "闪萌",
-        "icon": "weshineapp.png",
+        "icon": "weshineapp",
         "href": "https://www.weshineapp.com/",
         "description": "中文GIF搜索引擎"
       },
       {
         "id": 15,
         "name": "unsplash",
-        "icon": "unsplash.png",
+        "icon": "unsplash",
         "href": "https://unsplash.com/",
         "description": "图片"
       },
       {
         "id": 16,
         "name": "SSP",
-        "icon": "startupstockphotos.png",
+        "icon": "startupstockphotos",
         "href": "https://startupstockphotos.com/",
         "description": "图片"
       },
       {
         "id": 17,
         "name": "pngimg",
-        "icon": "pngimg.png",
+        "icon": "pngimg",
         "href": "https://pngimg.com/",
         "description": "png图片"
       },
       {
         "id": 18,
         "name": "pexels",
-        "icon": "pexels.png",
+        "icon": "pexels",
         "href": "https://www.pexels.com/zh-cn/",
         "description": "免费图片库"
       },
       {
         "id": 19,
         "name": "pixabay",
-        "icon": "pixabay.png",
+        "icon": "pixabay",
         "href": "https://pixabay.com/zh/",
         "description": "免费图片库"
       },
       {
         "id": 20,
         "name": "stockio",
-        "icon": "stockio.png",
+        "icon": "stockio",
         "href": "https://www.stockio.com/",
         "description": "图片"
       },
       {
         "id": 21,
         "name": "squoosh",
-        "icon": "squoosh.png",
+        "icon": "squoosh",
         "href": "https://squoosh.app/",
         "description": "图片压缩工具"
       },
       {
         "id": 22,
         "name": "picdiet",
-        "icon": "picdiet.png",
+        "icon": "picdiet",
         "href": "https://www.picdiet.com/zh-cn",
         "description": "在线批量压缩图片神器"
       },
       {
         "id": 23,
         "name": "bgremover",
-        "icon": "bgremover.png",
+        "icon": "bgremover",
         "href": "https://www.aigei.com/bgremover/",
         "description": "图片去底工具"
       },
       {
         "id": 24,
         "name": "photopea",
-        "icon": "photopea.png",
+        "icon": "photopea",
         "href": "https://www.photopea.com/",
         "description": "网页版PS"
       },
       {
         "id": 25,
         "name": "soogif",
-        "icon": "soogif.png",
+        "icon": "soogif",
         "href": "https://www.soogif.com/",
         "description": "gif动图编辑制作"
       },
       {
         "id": 26,
         "name": "pixilart",
-        "icon": "pixilart.png",
+        "icon": "pixilart",
         "href": "https://www.pixilart.com/",
         "description": "制作像素gif动图"
       }
@@ -3843,175 +3843,175 @@
       {
         "id": 1,
         "name": "lifeofvids",
-        "icon": "lifeofvids.png",
+        "icon": "lifeofvids",
         "href": "https://lifeofvids.com/",
         "description": "风景视频"
       },
       {
         "id": 2,
         "name": "videvo",
-        "icon": "videvo.png",
+        "icon": "videvo",
         "href": "https://www.videvo.net/",
         "description": "视频素材"
       },
       {
         "id": 3,
         "name": "幕后",
-        "icon": "muhou.png",
+        "icon": "muhou",
         "href": "https://muhou.net/",
         "description": "视频素材"
       },
       {
         "id": 4,
         "name": "musiclab",
-        "icon": "musiclab.png",
+        "icon": "musiclab",
         "href": "https://musiclab.chromeexperiments.com/Song-Maker/",
         "description": "弹钢琴声"
       },
       {
         "id": 5,
         "name": "dialogue",
-        "icon": "dialogue.png",
+        "icon": "dialogue",
         "href": "https://dialogue.moe/",
         "description": "动漫素材"
       },
       {
         "id": 6,
         "name": "预告片世界",
-        "icon": "yingshiguang.png",
+        "icon": "yingshiguang",
         "href": "https://www.yingshiguang.com/#ygpqr",
         "description": ""
       },
       {
         "id": 7,
         "name": "quodb",
-        "icon": "quodb.png",
+        "icon": "quodb",
         "href": "https://www.quodb.com/",
         "description": "英文台词"
       },
       {
         "id": 8,
         "name": "找台词",
-        "icon": "zhaotaici.png",
+        "icon": "zhaotaici",
         "href": "https://zhaotaici.cn/",
         "description": ""
       },
       {
         "id": 9,
         "name": "觅元素",
-        "icon": "51yuansu.png",
+        "icon": "51yuansu",
         "href": "https://www.51yuansu.com/",
         "description": ""
       },
       {
         "id": 10,
         "name": "apemockups",
-        "icon": "apemockups.png",
+        "icon": "apemockups",
         "href": "https://www.apemockups.com/",
         "description": "样机"
       },
       {
         "id": 11,
         "name": "dimmy",
-        "icon": "dimmy.png",
+        "icon": "dimmy",
         "href": "https://dimmy.club/",
         "description": "电子设备样机"
       },
       {
         "id": 12,
         "name": "mockuphone",
-        "icon": "mockuphone.png",
+        "icon": "mockuphone",
         "href": "https://mockuphone.com/#ios",
         "description": "手机样机"
       },
       {
         "id": 13,
         "name": "淘声网",
-        "icon": "tosound.png",
+        "icon": "tosound",
         "href": "https://www.tosound.com/#license",
         "description": ""
       },
       {
         "id": 14,
         "name": "耳聆网",
-        "icon": "ear0.png",
+        "icon": "ear0",
         "href": "https://www.ear0.com/",
         "description": "声音分享云|音效素材库"
       },
       {
         "id": 15,
         "name": "音效网",
-        "icon": "yinxiao.png",
+        "icon": "yinxiao",
         "href": "https://sc.chinaz.com/yinxiao/",
         "description": "音效素材下载"
       },
       {
         "id": 16,
         "name": "声音网",
-        "icon": "shengyin.png",
+        "icon": "shengyin",
         "href": "http://www.shengyin.com/sucai.asp",
         "description": ""
       },
       {
         "id": 17,
         "name": "freepd",
-        "icon": "freepd.png",
+        "icon": "freepd",
         "href": "https://freepd.com/",
         "description": "音乐素材"
       },
       {
         "id": 18,
         "name": "musopen",
-        "icon": "musopen.png",
+        "icon": "musopen",
         "href": "https://musopen.org/",
         "description": "古典音乐背景"
       },
       {
         "id": 19,
         "name": "Free video clips",
-        "icon": "mazwai.png",
+        "icon": "mazwai",
         "href": "https://mazwai.com/",
         "description": "视频素材"
       },
       {
         "id": 20,
         "name": "lottiefiles",
-        "icon": "lottiefiles.png",
+        "icon": "lottiefiles",
         "href": "https://lottiefiles.com/featured",
         "description": "动画素材"
       },
       {
         "id": 21,
         "name": "mixkit",
-        "icon": "mixkit.png",
+        "icon": "mixkit",
         "href": "https://mixkit.co/",
         "description": "视频素材"
       },
       {
         "id": 22,
         "name": "coverr",
-        "icon": "coverr.png",
+        "icon": "coverr",
         "href": "https://coverr.co/",
         "description": "视频素材"
       },
       {
         "id": 23,
         "name": "giphy",
-        "icon": "giphy.png",
+        "icon": "giphy",
         "href": "https://giphy.com/",
         "description": "gif动图"
       },
       {
         "id": 24,
         "name": "爱给网",
-        "icon": "aigei.png",
+        "icon": "aigei",
         "href": "https://www.aigei.com/",
         "description": "音效配乐、视频素材"
       },
       {
         "id": 25,
         "name": "pickfree",
-        "icon": "pickfree.png",
+        "icon": "pickfree",
         "href": "http://www.pickfree.cn/",
         "description": "免费资源导航"
       }
@@ -4025,140 +4025,140 @@
       {
         "id": 1,
         "name": "爱快云",
-        "icon": "ikuai8.png",
+        "icon": "ikuai8",
         "href": "https://yun.ikuai8.com/#/",
         "description": ""
       },
       {
         "id": 2,
         "name": "ipv6测试",
-        "icon": "test-ipv6.png",
+        "icon": "test-ipv6",
         "href": "http://www.test-ipv6.com/",
         "description": ""
       },
       {
         "id": 3,
         "name": "speedtest",
-        "icon": "speedtest2.png",
+        "icon": "speedtest2",
         "href": "https://myplugin.speedtest.cn/#/",
         "description": "测速网"
       },
       {
         "id": 4,
         "name": "拨测",
-        "icon": "boce.png",
+        "icon": "boce",
         "href": "https://www.boce.com/",
         "description": "网站测速-ping检测"
       },
       {
         "id": 5,
         "name": "站长工具",
-        "icon": "chinaz.png",
+        "icon": "chinaz",
         "href": "https://ping.chinaz.com/",
         "description": "ping检测"
       },
       {
         "id": 6,
         "name": "wxpusher",
-        "icon": "wxpusher.png",
+        "icon": "wxpusher",
         "href": "https://wxpusher.zjiecode.com/admin/main",
         "description": "微信消息推送"
       },
       {
         "id": 7,
         "name": "eu域名",
-        "icon": "nic_eu.png",
+        "icon": "nic_eu",
         "href": "https://nic.eu.org/arf/en/login/?next=/arf/en/",
         "description": "免费eu域名注册"
       },
       {
         "id": 8,
         "name": "cloudns域名",
-        "icon": "cloudns.png",
+        "icon": "cloudns",
         "href": "https://www.cloudns.net/main/dashboard/dns/",
         "description": "免费域名"
       },
       {
         "id": 9,
         "name": "ikuuu",
-        "icon": "ikuuu.png",
+        "icon": "ikuuu",
         "href": "https://ikuuu.art/user",
         "description": "加速器"
       },
       {
         "id": 10,
         "name": "itdog",
-        "icon": "itdog.png",
+        "icon": "itdog",
         "href": "https://www.itdog.cn/http/",
         "description": "网站测速、在线ping"
       },
       {
         "id": 11,
         "name": "DNS Check",
-        "icon": "dnschecker.png",
+        "icon": "dnschecker",
         "href": "https://dnschecker.org/",
         "description": "网站测速"
       },
       {
         "id": 12,
         "name": "canyouseeme",
-        "icon": "canyouseeme.png",
+        "icon": "canyouseeme",
         "href": "https://canyouseeme.org/",
         "description": "远程验证端口是否打开"
       },
       {
         "id": 13,
         "name": "Speedtest 测速网",
-        "icon": "speedtest.png",
+        "icon": "speedtest",
         "href": "https://www.speedtest.net/",
         "description": ""
       },
       {
         "id": 14,
         "name": "V2RaySSR综合网",
-        "icon": "v2rayssr.png",
+        "icon": "v2rayssr",
         "href": "https://www.v2rayssr.com/",
         "description": "网络教程论坛"
       },
       {
         "id": 15,
         "name": "甬哥侃侃侃",
-        "icon": "ygkkk.png",
+        "icon": "ygkkk",
         "href": "https://ygkkk.blogspot.com/",
         "description": "YouTube教程摘要随笔"
       },
       {
         "id": 16,
         "name": "绵阿羊",
-        "icon": "mareep.png",
+        "icon": "mareep",
         "href": "https://blog.mareep.net/",
         "description": "网络教程"
       },
       {
         "id": 17,
         "name": "不良林",
-        "icon": "bulianglin.png",
+        "icon": "bulianglin",
         "href": "https://bulianglin.com/",
         "description": "科学上网技术分享"
       },
       {
         "id": 18,
         "name": "香港临时手机号码",
-        "icon": "HongKong-Phone-Number.png",
+        "icon": "HongKong-Phone-Number",
         "href": "https://yunduanxin.net/HongKong-Phone-Number/",
         "description": "免费在线接收短信"
       },
       {
         "id": 19,
         "name": "检查IP地址",
-        "icon": "whoer.png",
+        "icon": "whoer",
         "href": "https://whoer.net/zh#",
         "description": ""
       },
       {
         "id": 20,
         "name": "外国地址身份生成器",
-        "icon": "meiguodizhi.png",
+        "icon": "meiguodizhi",
         "href": "https://www.meiguodizhi.com/tr-address",
         "description": ""
       }
@@ -4172,56 +4172,56 @@
       {
         "id": 1,
         "name": "公众号",
-        "icon": "weixin-mp.png",
+        "icon": "weixin-mp",
         "href": "https://mp.weixin.qq.com/cgi-bin/home?t=home/index&lang=zh_CN&token=1962054269#tab=sent-panel",
         "description": ""
       },
       {
         "id": 2,
         "name": "秀米",
-        "icon": "xiumi.png",
+        "icon": "xiumi",
         "href": "https://xiumi.us/studio/v5#/paper/for/new/cube/0",
         "description": "公众号编辑器"
       },
       {
         "id": 3,
         "name": "135编辑器",
-        "icon": "135editor.png",
+        "icon": "135editor",
         "href": "https://www.135editor.com/",
         "description": "公众号编辑器"
       },
       {
         "id": 4,
         "name": "新榜编辑器",
-        "icon": "newrank-edit.png",
+        "icon": "newrank-edit",
         "href": "https://edit.newrank.cn/",
         "description": "公众号编辑器"
       },
       {
         "id": 5,
         "name": "新榜",
-        "icon": "newrank.png",
+        "icon": "newrank",
         "href": "https://newrank.cn/new/?account=ishanyuey",
         "description": ""
       },
       {
         "id": 6,
         "name": "新榜有赚",
-        "icon": "newrank-a.png",
+        "icon": "newrank-a",
         "href": "https://a.newrank.cn/center/#/user",
         "description": ""
       },
       {
         "id": 7,
         "name": "西瓜数据",
-        "icon": "xiguaji.png",
+        "icon": "xiguaji",
         "href": "https://data.xiguaji.com/",
         "description": "公众号数据"
       },
       {
         "id": 8,
         "name": "墨滴编辑器",
-        "icon": "mdnice.png",
+        "icon": "mdnice",
         "href": "https://editor.mdnice.com/",
         "description": "多平台代码排版"
       }
@@ -4235,119 +4235,119 @@
       {
         "id": 1,
         "name": "JSON 转换 Excel",
-        "icon": "kpoda.png",
+        "icon": "kpoda",
         "href": "http://j2e.kpoda.com/",
         "description": ""
       },
       {
         "id": 2,
         "name": "aconvert",
-        "icon": "aconvert.png",
+        "icon": "aconvert",
         "href": "https://www.aconvert.com/cn/",
         "description": "格式在线转换器"
       },
       {
         "id": 3,
         "name": "cloudconvert",
-        "icon": "cloudconvert.png",
+        "icon": "cloudconvert",
         "href": "https://cloudconvert.com/",
         "description": "格式在线转换器"
       },
       {
         "id": 4,
         "name": "文件转换器",
-        "icon": "convertio.png",
+        "icon": "convertio",
         "href": "https://convertio.co/zh/",
         "description": ""
       },
       {
         "id": 5,
         "name": "ilovepdf",
-        "icon": "ilovepdf.png",
+        "icon": "ilovepdf",
         "href": "https://www.ilovepdf.com/zh-cn",
         "description": "PDF文件在线处理工具"
       },
       {
         "id": 6,
         "name": "在线电子书转换器",
-        "icon": "epubee.png",
+        "icon": "epubee",
         "href": "http://cn.epubee.com/",
         "description": ""
       },
       {
         "id": 7,
         "name": "azw3转pdf",
-        "icon": "azw3-to-pdf.png",
+        "icon": "azw3-to-pdf",
         "href": "https://www.zamzar.com/convert/azw3-to-pdf/",
         "description": ""
       },
       {
         "id": 8,
         "name": "在线视频转GIF",
-        "icon": "tooltt.png",
+        "icon": "tooltt",
         "href": "https://www.apowersoft.cn/video-to-gif-online",
         "description": ""
       },
       {
         "id": 9,
         "name": "iloveimg",
-        "icon": "iloveimg.png",
+        "icon": "iloveimg",
         "href": "https://www.iloveimg.com/zh-cn/resize-image",
         "description": "多张图像大小格式编辑"
       },
       {
         "id": 10,
         "name": "多图合成GIF",
-        "icon": "gif55.png",
+        "icon": "gif55",
         "href": "https://gif.55.la/",
         "description": ""
       },
       {
         "id": 11,
         "name": "epub2kindle",
-        "icon": "epub2kindle.png",
+        "icon": "epub2kindle",
         "href": "https://epub2kindle.com/",
         "description": "电子书格式转换"
       },
       {
         "id": 12,
         "name": "unscreen",
-        "icon": "unscreen.png",
+        "icon": "unscreen",
         "href": "https://www.unscreen.com/",
         "description": "删除gif/视频背景"
       },
       {
         "id": 13,
         "name": "fococlipping",
-        "icon": "fococlipping.png",
+        "icon": "fococlipping",
         "href": "https://www.fococlipping.com/",
         "description": "免费在线抠图"
       },
       {
         "id": 14,
         "name": "pdflux",
-        "icon": "pdflux.png",
+        "icon": "pdflux",
         "href": "https://webtool.pdflux.com/#/",
         "description": "pdf表格转excel表格"
       },
       {
         "id": 15,
         "name": "vectormagic",
-        "icon": "vectormagic.png",
+        "icon": "vectormagic",
         "href": "https://zh.vectormagic.com/",
         "description": "位图转换成矢量图"
       },
       {
         "id": 16,
         "name": "bitbug",
-        "icon": "bitbug.png",
+        "icon": "bitbug",
         "href": "https://www.bitbug.net/",
         "description": "制作ico图标"
       },
       {
         "id": 17,
         "name": "pdfdo",
-        "icon": "pdfdo.png",
+        "icon": "pdfdo",
         "href": "http://pdfdo.com/",
         "description": "PDF转换器"
       }
@@ -4361,112 +4361,112 @@
       {
         "id": 1,
         "name": "菜鸟工具",
-        "icon": "c-runoob.png",
+        "icon": "c-runoob",
         "href": "https://c.runoob.com/",
         "description": ""
       },
       {
         "id": 2,
         "name": "开源中国在线工具",
-        "icon": "tool-oschina.png",
+        "icon": "tool-oschina",
         "href": "https://tool.oschina.net/",
         "description": ""
       },
       {
         "id": 3,
         "name": "在线工具",
-        "icon": "tool-lu.png",
+        "icon": "tool-lu",
         "href": "https://tool.lu//",
         "description": ""
       },
       {
         "id": 4,
         "name": "脚本之家在线工具",
-        "icon": "tools-jb51.png",
+        "icon": "tools-jb51",
         "href": "http://tools.jb51.net/",
         "description": ""
       },
       {
         "id": 5,
         "name": "编程狮在线工具",
-        "icon": "w3cschool-cn.png",
+        "icon": "w3cschool-cn",
         "href": "https://123.w3cschool.cn/webtools/",
         "description": ""
       },
       {
         "id": 6,
         "name": "editor.md",
-        "icon": "editor-md.png",
+        "icon": "editor-md",
         "href": "https://pandao.github.io/editor.md/",
         "description": "开源在线markdown编辑器"
       },
       {
         "id": 7,
         "name": "pythontutor",
-        "icon": "python.png",
+        "icon": "python",
         "href": "https://pythontutor.com/visualize.html#mode=edit",
         "description": "可视化编辑器"
       },
       {
         "id": 8,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/try/try.php?filename=tryjsref_radio_type",
         "description": "HTML编辑器"
       },
       {
         "id": 9,
         "name": "uutool",
-        "icon": "uutool.png",
+        "icon": "uutool",
         "href": "https://uutool.cn/regex/",
         "description": "在线正则表达式测试"
       },
       {
         "id": 10,
         "name": "regulex",
-        "icon": "regulex.png",
+        "icon": "regulex",
         "href": "https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24",
         "description": "正则可视化网站"
       },
       {
         "id": 11,
         "name": "w3school",
-        "icon": "w3school.png",
+        "icon": "w3school",
         "href": "https://www.w3school.com.cn/tiy/t.asp?f=eg_html_select",
         "description": "html在线编辑器"
       },
       {
         "id": 12,
         "name": "regex101",
-        "icon": "regex101.png",
+        "icon": "regex101",
         "href": "https://regex101.com/",
         "description": "正则表达式练习"
       },
       {
         "id": 13,
         "name": "ihateregex",
-        "icon": "ihateregex.png",
+        "icon": "ihateregex",
         "href": "https://ihateregex.io/",
         "description": "正则表达式搜索"
       },
       {
         "id": 14,
         "name": "lddgo",
-        "icon": "yaml.png",
+        "icon": "yaml",
         "href": "https://www.lddgo.net/string/yaml",
         "description": "在线YAML编辑器"
       },
       {
         "id": 15,
         "name": "codebeautify",
-        "icon": "codebeautify.png",
+        "icon": "codebeautify",
         "href": "https://codebeautify.org/yaml-validator",
         "description": "在线YAML编辑器"
       },
       {
         "id": 16,
         "name": "jsonformatter",
-        "icon": "jsonformatter.png",
+        "icon": "jsonformatter",
         "href": "https://jsonformatter.org/yaml-validator",
         "description": "在线YAML编辑器"
       }
@@ -4480,126 +4480,126 @@
       {
         "id": 1,
         "name": "leon-kim",
-        "icon": "leon-kim.png",
+        "icon": "leon-kim",
         "href": "https://leon-kim.com/examples/#grid",
         "description": "字效"
       },
       {
         "id": 2,
         "name": "xkcd",
-        "icon": "xkcd.png",
+        "icon": "xkcd",
         "href": "https://xkcd.com/color/rgb/",
         "description": "颜色英文和RGB"
       },
       {
         "id": 3,
         "name": "艺术字生成器",
-        "icon": "yishuzi.png",
+        "icon": "yishuzi",
         "href": "http://www.yishuzi.com/",
         "description": ""
       },
       {
         "id": 4,
         "name": "qiuziti",
-        "icon": "qiuziti.png",
+        "icon": "qiuziti",
         "href": "https://www.qiuziti.com/",
         "description": "字体识别与搜索"
       },
       {
         "id": 5,
         "name": "ziticq",
-        "icon": "ziticq.png",
+        "icon": "ziticq",
         "href": "https://hao.ziticq.com/",
         "description": "字体导航"
       },
       {
         "id": 6,
         "name": "零度解说",
-        "icon": "freedidi.png",
+        "icon": "freedidi",
         "href": "https://www.freedidi.com/4553.html",
         "description": "真正的免费商用字体（大全）"
       },
       {
         "id": 7,
         "name": "自由字体",
-        "icon": "ziyouziti.png",
+        "icon": "ziyouziti",
         "href": "https://ziyouziti.com/sitemap.html",
         "description": "免费商用字体下载"
       },
       {
         "id": 8,
         "name": "maoken",
-        "icon": "maoken.png",
+        "icon": "maoken",
         "href": "https://www.maoken.com/all-fonts",
         "description": "可免费商用中文字体下载"
       },
       {
         "id": 9,
         "name": "uisdc",
-        "icon": "uisdc.png",
+        "icon": "uisdc",
         "href": "https://hao.uisdc.com/color/",
         "description": "色彩导航"
       },
       {
         "id": 10,
         "name": "gradientsguru",
-        "icon": "gradientsguru.png",
+        "icon": "gradientsguru",
         "href": "http://gradientsguru.com/",
         "description": "背景图像、背景渐变"
       },
       {
         "id": 11,
         "name": "color-adobe",
-        "icon": "color-adobe.png",
+        "icon": "color-adobe",
         "href": "https://color.adobe.com/zh/create/color-wheel",
         "description": "色轮、调色盘生成器"
       },
       {
         "id": 12,
         "name": "lolcolors",
-        "icon": "lolcolors.png",
+        "icon": "lolcolors",
         "href": "https://www.webdesignrankings.com/resources/lolcolors/",
         "description": "配色推荐"
       },
       {
         "id": 13,
         "name": "0to255",
-        "icon": "0to255.png",
+        "icon": "0to255",
         "href": "https://0to255.com/",
         "description": "色彩选择器"
       },
       {
         "id": 14,
         "name": "懒人工具箱",
-        "icon": "lanrentuku.png",
+        "icon": "lanrentuku",
         "href": "https://tool.lanrentuku.com/",
         "description": ""
       },
       {
         "id": 15,
         "name": "akuziti",
-        "icon": "akuziti.png",
+        "icon": "akuziti",
         "href": "http://www.akuziti.com/kt/",
         "description": "卡通字体在线生成器"
       },
       {
         "id": 16,
         "name": "gradients",
-        "icon": "gradients.png",
+        "icon": "gradients",
         "href": "https://c.runoob.com/more/gradients/#BlueRed",
         "description": "渐变色工具"
       },
       {
         "id": 17,
         "name": "rgb配色表",
-        "icon": "rgb.png",
+        "icon": "rgb",
         "href": "http://www.wahart.com.hk/rgb.htm",
         "description": ""
       },
       {
         "id": 18,
         "name": "颜色名",
-        "icon": "w3school.png",
+        "icon": "w3school",
         "href": "https://www.w3school.com.cn/tags/html_ref_colornames.asp",
         "description": "查看当前颜色作为背景各个颜色的字体效果"
       }
@@ -4613,196 +4613,196 @@
       {
         "id": 1,
         "name": "caniuse",
-        "icon": "caniuse.png",
+        "icon": "caniuse",
         "href": "https://caniuse.com/",
         "description": "查看不同属性和方法的兼容性"
       },
       {
         "id": 2,
         "name": "bootcss",
-        "icon": "bootcss.png",
+        "icon": "bootcss",
         "href": "https://www.bootcss.com/",
         "description": "前端开发框架"
       },
       {
         "id": 3,
         "name": "angularjs",
-        "icon": "angularjs.png",
+        "icon": "angularjs",
         "href": "https://www.angularjs.net.cn/",
         "description": "前端JS框架"
       },
       {
         "id": 4,
         "name": "electronjs",
-        "icon": "electronjs.png",
+        "icon": "electronjs",
         "href": "https://www.electronjs.org/",
         "description": "跨平台开发框架"
       },
       {
         "id": 5,
         "name": "github",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/validatorjs/validator.js",
         "description": "表单验证库"
       },
       {
         "id": 6,
         "name": "animate",
-        "icon": "animate.png",
+        "icon": "animate",
         "href": "https://animate.style/",
         "description": "动画库"
       },
       {
         "id": 7,
         "name": "swiper",
-        "icon": "swiper.png",
+        "icon": "swiper",
         "href": "https://www.swiper.com.cn/",
         "description": "移动端网站的内容触摸滑动"
       },
       {
         "id": 8,
         "name": "mescroll",
-        "icon": "mescroll.png",
+        "icon": "mescroll",
         "href": "https://www.mescroll.com/",
         "description": "下拉刷新和上拉加载js框架"
       },
       {
         "id": 9,
         "name": "vuejs",
-        "icon": "vuejs.png",
+        "icon": "vuejs",
         "href": "https://cn.vuejs.org/",
         "description": "渐进式JavaScript 框架"
       },
       {
         "id": 10,
         "name": "vant",
-        "icon": "vant.png",
+        "icon": "vant",
         "href": "https://vant-ui.github.io/vant/#/zh-CN/",
         "description": "轻量、可定制的移动端 Vue 组件库"
       },
       {
         "id": 11,
         "name": "react",
-        "icon": "react.png",
+        "icon": "react",
         "href": "https://react.docschina.org/",
         "description": "用于构建 Web 和原生交互界面的库"
       },
       {
         "id": 12,
         "name": "mui",
-        "icon": "mui.png",
+        "icon": "mui",
         "href": "https://mui.com/",
         "description": "基于vue.js的UI组件库"
       },
       {
         "id": 13,
         "name": "element",
-        "icon": "element.png",
+        "icon": "element",
         "href": "https://element-plus.org/zh-CN/#/zh-CN",
         "description": "一个 Vue 3 UI 框架"
       },
       {
         "id": 14,
         "name": "iviewui",
-        "icon": "iviewui.png",
+        "icon": "iviewui",
         "href": "https://www.iviewui.com/",
         "description": "基于 Vue.js 3 的企业级 UI 组件库"
       },
       {
         "id": 15,
         "name": "heropatterns",
-        "icon": "none-icon.png",
+        "icon": "none-icon",
         "href": "https://heropatterns.com/",
         "description": "可重复的 SVG 背景图案集合"
       },
       {
         "id": 16,
         "name": "snapsvg",
-        "icon": "snapsvg.png",
+        "icon": "snapsvg",
         "href": "http://snapsvg.io/",
         "description": "SVG动效的JS库"
       },
       {
         "id": 17,
         "name": "navnav",
-        "icon": "navnav.png",
+        "icon": "navnav",
         "href": "https://navnav.co/button",
         "description": "炫酷前端动效CSS/JS源码"
       },
       {
         "id": 18,
         "name": "anicollection",
-        "icon": "anicollection.png",
+        "icon": "anicollection",
         "href": "https://anicollection.github.io/#/",
         "description": "CSS3动效预设收藏集合"
       },
       {
         "id": 19,
         "name": "cssgenerator",
-        "icon": "cssgenerator.png",
+        "icon": "cssgenerator",
         "href": "https://cssgenerator.org/",
         "description": "CSS各种对象样式和效果在线生成"
       },
       {
         "id": 20,
         "name": "colorzilla",
-        "icon": "colorzilla.png",
+        "icon": "colorzilla",
         "href": "https://www.colorzilla.com/gradient-editor/",
         "description": "CSS渐变在线生成器"
       },
       {
         "id": 21,
         "name": "everythingfonts",
-        "icon": "everythingfonts.png",
+        "icon": "everythingfonts",
         "href": "https://everythingfonts.com/font-face",
         "description": "网页字体文件格式转换"
       },
       {
         "id": 22,
         "name": "jsbin",
-        "icon": "jsbin.png",
+        "icon": "jsbin",
         "href": "https://jsbin.com/?html,css,js,output",
         "description": "html、JS和CSS的代码片段在线调试"
       },
       {
         "id": 23,
         "name": "CSS按钮",
-        "icon": "cssbuttongenerator.png",
+        "icon": "cssbuttongenerator",
         "href": "https://www.cssbuttongenerator.com/",
         "description": "CSS按钮样式在线生成"
       },
       {
         "id": 24,
         "name": "toptal",
-        "icon": "toptal.png",
+        "icon": "toptal",
         "href": "https://www.toptal.com/designers/htmlarrows/",
         "description": "HMTL的特殊符号代码"
       },
       {
         "id": 25,
         "name": "copypastecharacter",
-        "icon": "copypastecharacter.png",
+        "icon": "copypastecharacter",
         "href": "https://copypastecharacter.com/",
         "description": "特殊符号HMTL代码大全表"
       },
       {
         "id": 26,
         "name": "codemyui",
-        "icon": "codemyui.png",
+        "icon": "codemyui",
         "href": "https://codemyui.com/",
         "description": "网页设计和UI灵感与代码片段"
       },
       {
         "id": 27,
         "name": "fontawesome",
-        "icon": "fontawesome.png",
+        "icon": "fontawesome",
         "href": "https://fontawesome.com/icons",
         "description": "互联网图标库和工具包"
       },
       {
         "id": 28,
         "name": "FastAPI",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/fastapi/fastapi-install.html",
         "description": "构建 API 的现代、快速的 web 框架"
       }
@@ -4816,63 +4816,63 @@
       {
         "id": 1,
         "name": "flourish",
-        "icon": "flourish.png",
+        "icon": "flourish",
         "href": "https://flourish.studio/examples/",
         "description": "动态图表"
       },
       {
         "id": 2,
         "name": "echarts",
-        "icon": "echarts.png",
+        "icon": "echarts",
         "href": "https://echarts.apache.org/zh/index.html",
         "description": "开源可视化图表库"
       },
       {
         "id": 3,
         "name": "echartsjs",
-        "icon": "echartsjs.png",
+        "icon": "echartsjs",
         "href": "https://echartsjs.com/",
         "description": "百度开发的可定制的数据可视化图表"
       },
       {
         "id": 4,
         "name": "antv",
-        "icon": "antv.png",
+        "icon": "antv",
         "href": "https://antv.antgroup.com/zh",
         "description": "蚂蚁数据可视化"
       },
       {
         "id": 5,
         "name": "d3js",
-        "icon": "d3js.png",
+        "icon": "d3js",
         "href": "https://d3js.org/",
         "description": "用动态图形显示数据的 JavaScript 库"
       },
       {
         "id": 6,
         "name": "threejs",
-        "icon": "threejs.png",
+        "icon": "threejs",
         "href": "https://threejs.org/",
         "description": "运行在浏览器中的3D引擎"
       },
       {
         "id": 7,
         "name": "highcharts",
-        "icon": "highcharts.png",
+        "icon": "highcharts",
         "href": "https://www.highcharts.com/",
         "description": "HTML5交互性图表库"
       },
       {
         "id": 8,
         "name": "chartjs",
-        "icon": "chartjs.png",
+        "icon": "chartjs",
         "href": "https://www.chartjs.org/",
         "description": "基于HTML5的JavaScript图表库"
       },
       {
         "id": 9,
         "name": "flotcharts",
-        "icon": "flotcharts.png",
+        "icon": "flotcharts",
         "href": "https://www.flotcharts.org/",
         "description": "基于 jQuery的charts"
       }
@@ -4886,280 +4886,280 @@
       {
         "id": 1,
         "name": "animista",
-        "icon": "animista.png",
+        "icon": "animista",
         "href": "https://animista.net/play/basic",
         "description": "CSS动画库"
       },
       {
         "id": 2,
         "name": "30secondsofcode",
-        "icon": "30secondsofcode.png",
+        "icon": "30secondsofcode",
         "href": "https://www.30secondsofcode.org/",
         "description": "许多有用的代码小片段"
       },
       {
         "id": 3,
         "name": "postimages",
-        "icon": "postimages.png",
+        "icon": "postimages",
         "href": "https://postimages.org/",
         "description": "免费图片托管 / 图片上传"
       },
       {
         "id": 4,
         "name": "codrops",
-        "icon": "codrops.png",
+        "icon": "codrops",
         "href": "https://tympanus.net/codrops/",
         "description": "酷炫的交互"
       },
       {
         "id": 5,
         "name": "pymotw",
-        "icon": "pymotw.png",
+        "icon": "pymotw",
         "href": "https://pymotw.com/2/",
         "description": ""
       },
       {
         "id": 6,
         "name": "shw2018",
-        "icon": "shw2018.png",
+        "icon": "shw2018",
         "href": "https://shw2018.github.io/posts/a927e90e.html",
         "description": "Markdown Emoji表情语法速查表"
       },
       {
         "id": 7,
         "name": "webfx",
-        "icon": "webfx.png",
+        "icon": "webfx",
         "href": "https://www.webfx.com/tools/emoji-cheat-sheet/",
         "description": "表情符号代码"
       },
       {
         "id": 8,
         "name": "MsoAutoShapeType",
-        "icon": "microsoft.png",
+        "icon": "microsoft",
         "href": "https://learn.microsoft.com/zh-cn/office/vba/api/Office.MsoAutoShapeType",
         "description": "PPT形状英语"
       },
       {
         "id": 9,
         "name": "符号大全",
-        "icon": "fhdq.png",
+        "icon": "fhdq",
         "href": "http://www.fhdq.net/emoji.html",
         "description": "常用emoji符号(可复制)"
       },
       {
         "id": 10,
         "name": "carbon",
-        "icon": "carbon.png",
+        "icon": "carbon",
         "href": "https://carbon.now.sh/",
         "description": "代码图片分享"
       },
       {
         "id": 11,
         "name": "codepng",
-        "icon": "codepng.png",
+        "icon": "codepng",
         "href": "https://www.codepng.app/",
         "description": "代码图片分享"
       },
       {
         "id": 12,
         "name": "funtabs",
-        "icon": "funtabs.png",
+        "icon": "funtabs",
         "href": "https://funtabs.cn/",
         "description": "标签页"
       },
       {
         "id": 13,
         "name": "ptgen",
-        "icon": "ptgen.png",
+        "icon": "ptgen",
         "href": "https://ptgen.tju.pt/",
         "description": "根据豆瓣、IMDb等链接自动生成简介"
       },
       {
         "id": 14,
         "name": "斗图啦",
-        "icon": "pkdoutu.png",
+        "icon": "pkdoutu",
         "href": "https://www.pkdoutu.com/maker",
         "description": "在线表情包制作器"
       },
       {
         "id": 15,
         "name": "在线思维导图",
-        "icon": "gitmind.png",
+        "icon": "gitmind",
         "href": "https://gitmind.cn/app/templates",
         "description": ""
       },
       {
         "id": 16,
         "name": "草料二维码",
-        "icon": "crontab.png",
+        "icon": "crontab",
         "href": "https://cli.im/",
         "description": ""
       },
       {
         "id": 17,
         "name": "在线工具_cron",
-        "icon": "crontab.png",
+        "icon": "crontab",
         "href": "https://tool.lu/crontab/",
         "description": ""
       },
       {
         "id": 18,
         "name": "tooltt工具箱_cron",
-        "icon": "tooltt.png",
+        "icon": "tooltt",
         "href": "https://tooltt.com/crontab/",
         "description": ""
       },
       {
         "id": 19,
         "name": "赤兔二维码",
-        "icon": "chitus.png",
+        "icon": "chitus",
         "href": "https://www.chitus.com/",
         "description": ""
       },
       {
         "id": 20,
         "name": "新浪短网址",
-        "icon": "sina-duan.png",
+        "icon": "sina-duan",
         "href": "https://sina.lt/",
         "description": "长网址转短网址"
       },
       {
         "id": 21,
         "name": "即时工具",
-        "icon": "67tool.png",
+        "icon": "67tool",
         "href": "https://www.67tool.com/",
         "description": ""
       },
       {
         "id": 22,
         "name": "实用工具大全",
-        "icon": "tool520101.png",
+        "icon": "tool520101",
         "href": "https://tool.520101.com/",
         "description": ""
       },
       {
         "id": 23,
         "name": "我要自学网",
-        "icon": "51zxw.png",
+        "icon": "51zxw",
         "href": "https://www.51zxw.net/",
         "description": ""
       },
       {
         "id": 24,
         "name": "figen",
-        "icon": "figen.png",
+        "icon": "figen",
         "href": "https://figen.cc/",
         "description": "背景封面生成器"
       },
       {
         "id": 25,
         "name": "流程图绘制",
-        "icon": "diagrams.png",
+        "icon": "diagrams",
         "href": "https://app.diagrams.net/?src=about",
         "description": ""
       },
       {
         "id": 26,
         "name": "metademolab",
-        "icon": "metademolab.png",
+        "icon": "metademolab",
         "href": "https://sketch.metademolab.com/canvas",
         "description": "让孩童画动起来"
       },
       {
         "id": 27,
         "name": "magicmockups",
-        "icon": "magicmockups.png",
+        "icon": "magicmockups",
         "href": "http://magicmockups.com/",
         "description": "样机模型工具"
       },
       {
         "id": 28,
         "name": "shapedivider",
-        "icon": "shapedivider.png",
+        "icon": "shapedivider",
         "href": "https://www.shapedivider.app/",
         "description": "SVG分割线生成"
       },
       {
         "id": 29,
         "name": "烟花模拟器",
-        "icon": "fireworks.png",
+        "icon": "fireworks",
         "href": "https://fireworks.nianbroken.top/",
         "description": ""
       },
       {
         "id": 30,
         "name": "datav",
-        "icon": "datav.png",
+        "icon": "datav",
         "href": "https://datav.aliyun.com/portal/school/atlas/area_selector",
         "description": "地图数据生成器"
       },
       {
         "id": 31,
         "name": "meshgradient",
-        "icon": "meshgradient.png",
+        "icon": "meshgradient",
         "href": "https://meshgradient.com/",
         "description": "弥散背景生成器"
       },
       {
         "id": 32,
         "name": "excelhome",
-        "icon": "excelhome.png",
+        "icon": "excelhome",
         "href": "https://www.excelhome.net/",
         "description": "Excel资源网站"
       },
       {
         "id": 33,
         "name": "photo505",
-        "icon": "photo505.png",
+        "icon": "photo505",
         "href": "https://photo505.com/cn/",
         "description": "照片效果"
       },
       {
         "id": 34,
         "name": "在线工具大全",
-        "icon": "lddgo.png",
+        "icon": "lddgo",
         "href": "https://www.lddgo.net/",
         "description": ""
       },
       {
         "id": 35,
         "name": "摹客",
-        "icon": "mockplus.png",
+        "icon": "mockplus",
         "href": "https://rp.mockplus.cn/editor/64vXNnzR_/z5iP4Z_pzF",
         "description": "网页布局设计"
       },
       {
         "id": 36,
         "name": "墨刀",
-        "icon": "modao.png",
+        "icon": "modao",
         "href": "https://modao.cc/team/splru5zugz4kga8h",
         "description": "网页布局设计"
       },
       {
         "id": 37,
         "name": "redis",
-        "icon": "dockerhub.png",
+        "icon": "dockerhub",
         "href": "https://hub.docker.com/_/redis?tab=tags",
         "description": "一个开源的内存 NoSQL 键/值存储库"
       },
       {
         "id": 38,
         "name": "centos",
-        "icon": "centos.png",
+        "icon": "centos",
         "href": "https://www.centos.org/",
         "description": "Redhat内核开源免费的linux系统"
       },
       {
         "id": 39,
         "name": "ubuntu",
-        "icon": "ubuntu.png",
+        "icon": "ubuntu",
         "href": "https://ubuntu.com/",
         "description": "以桌面应用为主的开源Linux操作系统"
       },
       {
         "id": 40,
         "name": "设计导航",
-        "icon": "shejidaren.png",
+        "icon": "shejidaren",
         "href": "https://hao.shejidaren.com/",
         "description": ""
       }
@@ -5173,238 +5173,238 @@
       {
         "id": 1,
         "name": "homepage官网",
-        "icon": "gethomepage.png",
+        "icon": "gethomepage",
         "href": "https://gethomepage.dev/v0.8.3/configs/",
         "description": ""
       },
       {
         "id": 2,
         "name": "navidrome官网",
-        "icon": "navidrome.png",
+        "icon": "navidrome",
         "href": "https://www.navidrome.org/docs/usage/configuration-options/",
         "description": ""
       },
       {
         "id": 3,
         "name": "ms_wiki文档",
-        "icon": "msaber_wiki.png",
+        "icon": "msaber_wiki",
         "href": "https://wiki.msaber.fun/docs/server/library/",
         "description": ""
       },
       {
         "id": 4,
         "name": "npm中文文档",
-        "icon": "npmjs.png",
+        "icon": "npmjs",
         "href": "https://www.npmjs.cn/",
         "description": ""
       },
       {
         "id": 5,
         "name": "小米路由器使用手册",
-        "icon": "xiaomi.png",
+        "icon": "xiaomi",
         "href": "https://cdn.cnbj1.fds.api.mi-img.com/ics-resources/articles/6055c933ec317cb4ee2d0103.html",
         "description": ""
       },
       {
         "id": 6,
         "name": "flutter",
-        "icon": "flutter.png",
+        "icon": "flutter",
         "href": "https://flutter.cn/docs/get-started/install",
         "description": "Flutter 中文文档"
       },
       {
         "id": 7,
         "name": "Flutter实战·第二版",
-        "icon": "flutterchina.png",
+        "icon": "flutterchina",
         "href": "https://book.flutterchina.club/",
         "description": ""
       },
       {
         "id": 8,
         "name": "pymupdf",
-        "icon": "pymupdf.png",
+        "icon": "pymupdf",
         "href": "https://pymupdf.readthedocs.io/en/latest/",
         "description": "PDF文档操作"
       },
       {
         "id": 9,
         "name": "python",
-        "icon": "python.png",
+        "icon": "python",
         "href": "https://docs.python.org/3.8/howto/index.html",
         "description": "python官方文档"
       },
       {
         "id": 10,
         "name": "PythonGames",
-        "icon": "python.png",
+        "icon": "python",
         "href": "https://wiki.python.org/moin/PythonGames",
         "description": "PythonGames文档"
       },
       {
         "id": 11,
         "name": "pygame",
-        "icon": "pygame.png",
+        "icon": "pygame",
         "href": "https://www.pygame.org/docs/index.html",
         "description": ""
       },
       {
         "id": 12,
         "name": "PyQt5",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://www.riverbankcomputing.com/static/Docs/PyQt5/index.html",
         "description": ""
       },
       {
         "id": 13,
         "name": "openpyxl",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://openpyxl.readthedocs.io/en/stable/api/openpyxl.html",
         "description": ""
       },
       {
         "id": 14,
         "name": "python-excel",
-        "icon": "python.png",
+        "icon": "python",
         "href": "https://www.python-excel.org/",
         "description": "Python处理Excel文件库"
       },
       {
         "id": 15,
         "name": "python-docx",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://python-docx.readthedocs.io/en/latest/index.html",
         "description": ""
       },
       {
         "id": 16,
         "name": "python-pptx",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://python-pptx.readthedocs.io/en/latest/",
         "description": ""
       },
       {
         "id": 17,
         "name": "pypdf2",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://pypdf2.readthedocs.io/en/stable/",
         "description": ""
       },
       {
         "id": 18,
         "name": "pdfplumber",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/jsvine/pdfplumber",
         "description": ""
       },
       {
         "id": 19,
         "name": "pdfminer",
-        "icon": "github.png",
+        "icon": "github",
         "href": "https://github.com/euske/pdfminer",
         "description": ""
       },
       {
         "id": 20,
         "name": "pdfminersix",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://pdfminersix.readthedocs.io/en/latest/",
         "description": ""
       },
       {
         "id": 21,
         "name": "pdfminer",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://www.unixuser.org/~euske/python/pdfminer/",
         "description": ""
       },
       {
         "id": 22,
         "name": "pandas",
-        "icon": "pandas.png",
+        "icon": "pandas",
         "href": "https://pandas.pydata.org/",
         "description": ""
       },
       {
         "id": 23,
         "name": "datetime",
-        "icon": "python.png",
+        "icon": "python",
         "href": "https://docs.python.org/zh-cn/3/library/datetime.html?highlight=datetime#time-objects",
         "description": ""
       },
       {
         "id": 24,
         "name": "matplotlib",
-        "icon": "matplotlib.png",
+        "icon": "matplotlib",
         "href": "https://matplotlib.org/3.2.2/contents.html",
         "description": ""
       },
       {
         "id": 25,
         "name": "pyqt5",
-        "icon": "pyqt5.png",
+        "icon": "pyqt5",
         "href": "https://zetcode.com/gui/pyqt5/",
         "description": ""
       },
       {
         "id": 26,
         "name": "pillow",
-        "icon": "pillow.png",
+        "icon": "pillow",
         "href": "https://pillow.readthedocs.io/en/stable/",
         "description": ""
       },
       {
         "id": 27,
         "name": "python-pptx",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://python-pptx.readthedocs.io/en/latest/api/enum/MsoAutoShapeType.html#msoautoshapetype",
         "description": "python里PPT形状别名"
       },
       {
         "id": 28,
         "name": "wxpy",
-        "icon": "readthedocs.png",
+        "icon": "readthedocs",
         "href": "https://wxpy.readthedocs.io/zh/latest/",
         "description": "wxpy:用 Python 玩微信"
       },
       {
         "id": 29,
         "name": "echarts",
-        "icon": "echarts.png",
+        "icon": "echarts",
         "href": "https://echarts.apache.org/zh/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts",
         "description": ""
       },
       {
         "id": 30,
         "name": "微信开放文档",
-        "icon": "weixin.png",
+        "icon": "weixin",
         "href": "https://developers.weixin.qq.com/miniprogram/dev/framework/",
         "description": ""
       },
       {
         "id": 31,
         "name": "django",
-        "icon": "django.png",
+        "icon": "django",
         "href": "https://docs.djangoproject.com/zh-hans/2.1/intro/",
         "description": ""
       },
       {
         "id": 32,
         "name": "Golang标准库文档",
-        "icon": "studygolang.png",
+        "icon": "studygolang",
         "href": "https://studygolang.com/pkgdoc",
         "description": ""
       },
       {
         "id": 33,
         "name": "Go语言圣经",
-        "icon": "books-studygolang.png",
+        "icon": "books-studygolang",
         "href": "https://books.studygolang.com/gopl-zh/ch1/ch1.html",
         "description": ""
       },
       {
         "id": 34,
         "name": "pig技术指南v3",
-        "icon": "yuque.png",
+        "icon": "yuque",
         "href": "https://www.yuque.com/pig4cloud/pig",
         "description": ""
       }
@@ -5418,595 +5418,595 @@
       {
         "id": 1,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/",
         "description": "菜鸟教程集合"
       },
       {
         "id": 2,
         "name": "w3cschool-cn",
-        "icon": "w3cschool-cn.png",
+        "icon": "w3cschool-cn",
         "href": "https://www.w3cschool.cn/tutorial/",
         "description": "免费的在线编程入门教程&技术文档"
       },
       {
         "id": 3,
         "name": "w3school",
-        "icon": "w3school.png",
+        "icon": "w3school",
         "href": "https://www.w3school.com.cn/",
         "description": "网站建设教程"
       },
       {
         "id": 4,
         "name": "MDN",
-        "icon": "mdn.png",
+        "icon": "mdn",
         "href": "https://developer.mozilla.org/zh-CN/docs/Learn",
         "description": "Web 开发教程"
       },
       {
         "id": 5,
         "name": "javatpoint",
-        "icon": "javatpoint.png",
+        "icon": "javatpoint",
         "href": "https://www.javatpoint.com/",
         "description": "教程集合"
       },
       {
         "id": 6,
         "name": "regexlearn",
-        "icon": "regexlearn.png",
+        "icon": "regexlearn",
         "href": "https://regexlearn.com/zh-cn",
         "description": "正则表达式学习"
       },
       {
         "id": 7,
         "name": "javascript",
-        "icon": "javascript.png",
+        "icon": "javascript",
         "href": "https://zh.javascript.info/",
         "description": "现代 JavaScript 教程"
       },
       {
         "id": 8,
         "name": "w3school",
-        "icon": "w3school.png",
+        "icon": "w3school",
         "href": "https://www.w3school.com.cn/tags/tag_select.asp",
         "description": "html教程"
       },
       {
         "id": 9,
         "name": "简书",
-        "icon": "jianshu.png",
+        "icon": "jianshu",
         "href": "https://www.jianshu.com/p/323222467e1e",
         "description": "HTML表单初探"
       },
       {
         "id": 10,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/jeasyui/jqueryeasyui-intro.html",
         "description": "jQuery EasyUI 教程"
       },
       {
         "id": 11,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/fat39/p/7159881.html",
         "description": "格式化输出（%用法和format用法）"
       },
       {
         "id": 12,
         "name": "git学习笔记",
-        "icon": "xugaoyi.png",
+        "icon": "xugaoyi",
         "href": "https://xugaoyi.com/note/git/",
         "description": ""
       },
       {
         "id": 13,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_43529415/article/details/100847887",
         "description": "python与anaconda安装"
       },
       {
         "id": 14,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_19557947/article/details/127128278",
         "description": "常用md语法"
       },
       {
         "id": 15,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_30245525/article/details/130516478",
         "description": "快速学习Go语言"
       },
       {
         "id": 16,
         "name": "简书",
-        "icon": "jianshu.png",
+        "icon": "jianshu",
         "href": "https://www.jianshu.com/p/7f45538b3bba",
         "description": "图形用户界面入门：EasyGui"
       },
       {
         "id": 17,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/tylerdonet/p/3520862.html",
         "description": "jquery中的ajax方法参数"
       },
       {
         "id": 18,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/dear_diary/p/8299060.html",
         "description": "django model常用字段类型"
       },
       {
         "id": 19,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/chenxi188/p/12176629.html",
         "description": "Django(二)模板：基本使用、模板语法、模板继承"
       },
       {
         "id": 20,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/regexp/regexp-syntax.html",
         "description": "正则表达式教程"
       },
       {
         "id": 21,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/zhangxinqi/p/10553650.html",
         "description": "python3之Django表单(一)"
       },
       {
         "id": 22,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/html/html-examples.html",
         "description": "HTML教程"
       },
       {
         "id": 23,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/yang-2018/p/11787385.html",
         "description": "Tkinter 之Text文本框标签"
       },
       {
         "id": 24,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/css/css-tutorial.html",
         "description": "CSS教程"
       },
       {
         "id": 25,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/wj-1314/p/10416591.html",
         "description": "Django（3）——表单，路由控制和模板语法的学习"
       },
       {
         "id": 26,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/js/js-tutorial.html",
         "description": "JavaScript 教程"
       },
       {
         "id": 27,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/xuhongfei/p/14023230.html",
         "description": "Tkinter图形化界面设计"
       },
       {
         "id": 28,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/python/python-exceptions.html",
         "description": "Python 异常处理"
       },
       {
         "id": 29,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/python3/python3-built-in-functions.html",
         "description": "Python3 内置函数"
       },
       {
         "id": 30,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/sqlite/sqlite-tutorial.html",
         "description": "SQLite 教程"
       },
       {
         "id": 31,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/django/django-tutorial.html",
         "description": "Django 教程"
       },
       {
         "id": 32,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/zeussbook/p/10283134.html",
         "description": "canvas高级篇：移动元素"
       },
       {
         "id": 33,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/way_testlife/archive/2011/04/20/2022997.html",
         "description": "PIL 中的 Image 模块"
       },
       {
         "id": 34,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/tuzaizi/p/10584634.html",
         "description": "Time 模块中asctime()等函数的用法"
       },
       {
         "id": 35,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/traditional/p/11111770.html",
         "description": "PIL图像处理模块教程"
       },
       {
         "id": 36,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/shwee/p/11421156.html",
         "description": "Hexo+Github:个人博客网站搭建教程"
       },
       {
         "id": 37,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/huigebj/p/11259449.html",
         "description": "Python中datetime库的用法"
       },
       {
         "id": 38,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/swjblog/p/9677559.html",
         "description": "time，calendar，datetime模块"
       },
       {
         "id": 39,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/hyz-it/p/13662304.html",
         "description": "Typora使用详解"
       },
       {
         "id": 40,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/emagic/p/django-1-part1.html",
         "description": "实战Django，官方示例"
       },
       {
         "id": 41,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/fnng/p/4855743.html",
         "description": "Django快速开发之投票系统"
       },
       {
         "id": 42,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/watertaro/tag/Django/",
         "description": "python之Django学习笔记全"
       },
       {
         "id": 43,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/zhuwjwh/p/12557022.html",
         "description": "使用Python玩转MySQL数据库"
       },
       {
         "id": 44,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/shwee/p/9427975.html",
         "description": "tkinter窗口视窗教程大集合"
       },
       {
         "id": 45,
         "name": "博客园",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/jjliu/p/11600623.html",
         "description": "python如何与mysql实现交互及常用sql语句"
       },
       {
         "id": 46,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/nilvya/article/details/105999020",
         "description": "【tkinter组件】Toplevel：窗口分身术之顶级窗口"
       },
       {
         "id": 47,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/ever_peng/article/details/103716375",
         "description": "【tkinter组件】文本框（Text）组件的属性说明及示例"
       },
       {
         "id": 48,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/lemonbit/article/details/119745450",
         "description": "OpenPyXL 设置 Excel 单元格样式"
       },
       {
         "id": 49,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_42232219/article/details/90631442",
         "description": "PyEcharts教程"
       },
       {
         "id": 50,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_44015805/article/details/103392603",
         "description": "openpyxl：工作簿、工作表、单元格、样式、页面设置"
       },
       {
         "id": 51,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_41556318/article/details/85273584",
         "description": "Tkinter 组件详解（十三）：Menu"
       },
       {
         "id": 52,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/ZXYhappiness/article/details/107564963",
         "description": "采用Gitee Pages + Gridea 搭建个人主页"
       },
       {
         "id": 53,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_43428376/article/details/120307771",
         "description": "openpyxl使用教程"
       },
       {
         "id": 54,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/whitedrogen/article/details/106333519",
         "description": "enum库学习笔记——枚举"
       },
       {
         "id": 55,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/y472360651/article/details/82291753",
         "description": "Python-标准库calendar的使用"
       },
       {
         "id": 56,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://sandtower.blog.csdn.net/article/details/106244853",
         "description": "MySQL 5.7 - 常见数据类型"
       },
       {
         "id": 57,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/gwqqqq/article/details/118962605",
         "description": "大学生信息管理系统（使用tkinter登录界面）"
       },
       {
         "id": 58,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_37598871/article/details/80185910",
         "description": "使用PIL简单的操作图片"
       },
       {
         "id": 59,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_45860674/article/details/121948708",
         "description": "用tkinter的canvas实现物体简单移动"
       },
       {
         "id": 60,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/xingchenbingbuyu/article/details/78880931",
         "description": "用Python给头像加上圣诞帽"
       },
       {
         "id": 61,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/BC_COM/article/details/105740721",
         "description": "关于Python对于图像处理详解"
       },
       {
         "id": 62,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/masbbx123/article/details/79496782",
-        "description": "使用python和opencv将.png文件修改为.bmp文件"
+        "description": "使用python和opencv将文件修改为.bmp文件"
       },
       {
         "id": 63,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_47197906/article/details/121456138",
         "description": "列表的操作——添加、修改、删除、查找、复制"
       },
       {
         "id": 64,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/zhouz92/article/details/106811760/",
         "description": "xlwt操作excel表格：冻结窗口、设置加密保护、打印设置等"
       },
       {
         "id": 65,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/Today_1st/article/details/108178946",
         "description": "如何往gitee上传代码"
       },
       {
         "id": 66,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_39654619/article/details/110513611",
         "description": "MySQL - SELECT 语句详解"
       },
       {
         "id": 67,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/nmjuzi/article/details/79075736",
         "description": "python的安装（一）"
       },
       {
         "id": 68,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_35868412/article/details/91366770",
         "description": "Android SDK下载安装及配置教程"
       },
       {
         "id": 69,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/u012219045/article/details/114841287",
         "description": "pyinstaller系列之五：使用--add-data 打包额外资源"
       },
       {
         "id": 70,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/lidashent/article/details/90319202",
         "description": "python调用自己写的py文件"
       },
       {
         "id": 71,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/ljt350740378/article/details/96324742",
         "description": "一个.py文件如何调用另一个.py文件中的类和函数"
       },
       {
         "id": 72,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/Jairoguo/article/details/104242947",
         "description": "Django admin 模型选项(ModelAdmin)"
       },
       {
         "id": 73,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/ychgyyn/article/details/84404217",
         "description": "Windows下MySQL的安装"
       },
       {
         "id": 74,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/qq_34137397/article/details/116036442",
         "description": "mysql中如何将默认用户名root改成其他"
       },
       {
         "id": 75,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_38437243/article/details/78974227",
         "description": "如何修改CSV文件的分隔符"
       },
       {
         "id": 76,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_38437243/article/details/78974346",
         "description": "教你一步一步将excel文件导入mysql数据库"
       },
       {
         "id": 77,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://blog.csdn.net/weixin_41261833/article/details/103832017",
         "description": "最通俗易懂的python与mysql数据库交互"
       },
       {
         "id": 78,
         "name": "CSDN",
-        "icon": "csdn.png",
+        "icon": "csdn",
         "href": "https://so.csdn.net/so/search?q=tkinter&t=blog&u=qq_41556318",
         "description": "tkinter教程"
       },
       {
         "id": 79,
         "name": "54笨鸟",
-        "icon": "54benniao.png",
+        "icon": "54benniao",
         "href": "https://www.54benniao.com/a/800.html",
         "description": "Tkinter Menu菜单组件的用法"
       },
       {
         "id": 80,
         "name": "iteye",
-        "icon": "iteye.png",
+        "icon": "iteye",
         "href": "https://www.iteye.com/blog/lvzhou-31-2072329",
         "description": "xpath路径表达式"
       },
       {
         "id": 81,
         "name": "简书",
-        "icon": "jianshu.png",
+        "icon": "jianshu",
         "href": "https://www.jianshu.com/p/840ba135df30",
         "description": "Python pandas用法"
       },
       {
         "id": 82,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/mysql/mysql-tutorial.html",
         "description": "MySQL 教程"
       },
       {
         "id": 83,
         "name": "菜鸟教程",
-        "icon": "runoob.png",
+        "icon": "runoob",
         "href": "https://www.runoob.com/python3/python3-tutorial.html",
         "description": "Python 3 教程"
       },
       {
         "id": 84,
         "name": "c-biancheng",
-        "icon": "c-biancheng.png",
+        "icon": "c-biancheng",
         "href": "https://c.biancheng.net/linux_tutorial/",
         "description": "Linux学习教程"
       },
       {
         "id": 85,
         "name": "redis配置文件详解",
-        "icon": "cnblogs.png",
+        "icon": "cnblogs",
         "href": "https://www.cnblogs.com/nhdlb/p/14048083.html",
         "description": ""
       }
@@ -6020,7 +6020,7 @@
       {
         "id": 1,
         "name": "coze",
-        "icon": "coze.png",
+        "icon": "coze",
         "href": "https://www.coze.com/space/7325250154297114629/bot/7325249448106442757",
         "description": "chatgpt"
       }

@@ -17,6 +17,8 @@ mat-sidenav {
   margin-right: 10px;
 }
 
+
+
 /* 确保 mat-sidenav-content 占据除了侧边栏外的剩余部分 */
 mat-sidenav-content {
   display: flex;
@@ -25,6 +27,66 @@ mat-sidenav-content {
   background-color: #F3F6F8;
   padding:10px 30px;
 }
+
+.navnetic {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.navnetic i-tabler {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.navnetic span {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+/* 列表项样式 */
+mat-list-item {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  font-size: 16px; /* 列表项字体大小 */
+  padding: 0 10px; /* 列表项内边距 */
+  height: 48px; /* 列表项高度 */
+}
+
+
+/* 分类侧边栏 */
+.categorySidebar {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  font-size: 12px;
+  font-weight: bold;
+  color: #677493;
+  padding-top: 10px;
+}
+
+/* 分类侧边栏图片样式 */
+.categorySidebar img {
+  margin-right: 10px; /* 图片和标题之间的间距 */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%; /* 圆形图片 */
+  color: #677493;
+}
+
+/* 鼠标悬停/点击的样式 */
+.categorySidebar.categorySidebar:hover,
+.categorySidebar.categorySidebar:focus,
+.categorySidebar.categorySidebar:active {
+  color: #fff;
+}
+
+
+
+
 
 /* 标题栏 */
 mat-toolbar {

@@ -1,6 +1,19 @@
 <mat-sidenav-container [hasBackdrop]="false" >
   <mat-sidenav #sidenav [mode]="'side'" opened >
-    <app-sidebar></app-sidebar>
+    <div class="navnetic">
+      <i-tabler name="brand-telegram"></i-tabler>
+      <span>夏夏子导航页</span>
+    </div>
+    <mat-nav-list>
+        <mat-list-item *ngFor="let item of data">
+          <ng-container >
+            <div class="categorySidebar">
+              <img src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <span>{{ item.category_name }}</span>
+            </div>
+          </ng-container>
+        </mat-list-item>
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
