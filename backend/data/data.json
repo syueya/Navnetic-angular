@@ -86,7 +86,7 @@
   {
     "category_id": 2,
     "category_name": "外网docker",
-    "category_icon": "",
+    "category_icon": "docker",
     "url": [
       {
         "id": 1,
@@ -191,7 +191,7 @@
   {
     "category_id": 3,
     "category_name": "内网docker",
-    "category_icon": "",
+    "category_icon": "docker",
     "url": [
       {
         "id": 1,

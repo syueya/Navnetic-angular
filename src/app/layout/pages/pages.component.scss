@@ -13,8 +13,8 @@ mat-card-header {
   padding: 0px 16px;
 }
 
-/* 网址卡片头部样式 */
-.urlHeader {
+/* 分类卡片头部样式 */
+.categoryHeader {
   display: flex;
   align-items: center; /* 垂直居中 */
   font-size: 16px;
@@ -23,9 +23,6 @@ mat-card-header {
   padding-top: 10px;
   width: 100%;
 }
-
-
-
 
 /* 网址卡片容器样式 */
 .urlCard-container {
@@ -50,6 +47,18 @@ mat-card-header {
   border: 1px solid #e4ecf3;
   margin: 16px 0;
 }
+
+
+/* 网址卡片头部样式 */
+.urlHeader {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  font-size: 14px;
+  color: #000;
+  padding-top: 10px;
+  width: 100%;
+}
+
 
 /* 去掉卡片内容的上边距 */
 .mat-mdc-card-content:first-child {

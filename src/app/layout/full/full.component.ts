@@ -85,8 +85,12 @@ export class FullComponent {
   }
 
 
-
-
+  scrollToCategory(categoryId: number): void {
+    const element = document.getElementById(`category-${categoryId}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   // 根据搜索词过滤数据
   filterDataBySearchTerm(term: string): void {
@@ -115,6 +119,7 @@ export class FullComponent {
     }
   }
 
+
   // 清空搜索词
   clearSearchTerm() {
     const searchControl = this.searchForm.get('searchKeyword');
@@ -130,6 +135,11 @@ export class FullComponent {
     this.isSidebarCollapsed = !this.isSidebarCollapsed;
     this.sidenav?.toggle(); // 切换侧边栏的显示状态
   }
+
+    // 分类图片路径
+    svgPath(name: string): string {
+      return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
+    }
 
   // 切换组件
   toggleComponent() {

@@ -63,10 +63,21 @@ export class ManageComponent implements OnInit {
     this.dataService.loadData();
   }
 
-  // 图片路径
-  iconPath(name: string): string {
+  // 分类图片路径
+  svgPath(name: string): string {
+    return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
+  }
+
+  // 网址图片路径
+  imagePath(name: string): string {
     return `assets/images/${name}.png`; // 假设所有图标都是.png格式
   }
+
+  // trackBy 用于遍历数据时的优化
+  trackByFn(index: number, item: Category): number {
+    return item.category_id; // 假设每个分类的 category_id 是唯一的
+  }
+
 
   // 删除分类
   deleteCategory(categoryId: number) {

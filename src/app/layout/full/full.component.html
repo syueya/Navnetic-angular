@@ -6,12 +6,10 @@
     </div>
     <mat-nav-list>
         <mat-list-item *ngFor="let item of data">
-          <ng-container >
-            <div class="categorySidebar">
-              <img src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-              <span>{{ item.category_name }}</span>
+            <div class="categorySidebar" (click)="scrollToCategory(item.category_id)">
+              <img class="sider-category-log" [src]="svgPath(item.category_icon)">
+              <span class="sider-category">{{ item.category_name }}</span>
             </div>
-          </ng-container>
         </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
@@ -28,7 +26,7 @@
         <div class="toolbar-search">
           <mat-icon matPrefix>search</mat-icon>
           <form [formGroup]="searchForm">
-            <input type="text" formControlName="searchKeyword" placeholder="搜索" />
+            <input type="text" formControlName="searchKeyword" placeholder="搜索" (blur)="clearSearchTerm()"/>
           </form>
         </div>
 
