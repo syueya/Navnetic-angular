@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ChangeDetectionStrategy,ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@common/modules/material.module';
 import { IconsModule } from '@common/icons/icons.module';
@@ -18,6 +18,7 @@ import { FormBuilder, FormGroup,ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-full',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush, // 添加 ChangeDetectionStrategy.OnPush 来保证组件的变更检测
   imports: [
     CommonModule,
     MaterialModule,
@@ -56,6 +57,7 @@ export class FullComponent {
     public dialog: MatDialog,
     private fb: FormBuilder,
     private dataService: DataService,
+    private cdr: ChangeDetectorRef,
 
   ) {
     this.searchForm = this.fb.group({
@@ -69,6 +71,7 @@ export class FullComponent {
     this.dataSubscription = this.dataService.data$.subscribe(
       (categories) => {
         this.data = categories;
+        this.cdr.markForCheck(); // 通知视图更新
       }
     );
     // 加载数据
@@ -78,6 +81,7 @@ export class FullComponent {
     this.searchForm.get('searchKeyword')?.valueChanges.subscribe((value) => {
       if (value) {
         this.filterDataBySearchTerm(value); // 过滤数据
+        this.cdr.markForCheck(); // 表单值变化时触发变更检测
       } else {
         this.clearSearchTerm(); // 若没有输入，清空搜索结果
       }
@@ -136,10 +140,10 @@ export class FullComponent {
     this.sidenav?.toggle(); // 切换侧边栏的显示状态
   }
 
-    // 分类图片路径
-    svgPath(name: string): string {
-      return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
-    }
+  // 分类图片路径
+  svgPath(name: string): string {
+    return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
+  }
 
   // 切换组件
   toggleComponent() {
@@ -163,6 +167,15 @@ export class FullComponent {
     });
   }
 
+
+  // trackBy 用于遍历数据时的优化
+  categorytrackByFn(index: number, item: Category): number {
+    return item.category_id; // 假设每个分类的 category_id 是唯一的
+  }
+  // trackBy 用于遍历数据时的优化
+  urltrackByFn(index: number, item: UrlItem): number {
+    return item.id; // 假设每个分类的 category_id 是唯一的
+  }
 
 
 

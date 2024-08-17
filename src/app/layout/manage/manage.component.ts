@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
-
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@common/modules/material.module';
 import { IconsModule } from '@common/icons/icons.module';
 import { HttpRespone} from '@common/interfaces/HttpRespone';
-
 import { DataService } from '@common/service/data.service';
 import { Subscription } from 'rxjs';
-
 import { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { takeUntil, Subject } from 'rxjs';
-
 import { Category, UrlItem } from '@common/interfaces/dataJson';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
@@ -74,8 +70,12 @@ export class ManageComponent implements OnInit {
   }
 
   // trackBy 用于遍历数据时的优化
-  trackByFn(index: number, item: Category): number {
+  categorytrackByFn(index: number, item: Category): number {
     return item.category_id; // 假设每个分类的 category_id 是唯一的
+  }
+  // trackBy 用于遍历数据时的优化
+  urltrackByFn(index: number, item: UrlItem): number {
+    return item.id; // 假设每个分类的 category_id 是唯一的
   }
 
 

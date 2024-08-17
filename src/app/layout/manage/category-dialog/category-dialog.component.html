@@ -1,13 +1,8 @@
 <button class="close-button" (click)="closeDialog()">×</button>
-
-
 <h5 mat-dialog-title class="custom-dialogTitle">{{ isUpdate ? '编辑分类' : '新增分类' }}</h5>
-
 
 <form [formGroup]="form" autocomplete="off">
   <div mat-dialog-content class="custom-dialogContent">
-
-
     <ng-container>
       <mat-label class="mb-6">分类名称:</mat-label>
       <mat-form-field appearance="outline" >
@@ -17,7 +12,6 @@
         </mat-error>
       </mat-form-field>
     </ng-container>
-
     <ng-container>
       <mat-label class="mb-6">分类图标:</mat-label>
       <mat-form-field appearance="outline" >
@@ -27,8 +21,6 @@
         </mat-error>
       </mat-form-field>
     </ng-container>
-
-
   </div>
 </form>
 

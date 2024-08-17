@@ -5,7 +5,7 @@
       <span>夏夏子导航页</span>
     </div>
     <mat-nav-list>
-        <mat-list-item *ngFor="let item of data">
+        <mat-list-item *ngFor="let item of data; trackBy: categorytrackByFn">
             <div class="categorySidebar" (click)="scrollToCategory(item.category_id)">
               <img class="sider-category-log" [src]="svgPath(item.category_icon)">
               <span class="sider-category">{{ item.category_name }}</span>
@@ -47,7 +47,7 @@
 
     <!-- 搜索结果 -->
     <div class="searchResult" *ngIf="searchForm.get('searchKeyword')?.value && data.length > 0" >
-      <ng-container *ngFor="let item of searchData">
+      <ng-container *ngFor="let item of searchData; trackBy: urltrackByFn">
         <a class="searchResult-content" [href]="item.href" target="_blank">
           <span class="searchResult-name">{{ item.name }}</span>
           <span class="searchResult-desc">{{ item.description }}</span>
