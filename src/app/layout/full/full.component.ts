@@ -46,11 +46,14 @@ export class FullComponent {
   // json数据
   data: Category[] = [];
 
+  searchData: UrlItem[] = []; // 定义一个属性来存储搜索过滤后的数据
+
   // 获取侧边栏实例
   @ViewChild('sidenav') sidenav: MatSidenav | null = null;
 
   // 订阅 DataService 提供的数据流
   private dataSubscription: Subscription | null = null;
+
 
 
   // 构造函数
@@ -77,10 +80,14 @@ export class FullComponent {
 
     // 订阅搜索表单的值变化
     this.searchForm.get('searchKeyword')?.valueChanges.subscribe((value) => {
-      this.filterDataBySearchTerm(value);
-
+      if (value) {
+        this.filterDataBySearchTerm(value); // 过滤数据
+      } else {
+        this.clearSearchTerm(); // 若没有输入，清空搜索结果
+      }
     });
   }
+
 
   // 根据搜索词过滤数据
   filterDataBySearchTerm(term: string): void {
@@ -104,9 +111,8 @@ export class FullComponent {
           // 如果 category.url 为空或不存在，则返回空数组
           return [];
         });
-      console.log('Filtered URLs:', filteredUrls);
-      // filteredUrls 是一个扁平化的数组，只包含匹配搜索词的 UrlItem 对象
 
+      this.searchData = filteredUrls; // 更新 filteredData 属性
     }
   }
 

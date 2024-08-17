@@ -15,25 +15,9 @@
         <div class="toolbar-search">
           <mat-icon matPrefix>search</mat-icon>
           <form [formGroup]="searchForm">
-            <input type="text" formControlName="searchKeyword" (blur)="clearSearchTerm()" placeholder="搜索" />
+            <input type="text" formControlName="searchKeyword" placeholder="搜索" />
           </form>
         </div>
-
-        <!-- 搜索结果 -->
-<!--         <!--
-        <div *ngIf="data.length"; else noResults>
-          <div class=url-item *ngFor="let item of data">
-            <a [href]="item.href" target="_blank">
-              {{ item.name }}
-            </a>
-            <p>{{ item.description }}</p>
-          </div>
-        </div>
-        <ng-template #noResults>
-          <div>No results found.</div>
-        </ng-template>
-      --> -->
-
 
         <div class="edButtons">
           <button class="iconButton" matTooltip="切换页面" (click)="toggleComponent()">
@@ -49,6 +33,17 @@
       </div>
     </mat-toolbar>
 
+
+    <!-- 搜索结果 -->
+    <div class="searchResult" *ngIf="searchForm.get('searchKeyword')?.value && data.length > 0" >
+      <ng-container *ngFor="let item of searchData">
+        <a class="searchResult-content" [href]="item.href" target="_blank">
+          <span class="searchResult-name">{{ item.name }}</span>
+          <span class="searchResult-desc">{{ item.description }}</span>
+        </a>
+      </ng-container>
+      <span class="searchResult-count">共搜到 {{ searchData.length }} 条结果</span>
+    </div>
 
     <!-- 根据 currentComponent 渲染不同的组件 -->
     <ng-container>

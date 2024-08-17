@@ -1,4 +1,4 @@
-
+/* 侧边栏容器 */
 mat-sidenav-container {
   height: 100vh; /* 确保容器占满可用高度 */
   width: 100vw; /* 占据整个视口宽度 */
@@ -29,6 +29,7 @@ mat-sidenav-content {
 /* 标题栏 */
 mat-toolbar {
   display: flex;
+  min-height: 60px;
   justify-content: space-between; /* 可选：根据需要调整主轴对齐方式 */
   align-items: center; /* 垂直居中对齐 */
   background-color: #fff;
@@ -39,6 +40,7 @@ mat-toolbar {
 .toolbar-right{
   display: flex;
   margin-left: auto; /* 推到右侧 */
+  position: relative;
 }
 
 /* 搜索框 */
@@ -76,3 +78,39 @@ mat-toolbar {
 }
 
 
+/* 搜索结果 */
+.searchResult {
+  position: absolute; /* 绝对定位 */
+  top: 75px; /* 根据需要调整，应该是搜索框的高度 */
+  right: 30px;
+  width: 240px;
+  max-height: 500px;
+  overflow-y: auto; /* 如果内容超出，允许垂直滚动 */
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  z-index: 100;
+}
+
+/* 搜索结果每一项 */
+.searchResult-content {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: space-between; /* 元素横向间隔分开 */
+  margin-bottom: 10px; /* 可选：增加每项之间的间隔 */
+  font-size: 13px; /* 可选：调整字体大小 */
+  text-decoration: none; /* 去除下划线 */
+  color: #415B75;
+}
+
+/* 鼠标悬停每个搜索结果时 */
+.searchResult-content:hover .searchResult-name,
+.searchResult-content:hover .searchResult-desc {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* 搜索结果总数 */
+.searchResult-count {
+  font-size: 13px;
+}
