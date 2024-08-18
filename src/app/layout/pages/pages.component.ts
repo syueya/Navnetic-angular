@@ -13,7 +13,7 @@ import { OnInit } from '@angular/core';
 import { Category, UrlItem } from '@common/interfaces/dataJson';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
-
+import { MySvgComponent } from '@common/my-svg/my-svg.component';
 
 @Component({
   selector: 'app-pages',
@@ -24,6 +24,7 @@ import { MatDialog } from '@angular/material/dialog';
     MaterialModule,
     IconsModule,
     MatDialogModule,
+    MySvgComponent,
   ],
   templateUrl: './pages.component.html',
   styleUrl: './pages.component.scss'
@@ -56,10 +57,7 @@ export class PagesComponent implements OnInit {
     // 加载数据
     this.dataService.loadData();
   }
-  // 分类图片路径
-  svgPath(name: string): string {
-    return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
-  }
+
 
   // 网址图片路径
   imagePath(name: string): string {

@@ -12,7 +12,7 @@ import { Category, UrlItem } from '@common/interfaces/dataJson';
 import { MatDialog } from '@angular/material/dialog';
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
 import { FormBuilder, FormGroup,ReactiveFormsModule } from '@angular/forms';
-
+import { MySvgComponent } from '@common/my-svg/my-svg.component';
 
 
 @Component({
@@ -25,7 +25,8 @@ import { FormBuilder, FormGroup,ReactiveFormsModule } from '@angular/forms';
     IconsModule,
     ManageComponent,
     PagesComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MySvgComponent
   ],
   templateUrl: './full.component.html',
   styleUrl: './full.component.scss'
@@ -88,13 +89,25 @@ export class FullComponent {
     });
   }
 
+  activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID
 
+  // 点击的时候
   scrollToCategory(categoryId: number): void {
+
+    this.activeCategoryId = categoryId; // 设置为当前类别
+
+    // 滚动到指定分类
     const element = document.getElementById(`category-${categoryId}`);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  // 判断当前类别是否为点击状态
+  isActive(categoryId: number): boolean {
+    return this.activeCategoryId === categoryId; // 检查当前类别是否为活动状态
+  }
+
 
   // 根据搜索词过滤数据
   filterDataBySearchTerm(term: string): void {
@@ -138,11 +151,6 @@ export class FullComponent {
   toggleSidebar() {
     this.isSidebarCollapsed = !this.isSidebarCollapsed;
     this.sidenav?.toggle(); // 切换侧边栏的显示状态
-  }
-
-  // 分类图片路径
-  svgPath(name: string): string {
-    return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
   }
 
   // 切换组件

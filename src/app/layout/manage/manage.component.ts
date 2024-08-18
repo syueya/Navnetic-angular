@@ -13,6 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
 import { UrlDialogComponent } from '../manage/url-dialog/url-dialog.component';
+import { MySvgComponent } from '@common/my-svg/my-svg.component';  // svg图标组件
 
 @Component({
   selector: 'app-manage',
@@ -22,6 +23,7 @@ import { UrlDialogComponent } from '../manage/url-dialog/url-dialog.component';
     MaterialModule,
     IconsModule,
     MatDialogModule,
+    MySvgComponent,
   ],
   templateUrl: './manage.component.html',
   styleUrl: './manage.component.scss'
@@ -59,10 +61,7 @@ export class ManageComponent implements OnInit {
     this.dataService.loadData();
   }
 
-  // 分类图片路径
-  svgPath(name: string): string {
-    return `assets/svg/${name}.svg`; // 假设所有图标都是.svg格式
-  }
+
 
   // 网址图片路径
   imagePath(name: string): string {

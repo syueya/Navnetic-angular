@@ -6,8 +6,8 @@
     </div>
     <mat-nav-list>
         <mat-list-item *ngFor="let item of data; trackBy: categorytrackByFn">
-            <div class="categorySidebar" (click)="scrollToCategory(item.category_id)">
-              <img class="sider-category-log" [src]="svgPath(item.category_icon)">
+            <div class="categorySidebar" (click)="scrollToCategory(item.category_id)"  [ngClass]="{'active-class': isActive(item.category_id)}">
+              <app-my-svg class="sider-category-log" [iconId]="'icon-' + item.category_icon"  [size]="'20'" [fillColor]="isActive(item.category_id) ? '#FFFFFF' : '#A9B1C7'"></app-my-svg>
               <span class="sider-category">{{ item.category_name }}</span>
             </div>
         </mat-list-item>

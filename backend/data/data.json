@@ -289,7 +289,7 @@
   {
     "category_id": 4,
     "category_name": "工作",
-    "category_icon": "",
+    "category_icon": "work",
     "url": [
       {
         "id": 1,
@@ -954,7 +954,7 @@
   {
     "category_id": 7,
     "category_name": "网盘",
-    "category_icon": "",
+    "category_icon": "netdisk",
     "url": [
       {
         "id": 1,
@@ -1234,7 +1234,7 @@
   {
     "category_id": 9,
     "category_name": "游戏",
-    "category_icon": "",
+    "category_icon": "games",
     "url": [
       {
         "id": 1,
@@ -1325,7 +1325,7 @@
   {
     "category_id": 10,
     "category_name": "NAS",
-    "category_icon": "",
+    "category_icon": "nas",
     "url": [
       {
         "id": 1,
@@ -1619,7 +1619,7 @@
   {
     "category_id": 12,
     "category_name": "理财",
-    "category_icon": "",
+    "category_icon": "licai",
     "url": [
       {
         "id": 1,
@@ -1717,7 +1717,7 @@
   {
     "category_id": 13,
     "category_name": "知乎文章",
-    "category_icon": "",
+    "category_icon": "zhihu",
     "url": [
       {
         "id": 1,
@@ -1899,7 +1899,7 @@
   {
     "category_id": 15,
     "category_name": "影音下载",
-    "category_icon": "",
+    "category_icon": "musci",
     "url": [
       {
         "id": 1,
@@ -2088,7 +2088,7 @@
   {
     "category_id": 16,
     "category_name": "热门社区",
-    "category_icon": "",
+    "category_icon": "luntan",
     "url": [
       {
         "id": 1,
@@ -2564,7 +2564,7 @@
   {
     "category_id": 18,
     "category_name": "CSS样式",
-    "category_icon": "",
+    "category_icon": "css",
     "url": [
       {
         "id": 1,
@@ -2613,7 +2613,7 @@
   {
     "category_id": 19,
     "category_name": "github下载",
-    "category_icon": "",
+    "category_icon": "github",
     "url": [
       {
         "id": 1,
@@ -2725,7 +2725,7 @@
   {
     "category_id": 21,
     "category_name": "浏览器插件",
-    "category_icon": "",
+    "category_icon": "plug",
     "url": [
       {
         "id": 1,
@@ -2781,7 +2781,7 @@
   {
     "category_id": 22,
     "category_name": "梯子",
-    "category_icon": "",
+    "category_icon": "tizi",
     "url": [
       {
         "id": 1,
@@ -3054,7 +3054,7 @@
   {
     "category_id": 27,
     "category_name": "书籍下载",
-    "category_icon": "",
+    "category_icon": "book",
     "url": [
       {
         "id": 1,
@@ -3257,7 +3257,7 @@
   {
     "category_id": 28,
     "category_name": "软件下载",
-    "category_icon": "",
+    "category_icon": "exe",
     "url": [
       {
         "id": 1,
@@ -3649,7 +3649,7 @@
   {
     "category_id": 30,
     "category_name": "图片",
-    "category_icon": "",
+    "category_icon": "image",
     "url": [
       {
         "id": 1,
@@ -4475,7 +4475,7 @@
   {
     "category_id": 36,
     "category_name": "字体配色",
-    "category_icon": "",
+    "category_icon": "font",
     "url": [
       {
         "id": 1,
@@ -5168,7 +5168,7 @@
   {
     "category_id": 40,
     "category_name": "官方文档",
-    "category_icon": "",
+    "category_icon": "documentation",
     "url": [
       {
         "id": 1,

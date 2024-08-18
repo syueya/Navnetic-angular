@@ -44,18 +44,17 @@ mat-list-item {
   color: #A9B1C7;
 }
 
+.categorySidebar:hover,
+.active-class {
+  background-color: #222831; /* 点击后的背景颜色 */
+  color: white; /* 点击后文字颜色 */
+}
+
+
 .sider-category {
   font-size: 12px;
 }
 
-
-
-/* 鼠标悬停/点击的样式 */
-.categorySidebar.categorySidebar:hover,
-.categorySidebar.categorySidebar:focus,
-.categorySidebar.categorySidebar:active {
-  color: #fff;
-}
 
 
 
