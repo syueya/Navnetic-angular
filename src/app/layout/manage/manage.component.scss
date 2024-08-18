@@ -22,6 +22,7 @@ mat-card-header {
   color: #3273dc;
   padding-top: 10px;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 
@@ -34,20 +35,38 @@ mat-card-header {
 }
 
 
-/* 网址卡片链接样式 */
+/* 网址卡片链接样式的基础样式 */
 .urlhref {
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* 默认情况下，每个卡片占据25%的宽度，适用于大屏幕 */
+.urlhref {
   flex: 1 1 calc(25% - 16px); /* 修正计算公式以确保间距被考虑到 */
   max-width: calc(25% - 16px); /* 确保每个卡片的最大宽度为25% */
-  box-sizing: border-box; /* 确保内边距和边框被包含在宽度内 */
+}
 
+/* 当屏幕宽度小于850px时，每个卡片占据50%的宽度 */
+@media screen and (max-width: 850px) {
+  .urlhref {
+    flex: 1 1 calc(50% - 16px); /* 修正计算公式以确保间距被考虑到 */
+    max-width: calc(50% - 16px); /* 确保每个卡片的最大宽度为25% */
+  }
+}
+/* 当屏幕宽度小于手机的典型宽度时，每个卡片占据100%的宽度 */
+@media screen and (max-width: 480px) {
+  .urlhref {
+    flex: 1 1 calc(100% - 16px); /* 修正计算公式以确保间距被考虑到 */
+    max-width: calc(100% - 16px); /* 确保每个卡片的最大宽度为25% */
+  }
 }
 
 /* 网址卡片样式 */
 .urlCard {
   height: 96px;
   border: 1px solid #e4ecf3;
-  margin: 16px 0;
+  margin: 5px 0;
 }
 
 /* 去掉卡片内容的上边距 */

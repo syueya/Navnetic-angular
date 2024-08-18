@@ -13,7 +13,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
 import { FormBuilder, FormGroup,ReactiveFormsModule } from '@angular/forms';
 import { MySvgComponent } from '@common/my-svg/my-svg.component';
-
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-full',
@@ -79,7 +79,9 @@ export class FullComponent {
     this.dataService.loadData();
 
     // 订阅搜索表单的值变化
-    this.searchForm.get('searchKeyword')?.valueChanges.subscribe((value) => {
+    this.searchForm.get('searchKeyword')?.valueChanges
+      .pipe(debounceTime(300)) // 用户停止输入300毫秒后触发搜索
+      .subscribe((value) => {
       if (value) {
         this.filterDataBySearchTerm(value); // 过滤数据
         this.cdr.markForCheck(); // 表单值变化时触发变更检测

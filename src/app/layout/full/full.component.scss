@@ -44,18 +44,17 @@ mat-list-item {
   color: #A9B1C7;
 }
 
+/* 分类侧边栏悬停效果 */
 .categorySidebar:hover,
 .active-class {
   background-color: #222831; /* 点击后的背景颜色 */
   color: white; /* 点击后文字颜色 */
 }
 
-
+/* 分类侧边栏文字 */
 .sider-category {
   font-size: 12px;
 }
-
-
 
 
 /* 确保 mat-sidenav-content 占据除了侧边栏外的剩余部分 */
@@ -76,15 +75,14 @@ mat-sidenav-content {
 }
 /* 导航标题图标 */
 .navnetic i-tabler {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 /* 导航标题文字 */
 .navnetic span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-
 }
 
 
@@ -137,7 +135,6 @@ mat-toolbar {
   &:focus{
     outline: none;  /* 去除输入框获得焦点时的默认外边框 */
   }
-
 }
 
 

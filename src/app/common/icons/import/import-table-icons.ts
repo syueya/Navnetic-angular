@@ -8,6 +8,7 @@ import {
   IconLayoutSidebarLeftCollapse, // 侧边栏收起
   IconLayoutSidebarLeftExpand, // 侧边栏展开
   IconBrandTelegram, // 发送信息
+  IconExternalLink, // 外部链接
 
 } from 'angular-tabler-icons/icons';
 
@@ -22,5 +23,8 @@ export const ImportTableIcons = {
   IconLayoutSidebarLeftCollapse,
   IconLayoutSidebarLeftExpand,
   IconBrandTelegram,
+  IconExternalLink,
+
 }
+
 

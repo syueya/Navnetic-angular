@@ -14,6 +14,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
 import { UrlDialogComponent } from '../manage/url-dialog/url-dialog.component';
 import { MySvgComponent } from '@common/my-svg/my-svg.component';  // svg图标组件
+import { DelConfirmDialogComponent } from '../manage/del-confirm-dialog/del-confirm-dialog.component';
 
 @Component({
   selector: 'app-manage',
@@ -80,14 +81,22 @@ export class ManageComponent implements OnInit {
 
   // 删除分类
   deleteCategory(categoryId: number) {
-    this.dataCategory = this.data.find(category => category.category_id === categoryId) || null;
-    this.httpClient.delete<HttpRespone<Category[]>>(`/delCategory?category_id=${categoryId}`)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((res) => {
-        if (res.code === 20000) {
-          this.dataService.loadData();
+    const dialogRef = this.dialog.open(DelConfirmDialogComponent, {
+      width: '400px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.dataCategory = this.data.find(category => category.category_id === categoryId) || null;
+        this.httpClient.delete<HttpRespone<Category[]>>(`/delCategory?category_id=${categoryId}`)
+          .pipe(takeUntil(this.destroy$))
+          .subscribe((res) => {
+            if (res.code === 20000) {
+              this.dataService.loadData();
+          }
+          });
       }
-      });
+    });
   }
 
 
@@ -109,7 +118,8 @@ export class ManageComponent implements OnInit {
   }
 
   // 添加编辑网址
-  openUrlDialog(category_id: number,row?: UrlItem): void {
+  openUrlDialog(event: Event, category_id: number, row?: UrlItem){
+    event.preventDefault(); // 阻止链接跳转
 
     const data = {
       categoryId: category_id,
@@ -132,14 +142,23 @@ export class ManageComponent implements OnInit {
 
 
   // 删除网址
-  deleteUrl(categoryId: number, urlId: number) {
-    this.httpClient.delete<HttpRespone<UrlItem[]>>(`/delUrl?category_id=${categoryId}&url_id=${urlId}`)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((res) => {
-        if (res.code === 20000) {
-          this.dataService.loadData();
+  deleteUrl(event: Event, categoryId: number, urlId: number) {
+    event.preventDefault(); // 阻止链接跳转
+    const dialogRef = this.dialog.open(DelConfirmDialogComponent, {
+      width: '400px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.httpClient.delete<HttpRespone<UrlItem[]>>(`/delUrl?category_id=${categoryId}&url_id=${urlId}`)
+          .pipe(takeUntil(this.destroy$))
+          .subscribe((res) => {
+            if (res.code === 20000) {
+              this.dataService.loadData();
+          }
+          });
       }
-      });
+    });
   }
 
   ngOnDestroy() {

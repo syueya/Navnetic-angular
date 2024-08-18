@@ -1,0 +1,10 @@
+<!-- delete-dialog.component.html -->
+<h5 mat-dialog-title class="custom-dialogTitle">确认删除</h5>
+
+<div mat-dialog-content class="custom-dialogContent">您确定要删除这个项目吗？</div>
+
+<div mat-dialog-actions class="button-row">
+  <button mat-stroked-button color="primary" (click)="closeDialog()">取消</button>
+  <button mat-flat-button color="primary" type=submit class=save-button (click)="onSubmit()">确定删除</button>
+</div>
+
