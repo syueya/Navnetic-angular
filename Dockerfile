@@ -21,7 +21,7 @@ RUN npm run ng build -- --prod
 
 
 # 第二阶段：构建 Go 后端应用
-FROM golang:1.22-alpine AS go-build
+FROM golang:1.22-alpine AS builder
 
 WORKDIR /app/backend
 
@@ -44,7 +44,7 @@ ENV TZ=Asia/Shanghai
 COPY --from=ng-build /app/dist /app/frontend
 
 # 将构建好的 Go 应用复制到镜像中
-COPY --from=go-build /app/backend/app /app/backend/app
+COPY --from=builder /app/backend/app /app/backend/app
 
 
 
