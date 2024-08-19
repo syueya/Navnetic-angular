@@ -1,11 +1,9 @@
-import { Component,ChangeDetectionStrategy,ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@common/modules/material.module';
 import { IconsModule } from '@common/icons/icons.module';
 import { ManageComponent } from '../manage/manage.component';
-import { PagesComponent } from '../pages/pages.component';
 import { MatSidenav } from '@angular/material/sidenav';
-import { ViewChild } from '@angular/core';
 import { DataService } from '@common/service/data.service';
 import { Subscription } from 'rxjs';
 import { Category, UrlItem } from '@common/interfaces/dataJson';
@@ -24,7 +22,6 @@ import { debounceTime } from 'rxjs/operators';
     MaterialModule,
     IconsModule,
     ManageComponent,
-    PagesComponent,
     ReactiveFormsModule,
     MySvgComponent
   ],
@@ -33,29 +30,18 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class FullComponent {
 
-  isSidebarCollapsed: boolean = true; // 切换侧边栏状态是折叠的
-
-  currentComponent: string = 'pages'; // 默认显示 pages 组件
-
-  // 搜索表单
-  searchForm: FormGroup;
-
-  // json数据
-  data: Category[] = [];
-
-  searchData: UrlItem[] = []; // 定义一个属性来存储搜索过滤后的数据
-
-  activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID
-
   // 获取侧边栏实例
   @ViewChild('sidenav') sidenav: MatSidenav | null = null;
 
-  // 订阅 DataService 提供的数据流
-  private dataSubscription: Subscription | null = null;
+  data: Category[] = []; // json数据
+  isSidebarCollapsed: boolean = true; // 切换侧边栏状态是折叠的
+  showButtons: boolean = false; // 控制按钮显示的状态
+  searchForm: FormGroup; // 搜索表单
+  searchData: UrlItem[] = []; // 定义一个属性来存储搜索过滤后的数据
+  activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID
+  private dataSubscription: Subscription | null = null; // 订阅 DataService 提供的数据流
 
 
-
-  // 构造函数
   constructor(
     public dialog: MatDialog,
     private fb: FormBuilder,
@@ -82,7 +68,7 @@ export class FullComponent {
 
     // 订阅搜索表单的值变化
     this.searchForm.get('searchKeyword')?.valueChanges
-      .pipe(debounceTime(300)) // 用户停止输入300毫秒后触发搜索
+      .pipe(debounceTime(500)) // 用户停止输入500毫秒后触发搜索
       .subscribe((value) => {
       if (value) {
         this.filterDataBySearchTerm(value); // 过滤数据
@@ -94,13 +80,13 @@ export class FullComponent {
   }
 
 
-  // 点击的时候
+  // 点击侧边栏滚动到指定分类
   scrollToCategory(categoryId: number): void {
     this.activeCategoryId = categoryId; // 设置为当前类别
     // 滚动到指定分类
     const element = document.getElementById(`category-${categoryId}`);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   }
 
@@ -109,18 +95,12 @@ export class FullComponent {
     return this.activeCategoryId === categoryId; // 检查当前类别是否为活动状态
   }
 
-
   // 根据搜索词过滤数据
   filterDataBySearchTerm(term: string): void {
     if (term) {
-      console.log('Search term:', term);
-
-      // 过滤数据，只处理 category.url 不为空的项，并只返回匹配的 url 数据
       const filteredUrls = this.data
         .flatMap(category => {
-          // 确保 category.url 存在且不为空
           if (category.url && category.url.length > 0) {
-            // 过滤当前分类下的 url 数组
             return category.url.filter(urlItem => {
               return (
                 urlItem.name.toString().toLowerCase().includes(term.toLowerCase()) ||
@@ -129,14 +109,12 @@ export class FullComponent {
               );
             });
           }
-          // 如果 category.url 为空或不存在，则返回空数组
           return [];
         });
 
       this.searchData = filteredUrls; // 更新 filteredData 属性
     }
   }
-
 
   // 清空搜索词
   clearSearchTerm() {
@@ -154,12 +132,14 @@ export class FullComponent {
     this.sidenav?.toggle(); // 切换侧边栏的显示状态
   }
 
-  // 切换组件
-  toggleComponent() {
-    this.currentComponent = this.currentComponent === 'pages' ? 'manage' : 'pages';
+
+
+  // 切换是否显示按钮
+  toggleButtons(): void {
+    this.showButtons = !this.showButtons;
   }
 
-  // 打开dialog
+  // 打开添加分类的dialog
   openCategoryDialog(row?: Category): void {
     const data = row || null;
     const dialogRef = this.dialog.open(CategoryDialogComponent, {

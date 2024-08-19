@@ -31,16 +31,17 @@
         </div>
 
         <div class="edButtons">
-          <button class="iconButton" matTooltip="切换页面" (click)="toggleComponent()">
+          <button class="iconButton" matTooltip="是否显示按钮" (click)="toggleButtons()">
             <i-tabler name="menu-2"></i-tabler>
           </button>
-          <!-- 根据 currentComponent 渲染添加分类按钮 -->
-          <ng-container *ngIf="currentComponent === 'manage'">
+          <!-- 根据 showButtons 渲染添加分类按钮 -->
+          <ng-container *ngIf="showButtons">
             <button class="iconButton" (click)="openCategoryDialog()" matTooltip="添加分类">
               <i-tabler name="plus"></i-tabler>
             </button>
           </ng-container>
         </div>
+
       </div>
     </mat-toolbar>
 
@@ -56,15 +57,13 @@
       <span class="searchResult-count">共搜到 {{ searchData.length }} 条结果</span>
     </div>
 
-    <!-- 根据 currentComponent 渲染不同的组件 -->
     <ng-container>
-      <ng-container *ngIf="currentComponent === 'pages'">
-        <app-pages class="mt-16"></app-pages>
-      </ng-container>
-      <ng-container *ngIf="currentComponent === 'manage'">
-        <app-manage class="mt-16"></app-manage>
-      </ng-container>
+      <app-manage [showButtons]="showButtons" class="mt-16"></app-manage>
     </ng-container>
+
+
+
+
 
   </mat-sidenav-content>
 </mat-sidenav-container>

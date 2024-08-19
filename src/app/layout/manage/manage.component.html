@@ -5,7 +5,7 @@
       <div class="categoryHeader">
         <app-my-svg class="sider-category-log" [iconId]="'icon-' + category.category_icon"  [size]="'20'" [fillColor]="'#4d4d4d'"></app-my-svg>
         <span>{{ category.category_name }}</span>
-        <div class="edButtons">
+        <div class="edButtons" *ngIf="showButtons">
           <button class="iconButton" (click)="openUrlDialog($event, category.category_id)" matTooltip="添加网址">
             <i-tabler name="plus"></i-tabler>
           </button>
@@ -30,7 +30,7 @@
               <div class="urlHeader">
                 <img class="url-log" [src]="imagePath(url.icon)"  loading="lazy">
                 <span>{{ url.name }}</span>
-                <div class="edButtons">
+                <div class="edButtons" *ngIf="showButtons">
                   <button class="iconButton" (click)="openUrlDialog($event, category.category_id,url)" matTooltip="编辑">
                     <i-tabler name="edit"></i-tabler>
                   </button>

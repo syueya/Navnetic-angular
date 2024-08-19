@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@common/modules/material.module';
 import { IconsModule } from '@common/icons/icons.module';
@@ -30,6 +30,7 @@ import { DelConfirmDialogComponent } from '../manage/del-confirm-dialog/del-conf
   styleUrl: './manage.component.scss'
 })
 export class ManageComponent implements OnInit {
+  @Input() showButtons: boolean = false; // 默认为 false
 
   // json数据
   data: Category[] = [];
@@ -40,6 +41,7 @@ export class ManageComponent implements OnInit {
 
   // 分类数据
   dataCategory: Category | null = null;
+
 
 
   private destroy$ = new Subject<void>();
