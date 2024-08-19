@@ -45,6 +45,8 @@ export class FullComponent {
 
   searchData: UrlItem[] = []; // 定义一个属性来存储搜索过滤后的数据
 
+  activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID
+
   // 获取侧边栏实例
   @ViewChild('sidenav') sidenav: MatSidenav | null = null;
 
@@ -91,13 +93,10 @@ export class FullComponent {
     });
   }
 
-  activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID
 
   // 点击的时候
   scrollToCategory(categoryId: number): void {
-
     this.activeCategoryId = categoryId; // 设置为当前类别
-
     // 滚动到指定分类
     const element = document.getElementById(`category-${categoryId}`);
     if (element) {
