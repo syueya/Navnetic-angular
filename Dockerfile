@@ -18,7 +18,7 @@ RUN npm run ng build -- --prod
 
 
 # 第二阶段：构建 Go 后端应用
-FROM golang:1.22-alpine AS go-builder
+FROM golang:1.22-alpine AS go-build
 
 WORKDIR /app/backend
 
