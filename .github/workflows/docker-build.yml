@@ -1,4 +1,4 @@
-name: Navnetic Docker
+name: Navnetic-angular Docker
 
 on:
   push:
@@ -51,5 +51,5 @@ jobs:
             linux/amd64
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/navnetic:latest
-            ${{ secrets.DOCKER_USERNAME }}/navnetic:${{ env.app_version }}
+            ${{ secrets.DOCKER_USERNAME }}/navnetic-angular:latest
+            ${{ secrets.DOCKER_USERNAME }}/navnetic-angular:${{ env.app_version }}
