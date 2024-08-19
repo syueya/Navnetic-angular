@@ -6,6 +6,9 @@ WORKDIR /app
 # 复制 package.json 和 angular.json 到工作目录
 COPY package.json angular.json ./
 
+# 设置 npm 镜像源为淘宝的 npm 镜像
+RUN npm config set registry https://registry.npm.taobao.org
+
 # 安装项目依赖
 RUN npm install
 
