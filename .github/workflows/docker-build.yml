@@ -47,8 +47,6 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          build-args: |
-            GITHUB_TOKEN=${{ secrets.RELEASE_TOKEN }}
           platforms: |
             linux/amd64
           push: true
