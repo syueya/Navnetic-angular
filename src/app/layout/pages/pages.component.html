@@ -15,7 +15,7 @@
           <mat-card class="urlCard">
             <mat-card-content>
               <div class="urlHeader">
-                <img class="url-log" [src]="imagePath(url.icon)">
+                <img class="url-log" [src]="imagePath(url.icon)" loading="lazy">
                 <span>{{ url.name }}</span>
               </div>
               <div class="urlDescription">
