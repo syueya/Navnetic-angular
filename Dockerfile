@@ -1,5 +1,5 @@
 # 第一阶段：构建 Angular 前端应用
-FROM node:16-alpine AS ng-build
+FROM node:20-alpine AS ng-build
 
 WORKDIR /app
 
