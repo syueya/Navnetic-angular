@@ -1,4 +1,22 @@
-# 第一阶段：构建 Angular 前端应用
+
+
+# 第一阶段：构建 Go 后端应用
+FROM golang:1.22-alpine AS builder
+
+WORKDIR /app/backend
+
+# 只复制 backend 目录中的文件到工作目录
+COPY backend/ ./
+
+# 下载依赖
+RUN go mod download
+
+# 静态编译 Go 应用
+RUN go build -o /app/backend/backend && go clean -cache
+
+
+
+# 第二阶段：构建 Angular 前端应用
 FROM node:20-alpine AS ng-build
 
 WORKDIR /app
@@ -16,23 +34,6 @@ RUN npm install --force
 # 构建 Angular 应用为生产版本
 RUN npm run build
 
-
-
-# 第二阶段：构建 Go 后端应用
-FROM golang:1.22-alpine AS builder
-
-WORKDIR /app/backend
-
-# 只复制 backend 目录中的文件到工作目录
-COPY backend/ ./
-
-# 下载依赖
-RUN go mod download
-
-# 静态编译 Go 应用
-RUN go build -o /app/backend/backend && go clean -cache
-
-
 # 第三阶段：设置最终的运行环境
 FROM alpine:latest
 
@@ -47,8 +48,8 @@ COPY --from=builder /app/backend/backend /app/backend/
 
 
 # 查看 /app/backend 目录的内容
-RUN ls -al /app
-
+RUN ls -al /app/backend
+RUN ls -al /app/frontend
 
 # 创建存储卷
 
