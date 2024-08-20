@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json angular.json ./
 
 # 设置 npm 镜像源为淘宝的 npm 镜像
-RUN npm config set registry https://registry.npm.taobao.org
+RUN npm config set registry https://registry.npmmirror.com
 
 # 安装项目依赖
 RUN npm install
