@@ -9,8 +9,11 @@ COPY package.json angular.json ./
 # 设置 npm 镜像源为淘宝的 npm 镜像
 RUN npm config set registry https://registry.npmmirror.com
 
+# 升级npm 版本
+RUN npm install -g npm@10.8.2
+
 # 安装项目依赖
-RUN npm install
+RUN npm install --force
 
 # 复制 Angular 应用源代码到工作目录
 COPY src/ .
