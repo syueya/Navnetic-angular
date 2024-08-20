@@ -3,8 +3,8 @@ FROM node:16-alpine AS ng-build
 
 WORKDIR /app
 
-# 复制 package.json 和 angular.json 到工作目录
-COPY package.json angular.json ./
+# 复制 Angular 源代码到工作目录
+COPY . .
 
 # 设置 npm 镜像源为淘宝的 npm 镜像
 RUN npm config set registry https://registry.npmmirror.com
@@ -12,8 +12,6 @@ RUN npm config set registry https://registry.npmmirror.com
 # 安装项目依赖
 RUN npm install --force
 
-# 复制 Angular 应用源代码到工作目录
-COPY src/ .
 
 # 构建 Angular 应用为生产版本
 RUN npm run build -- --prod
