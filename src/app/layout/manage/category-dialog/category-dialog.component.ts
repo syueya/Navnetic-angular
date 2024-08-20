@@ -55,7 +55,7 @@ export class CategoryDialogComponent {
     // 获取表单数据
     const formData = this.form.getRawValue();
 
-    this.httpClient.post<HttpRespone<Category[]>>(`/api/addCategory`, formData)
+    this.httpClient.post<HttpRespone<Category[]>>(`/addCategory`, formData)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         if (res) {
