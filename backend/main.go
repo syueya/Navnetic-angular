@@ -28,11 +28,11 @@ func withCORS(h http.HandlerFunc) http.HandlerFunc {
 
 func main() {
 	// 路由
-	http.HandleFunc("/read", withCORS(handlers.HandleReadCategories))
-	http.HandleFunc("/addCategory", withCORS(handlers.HandleAddCategory))
-	http.HandleFunc("/delCategory", withCORS(handlers.HandleDeleteCategory))
-	http.HandleFunc("/addUrl", withCORS(handlers.HandleAddURLToCategory))
-	http.HandleFunc("/delUrl", withCORS(handlers.HandleRemoveURLFromCategory))
+	http.HandleFunc("/api/read", withCORS(handlers.HandleReadCategories))
+	http.HandleFunc("/api/addCategory", withCORS(handlers.HandleAddCategory))
+	http.HandleFunc("/api/delCategory", withCORS(handlers.HandleDeleteCategory))
+	http.HandleFunc("/api/addUrl", withCORS(handlers.HandleAddURLToCategory))
+	http.HandleFunc("/api/delUrl", withCORS(handlers.HandleRemoveURLFromCategory))
 
 	// 启动服务器
 	port := ":8080"

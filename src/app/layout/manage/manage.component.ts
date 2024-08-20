@@ -90,7 +90,7 @@ export class ManageComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.dataCategory = this.data.find(category => category.category_id === categoryId) || null;
-        this.httpClient.delete<HttpRespone<Category[]>>(`/delCategory?category_id=${categoryId}`)
+        this.httpClient.delete<HttpRespone<Category[]>>(`/api/delCategory?category_id=${categoryId}`)
           .pipe(takeUntil(this.destroy$))
           .subscribe((res) => {
             if (res.code === 20000) {
@@ -152,7 +152,7 @@ export class ManageComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this.httpClient.delete<HttpRespone<UrlItem[]>>(`/delUrl?category_id=${categoryId}&url_id=${urlId}`)
+        this.httpClient.delete<HttpRespone<UrlItem[]>>(`/api/delUrl?category_id=${categoryId}&url_id=${urlId}`)
           .pipe(takeUntil(this.destroy$))
           .subscribe((res) => {
             if (res.code === 20000) {
