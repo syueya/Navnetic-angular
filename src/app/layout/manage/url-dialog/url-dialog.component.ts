@@ -61,7 +61,7 @@ export class UrlDialogComponent {
     // 获取表单数据
     const formData = this.form.getRawValue();
 
-    this.httpClient.post<HttpRespone<UrlItem[]>>(`/addUrl?category_id=${this.data.categoryId}`, formData)
+    this.httpClient.post<HttpRespone<UrlItem[]>>(`/api/addUrl?category_id=${this.data.categoryId}`, formData)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         if (res) {

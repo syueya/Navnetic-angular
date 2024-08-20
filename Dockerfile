@@ -10,8 +10,6 @@ RUN npm install --force
 
 COPY . .
 
-# 暴露前端端口
-EXPOSE 3000
 # 构建前端应用程序
 RUN npm run build
 
@@ -20,14 +18,15 @@ RUN npm run build
 # 构建Go后端
 FROM golang:1.22-alpine AS backend
 
-WORKDIR /go/src/mygo
+WORKDIR /mygo
 
 
 COPY ./backend/go.mod ./
 RUN go mod download
 
 COPY ./backend .
-RUN CGO_ENABLED=0 GOARCH=amd64 GOOS=linux go build -a -o main main.go && go clean -cache
+RUN CGO_ENABLED=0 GOARCH=amd64 GOOS=linux go build -a -o main main.go
+RUN go clean -cache
 
 # 暴露后端端口
 EXPOSE 8080
@@ -43,7 +42,15 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 # 复制前端的构建结果到Nginx的静态文件目录
 COPY --from=frontend /app/dist/navnetic-angular /usr/share/nginx/html
 
+COPY --from=backend /mygo/main /usr/share/nginx/html
+
+
+# 创建一个 shell 脚本来启动 Go 二进制文件
+COPY --from=backend /mygo/start.sh /usr/share/nginx/html/start.sh
+RUN chmod +x /usr/share/nginx/html/start.sh
+
+
 # 使用启动脚本来启动服务
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/bin/sh", "/usr/share/nginx/html/start.sh"]
 
 
