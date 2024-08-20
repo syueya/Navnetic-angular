@@ -29,7 +29,7 @@ COPY backend/ ./
 # 下载依赖
 RUN go mod download
 
-# 构建 Go 应用
+# 静态编译 Go 应用
 RUN go build -o /app/backend/backend && go clean -cache
 
 
@@ -45,6 +45,9 @@ COPY --from=ng-build /app/dist /app/frontend
 # 将构建好的 Go 应用复制到镜像中
 COPY --from=builder /app/backend/backend /app/backend/
 
+
+# 查看 /app/backend 目录的内容
+RUN ls -al /app
 
 
 # 创建存储卷
@@ -63,4 +66,4 @@ EXPOSE 2260
 
 
 # 启动 Go 应用
-CMD [./backend]
+CMD ["./backend"]
