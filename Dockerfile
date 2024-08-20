@@ -32,6 +32,9 @@ COPY --from=frontend-build /app/dist/navnetic-angular /usr/share/nginx/html
 # 复制后端的Go可执行文件
 COPY --from=backend-build /backend/goland /usr/local/bin/backend
 
+RUN ls -l
+
+
 # 添加一个启动脚本，启动Go后端和Nginx
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
