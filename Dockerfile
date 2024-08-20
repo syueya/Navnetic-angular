@@ -16,7 +16,7 @@ RUN npm install --force
 COPY src/ .
 
 # 构建 Angular 应用为生产版本
-RUN npm run ng build -- --prod
+RUN npm run build -- --prod
 
 
 
