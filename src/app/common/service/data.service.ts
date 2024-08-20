@@ -24,7 +24,7 @@ export class DataService {
 
   // 加载数据
   loadData(): void {
-    this.httpClient.get<HttpRespone<Category[]>>(`/api/read`)
+    this.httpClient.get<HttpRespone<Category[]>>(`/read`)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         if (res && res.data) {
