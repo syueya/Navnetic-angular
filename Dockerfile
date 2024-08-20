@@ -1,51 +1,45 @@
-# 第一阶段：构建 Go 后端应用
-FROM golang:1.22-alpine AS builder
+# 第一步：构建Go后端
+FROM golang:1.22-alpine AS backend-build
 
-WORKDIR /app/backend
+WORKDIR /backend
+COPY ./backend /backend
 
-# 复制 backend 目录中的文件到工作目录
-COPY backend/ ./
+RUN go mod tidy
+RUN go build -o goland main.go && go clean -cache
 
-# 下载依赖
-RUN go mod download
 
-# 静态编译 Go 应用
-RUN go build -o /app/backend/backend && go clean -cache
 
-# 第二阶段：构建 Angular 前端应用
-FROM node:20-alpine AS ng-build
+# 第二步：构建Angular前端
+FROM node:20-alpine AS frontend-build
 
 WORKDIR /app
+COPY . /app
 
-# 设置 npm 镜像源为淘宝的 npm 镜像
 RUN npm config set registry https://registry.npmmirror.com
-
-# 复制所有源代码到工作目录
-COPY . .
-
-# 安装项目依赖
 RUN npm install --force
-
-# 构建 Angular 应用为生产版本
 RUN npm run build
 
-# 第三阶段：设置最终的运行环境
+
+# 第三步：创建最终的Nginx镜像
 FROM nginx:alpine AS final
 
-# 设置时区
-ENV TZ=Asia/Shanghai
+# 复制自定义的Nginx配置
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
-# 将构建好的 Angular 静态文件复制到镜像中
-COPY --from=ng-build /app/dist/navnetic-angular /usr/share/nginx/html
+# 复制前端的构建结果到Nginx的静态文件目录
+COPY --from=frontend-build /app/dist/navnetic-angular /usr/share/nginx/html
 
-# 将构建好的 Go 应用复制到镜像中
-COPY --from=builder /app/backend/backend /app/backend/
+# 复制后端的Go可执行文件
+COPY --from=backend-build /backend/goland /usr/local/bin/backend
 
-# 设置工作目录为后端应用目录
-WORKDIR /app/backend
+# 添加一个启动脚本，启动Go后端和Nginx
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
-# 暴露 Go 应用的端口
-EXPOSE 8080
+# 暴露HTTP和HTTPS端口
+EXPOSE 80 443
 
-# 启动 Go 应用
-CMD ["./backend"]
+# 使用启动脚本来启动服务
+CMD ["/start.sh"]
+
+
