@@ -14,7 +14,7 @@ RUN npm install --force
 
 
 # 构建 Angular 应用为生产版本
-RUN npm run build -- --prod
+RUN npm run build
 
 
 
