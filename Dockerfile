@@ -3,7 +3,7 @@ FROM node:20-alpine AS ng-build
 
 WORKDIR /app
 
-# 复制 Angular 源代码到工作目录
+# 复制所有源代码到工作目录
 COPY . .
 
 # 设置 npm 镜像源为淘宝的 npm 镜像
@@ -23,13 +23,14 @@ FROM golang:1.22-alpine AS builder
 
 WORKDIR /app/backend
 
-# 复制 Go 模块文件和源代码到工作目录
-COPY backend/ .
+# 只复制 backend 目录中的文件到工作目录
+COPY backend/ ./
 
-# 下载依赖并构建 Go 应用
-RUN go mod download && go build -o /app/backend && go clean -cache
+# 下载依赖
+RUN go mod download
 
-
+# 构建 Go 应用
+RUN go build -o /app/backend/backend && go clean -cache
 
 
 # 第三阶段：设置最终的运行环境
@@ -42,7 +43,7 @@ ENV TZ=Asia/Shanghai
 COPY --from=ng-build /app/dist /app/frontend
 
 # 将构建好的 Go 应用复制到镜像中
-COPY --from=builder /app/backend /app/backend
+COPY --from=builder /app/backend/backend /app/backend/
 
 
 
