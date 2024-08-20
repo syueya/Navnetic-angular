@@ -46,7 +46,7 @@ COPY --from=backend /mygo/main /usr/share/nginx/html
 
 
 # 创建一个 shell 脚本来启动 Go 二进制文件
-COPY --from=backend /mygo/start.sh /usr/share/nginx/html/start.sh
+COPY ./start.sh /usr/share/nginx/html/start.sh
 RUN chmod +x /usr/share/nginx/html/start.sh
 
 
