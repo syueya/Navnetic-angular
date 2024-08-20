@@ -27,7 +27,7 @@ WORKDIR /app/backend
 COPY backend/ .
 
 # 下载依赖并构建 Go 应用
-RUN go mod download && go build -o /app/backend/app && go clean -cache
+RUN go mod download && go build -o /app/backend && go clean -cache
 
 
 
@@ -42,14 +42,14 @@ ENV TZ=Asia/Shanghai
 COPY --from=ng-build /app/dist /app/frontend
 
 # 将构建好的 Go 应用复制到镜像中
-COPY --from=builder /app/backend/app /app/backend/app
+COPY --from=builder /app/backend /app/backend
 
 
 
 # 创建存储卷
 
 VOLUME /app/frontend/assets/images
-VOLUME /app/backend/app/data
+VOLUME /app/backend/data
 
 # 增加作者信息
 LABEL author=夏夏子
@@ -62,4 +62,4 @@ EXPOSE 2260
 
 
 # 启动 Go 应用
-CMD [./app]
+CMD [./backend]
