@@ -43,8 +43,6 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 # 复制前端的构建结果到Nginx的静态文件目录
 COPY --from=frontend /app/dist/navnetic-angular /usr/share/nginx/html
 
-RUN chmod +x /start.sh
-
 # 使用启动脚本来启动服务
 CMD ["nginx", "-g", "daemon off;"]
 
