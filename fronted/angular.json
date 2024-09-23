@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Navnetic-angular": {
+    "fronted": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,11 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "allowedCommonJsDependencies": [
-              "apexcharts",
-              "bezier-easing"
-            ],
-            "outputPath": "dist/navnetic-angular",
+            "outputPath": "dist/fronted",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,7 +26,6 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -39,9 +34,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -77,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Navnetic-angular:build:production"
+              "buildTarget": "fronted:build:production"
             },
             "development": {
-              "buildTarget": "Navnetic-angular:build:development"
+              "buildTarget": "fronted:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +91,6 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"

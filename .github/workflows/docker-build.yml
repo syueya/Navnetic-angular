@@ -37,12 +37,13 @@ jobs:
 
       - name: Build Frontend
         run: |
+          cd frontend
           npm install --force
           npm run build
 
       - name: 检查前端构建后文件
         run: |
-          ls -al dist/navnetic-angular/browser
+          ls -al fronted/dist/fronted/browser
 
       - name: Set up Go
         uses: actions/setup-go@v4
