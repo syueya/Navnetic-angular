@@ -4,4 +4,3 @@ envsubst '${PORT}' < /etc/nginx/nginx.template.conf > /etc/nginx/nginx.conf
 nginx
 cd /app || exit
 umask "${UMASK}"
-exec su-exec msaber:msaber /app/mediaSaber
