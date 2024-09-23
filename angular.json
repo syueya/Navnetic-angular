@@ -17,6 +17,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "apexcharts",
+              "bezier-easing"
+            ],
             "outputPath": "dist/navnetic-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
