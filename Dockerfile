@@ -3,14 +3,14 @@ FROM alpine:3.20
 # 定义构建参数，以便在构建时指定目标平台
 ARG TARGETPLATFORM
 
-ENV MS_PORT="8888"
+ENV PORT="8888"
 
 # 设置工作目录
 WORKDIR /app
 
 # 根据 TARGETPLATFORM 变量复制相应平台的可执行文件到工作目录
 COPY backend/dist/$TARGETPLATFORM/Navnetic /app/Navnetic
-COPY dist/Navnetic-angular/browser/. /app/front
+COPY dist/navnetic-angular/browser/. /app/front
 COPY nginx.template.conf /etc/nginx/nginx.template.conf
 COPY entrypoint.sh /entrypoint.sh
 
