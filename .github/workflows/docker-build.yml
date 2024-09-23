@@ -37,10 +37,8 @@ jobs:
 
       - name: Build Frontend
         run: |
-          npm install --force
+          npm install
           npm run build
-          rm -rf /backend/front
-          cp -r dist/navnetic-angular/browser /backend/front
 
       - name: Set up Go
         uses: actions/setup-go@v4
