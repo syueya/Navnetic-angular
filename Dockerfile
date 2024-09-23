@@ -3,7 +3,8 @@ FROM alpine:3.20
 # 定义构建参数，以便在构建时指定目标平台
 ARG TARGETPLATFORM
 
-ENV PORT="8888"
+ENV PORT="8888" \
+    UMASK=022
 
 # 设置工作目录
 WORKDIR /app
