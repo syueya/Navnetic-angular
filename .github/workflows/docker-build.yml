@@ -37,7 +37,7 @@ jobs:
 
       - name: Build Frontend
         run: |
-          cd frontend
+          cd fronted
           npm install --force
           npm run build
 
