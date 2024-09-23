@@ -35,7 +35,7 @@ func main() {
 	http.HandleFunc("/delUrl", withCORS(handlers.HandleRemoveURLFromCategory))
 
 	// 启动服务器
-	port := ":8080"
+	port := ":8888"
 	log.Printf("服务在端口 %s 上启动...", port)
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
