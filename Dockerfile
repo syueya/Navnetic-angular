@@ -10,7 +10,7 @@ WORKDIR /app
 
 # 根据 TARGETPLATFORM 变量复制相应平台的可执行文件到工作目录
 COPY backend/dist/$TARGETPLATFORM/Navnetic /app/Navnetic
-COPY dist/navnetic-angular/browser/. /app/front
+COPY dist/Navnetic-angular/browser/. /app/front
 COPY nginx.template.conf /etc/nginx/nginx.template.conf
 COPY entrypoint.sh /entrypoint.sh
 
