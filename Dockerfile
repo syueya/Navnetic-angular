@@ -9,8 +9,12 @@ ENV TZ="Asia/Shanghai" \
 # 设置工作目录
 WORKDIR /app
 
+# 复制数据文件
+COPY backend/data/data.json /app/data/data.json
+
 # 根据 TARGETPLATFORM 变量复制相应平台的可执行文件到工作目录
 COPY backend/dist/$TARGETPLATFORM/Navnetic /app/Navnetic
+
 COPY fronted/dist/fronted/browser/. /app/front
 COPY nginx.template.conf /etc/nginx/nginx.template.conf
 COPY entrypoint.sh /entrypoint.sh
@@ -39,3 +43,4 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 
 EXPOSE 8888
 VOLUME ["/app/config"]
+VOLUME ["/app/data/data.json"]
