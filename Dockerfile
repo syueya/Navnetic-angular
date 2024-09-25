@@ -16,7 +16,8 @@ COPY nginx.template.conf /etc/nginx/nginx.template.conf
 COPY entrypoint.sh /entrypoint.sh
 
 # 查看/app目录的内容
-RUN ls -la /app
+RUN ls -la /app/Navnetic
+RUN ls -la /app/front
 
 # 这条指令使用Alpine Linux的包管理器apk来安装一系列软件包，包括tzdata（时区数据），nginx（Web服务器），gettext（用于国际化的消息翻译），su-exec（用于以其他用户身份执行命令的工具），bash（Bourne Again SHell），和shadow（用于管理用户和组的包）。--no-cache选项表示不使用缓存，每次都从远程仓库获取最新版本的包。
 RUN apk --no-cache add \
