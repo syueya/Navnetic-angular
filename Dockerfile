@@ -12,6 +12,9 @@ WORKDIR /app
 # 复制json数据文件
 COPY backend/data/data.json /app/data/data.json
 
+# 复制前端assets下的images文件夹到工作目录
+COPY fronted/src/assets/images /app/images
+
 # 根据 TARGETPLATFORM 变量复制相应平台的可执行文件到工作目录
 COPY backend/dist/$TARGETPLATFORM/Navnetic /app/Navnetic
 
@@ -44,4 +47,4 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 EXPOSE 8888
 VOLUME ["/app/config"]
 VOLUME ["/app/data/data.json"]
-VOLUME ["/app/front/assets/images"]
+VOLUME ["/app/images"]
