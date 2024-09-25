@@ -55,10 +55,6 @@ jobs:
           cd backend
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a --trimpath -ldflags="-X 'backend/internal/config.Version=${{ env.app_version }}' -X 'backend/internal/config.BuildDate=$(date)'" -o dist/linux/amd64/Navnetic .
 
-      - name: 检查后端构建后文件
-        run: |
-          ls -al backend/dist/linux/amd64/Navnetic
-
       - name: Build for arm64
         run: |
           cd backend
