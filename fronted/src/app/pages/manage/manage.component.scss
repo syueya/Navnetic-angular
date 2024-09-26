@@ -1,0 +1,33 @@
+
+/* 图标按钮颜色 */
+.color-gray {
+  color: #969BA5;
+}
+
+
+/* 描述样式 */
+.color-description {
+  color: #999;
+}
+
+
+
+/* 分类卡片样式 */
+.mat-card-style {
+  border-radius: 8px;
+  box-shadow: none; /* 去除所有阴影，包括下边框线 */
+}
+
+/* 网址分类卡片高度 */
+.card-height {
+  height: 96px;
+}
+
+
+/* 去掉卡片内容的上边距 */
+.mat-mdc-card-content:first-child {
+  padding-top: 0;
+}
+
+
+

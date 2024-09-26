@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FullComponent } from './layout/full/full.component';
+import { FullComponent } from './pages/full/full.component';
 
 
 @Component({

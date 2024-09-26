@@ -1,0 +1,64 @@
+@if (allData?.length > 0) {
+  @for (category of allData; track category.category_id) {
+    <mat-card id="category-{{category.category_id}}" class="bg-white m-b-16 w-100 mat-card-style">
+      <mat-card-header class="p-x-16 p-y-8">
+        <div class="d-flex row align-items-center justify-content-between m-b-8 p-t-10 w-100">
+          <div class="col-6 col-md-4 col-lg-4 d-flex align-items-center">
+            <app-my-svg class="m-r-10 rounded-circle" [iconId]="'icon-' + category.category_icon"  [size]="'20'" [fillColor]="'#4d4d4d'"></app-my-svg>
+            <span class="f-s-16 f-w-600 text-primary">{{ category.category_name }}</span>
+          </div>
+          @if (showButtons) {
+            <div class="d-flex justify-content-end">
+              <button mat-icon-button class="color-gray" type="button" matTooltip="添加网址" (click)="openUrlDialog($event, category.category_id)">
+                <i-tabler name="plus" class="icon-24 align-items-center"></i-tabler>
+              </button>
+              <button mat-icon-button class="color-gray" type="button" matTooltip="编辑分类" (click)="openCategoryDialog(category)">
+                <i-tabler name="edit" class="icon-24 align-items-center"></i-tabler>
+              </button>
+              <button mat-icon-button class="color-gray" type="button" matTooltip="删除分类" (click)="deleteCategory(category.category_id)">
+                <i-tabler name="trash" class="icon-24 align-items-center"></i-tabler>
+              </button>
+            </div>
+          }
+        </div>
+      </mat-card-header>
+
+      <!-- 网址卡片 -->
+      <mat-card-content>
+        @for (url of category.url; track url.id) {
+          <div class="col-24 col-md-8 col-lg-6">
+            <a href="{{ url.href }}" target="_blank" class="m-0 text-none">
+              <mat-card class="cardWithShadow b-1 cursor-pointer bg-white mat-card-style card-height">
+                <mat-card-content>
+                  <div class="d-flex row align-items-center justify-content-between p-t-10 w-100">
+                    <div class="col-16 col-md-12 col-lg-12 d-flex align-items-center">
+                      <img class="m-x-8 rounded-circle" width="32" height="32" [src]="imagePath(url.icon)"  loading="lazy">
+                      <span>{{ url.name }}</span>
+                    </div>
+                    @if (showButtons) {
+                      <div class="d-flex justify-content-end">
+                        <button mat-icon-button class="color-gray" type="button" matTooltip="编辑" (click)="openUrlDialog($event, category.category_id,url)">
+                          <i-tabler name="edit" class="icon-24 align-items-center"></i-tabler>
+                        </button>
+                        <button mat-icon-button class="color-gray" type="button" matTooltip="删除" (click)="deleteUrl($event, category.category_id,url.id)">
+                          <i-tabler name="trash" class="icon-24 align-items-center"></i-tabler>
+                        </button>
+                      </div>
+                    }
+                  </div>
+                  <div class="f-s-12 p-x-10 color-description">
+                    {{ url.description }}
+                  </div>
+                </mat-card-content>
+              </mat-card>
+            </a>
+          </div>
+        }
+      </mat-card-content>
+    </mat-card>
+  }
+} @else {
+  <div class="col-24 text-center">
+    <cm-no-data noDataTitle="您还未添加任何网址！"></cm-no-data>
+  </div>
+}

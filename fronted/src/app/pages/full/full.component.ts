@@ -4,11 +4,10 @@ import { MaterialModule } from '@common/material.module';
 import { IconsModule } from '@common/icons/icons.module';
 import { ManageComponent } from '../manage/manage.component';
 import { MatSidenav } from '@angular/material/sidenav';
-import { DataService } from '@common/service/data.service';
 import { Subscription } from 'rxjs';
 import { Category, UrlItem } from '@common/interfaces/dataJson';
 import { MatDialog } from '@angular/material/dialog';
-import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
+import { CategoryUpdateComponent } from '../category-update/category-update.component';
 import { FormBuilder, FormGroup,ReactiveFormsModule } from '@angular/forms';
 import { MySvgComponent } from '@common/my-svg/my-svg.component';
 import { debounceTime } from 'rxjs/operators';
@@ -28,6 +27,8 @@ import { debounceTime } from 'rxjs/operators';
   templateUrl: './full.component.html',
   styleUrl: './full.component.scss'
 })
+
+
 export class FullComponent {
 
   // 获取侧边栏实例
@@ -45,8 +46,7 @@ export class FullComponent {
   constructor(
     public dialog: MatDialog,
     private fb: FormBuilder,
-    private dataService: DataService,
-    private cdr: ChangeDetectorRef,
+    private cdr: ChangeDetectorRef
 
   ) {
     this.searchForm = this.fb.group({
@@ -56,16 +56,6 @@ export class FullComponent {
 
 
   ngOnInit() {
-    // 订阅 DataService 提供的数据流
-    this.dataSubscription = this.dataService.data$.subscribe(
-      (categories) => {
-        this.data = categories;
-        this.cdr.markForCheck(); // 通知视图更新
-      }
-    );
-    // 加载数据
-    this.dataService.loadData();
-
     // 订阅搜索表单的值变化
     this.searchForm.get('searchKeyword')?.valueChanges
       .pipe(debounceTime(500)) // 用户停止输入500毫秒后触发搜索
@@ -139,10 +129,10 @@ export class FullComponent {
     this.showButtons = !this.showButtons;
   }
 
-  // 打开添加分类的dialog
-  openCategoryDialog(row?: Category): void {
+  // 添加分类
+  addCategory(row?: Category): void {
     const data = row || null;
-    const dialogRef = this.dialog.open(CategoryDialogComponent, {
+    const dialogRef = this.dialog.open(CategoryUpdateComponent, {
       width: '400px',
       data,
     });
@@ -150,20 +140,10 @@ export class FullComponent {
     // 执行对话框关闭后的操作
     dialogRef.afterClosed().subscribe(result => {
       if(result){
-        this.dataService.loadData();
+
       }
 
     });
-  }
-
-
-  // trackBy 用于遍历数据时的优化
-  categorytrackByFn(index: number, item: Category): number {
-    return item.category_id; // 假设每个分类的 category_id 是唯一的
-  }
-  // trackBy 用于遍历数据时的优化
-  urltrackByFn(index: number, item: UrlItem): number {
-    return item.id; // 假设每个分类的 category_id 是唯一的
   }
 
 

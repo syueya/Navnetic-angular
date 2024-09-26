@@ -1,3 +1,28 @@
+
+/* 分类侧边栏颜色 */
+.colorSidebar {
+  color: #A9B1C7;
+}
+
+/* 分类侧边栏悬停效果 */
+.colorSidebar:hover,
+.active-class {
+  background-color: #222831; /* 点击后的背景颜色 */
+  color: white; /* 点击后文字颜色 */
+}
+
+/* 搜索图标颜色 */
+.iconColor {
+  color: #AAAAAA;
+}
+
+/* 去除输入框获得焦点时的默认外边框 */
+input{
+  &:focus{
+    outline: none;
+  }
+}
+
 /* 侧边栏容器 */
 mat-sidenav-container {
   height: 100vh; /* 确保容器占满可用高度 */
@@ -23,39 +48,11 @@ mat-sidenav {
   }
 }
 
-/* 列表项样式 */
-mat-list-item {
-  display: flex;
-  align-items: center; /* 垂直居中 */
-  justify-content: center; /* 水平居中 */
-  padding: 8px 15px; /* 列表项内边距 */
-}
 
 /* 列表项高度自适应 */
 .mdc-list-item.mdc-list-item--with-one-line {
   height: auto;
 }
-
-/* 分类侧边栏 */
-.categorySidebar {
-  display: flex;
-  align-items: center; /* 垂直居中 */
-  font-size: 12px;
-  color: #A9B1C7;
-}
-
-/* 分类侧边栏悬停效果 */
-.categorySidebar:hover,
-.active-class {
-  background-color: #222831; /* 点击后的背景颜色 */
-  color: white; /* 点击后文字颜色 */
-}
-
-/* 分类侧边栏文字 */
-.sider-category {
-  font-size: 12px;
-}
-
 
 /* 确保 mat-sidenav-content 占据除了侧边栏外的剩余部分 */
 mat-sidenav-content {
@@ -66,84 +63,13 @@ mat-sidenav-content {
   padding:10px 30px;
 }
 
-/* 导航标题样式 */
-.navnetic {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  margin-top: 20px;
-}
-/* 导航标题图标 */
-.navnetic i-tabler {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-/* 导航标题文字 */
-.navnetic span {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-
-
-/* 标题栏 */
-mat-toolbar {
-  display: flex;
-  min-height: 60px;
-  justify-content: space-between; /* 可选：根据需要调整主轴对齐方式 */
-  align-items: center; /* 垂直居中对齐 */
-  background-color: #fff;
-
-}
-
-/* 标题栏右侧内容 */
-.toolbar-right{
-  display: flex;
-  margin-left: auto; /* 推到右侧 */
-  position: relative;
-}
-
-/* 搜索框 */
-.toolbar-search{
-  display: flex;
-  align-items: center;  /* 垂直居中 */
-  border-radius: 32px;
-  border: 1px solid #e6e6e6;
-  padding: 5px;
-  margin: 0 10px;
-  width: 180px;
-}
-
-/* 搜索图标 */
-.toolbar-search i-tabler {
-  color: #AAAAAA;
-  padding: 0 5px;
-}
-
-/* 搜索输入框 */
-.toolbar-search form {
-  display: flex;
-  align-items: center;  /* 垂直居中 */
-}
-.toolbar-search input{
-  border: none;
-  height: 20px;
-  width: 120px;
-  margin-left: 8px;
-
-  &:focus{
-    outline: none;  /* 去除输入框获得焦点时的默认外边框 */
-  }
-}
-
 
 /* 搜索结果 */
 .searchResult {
   position: absolute; /* 绝对定位 */
   top: 75px; /* 根据需要调整，应该是搜索框的高度 */
   right: 30px;
-  width: 240px;
+  width: 350px;
   max-height: 400px;
   background-color: #fff;
   border: 1px solid #e6e6e6;
@@ -180,7 +106,3 @@ mat-toolbar {
   font-weight: bold;
 }
 
-/* 搜索结果总数 */
-.searchResult-count {
-  font-size: 13px;
-}
