@@ -1,0 +1,56 @@
+<h5 mat-dialog-title class="mat-subtitle-1">
+  <ng-container [ngSwitch]="model">
+    <ng-container *ngSwitchCase="modelType.info">
+      <!-- 提示框 -->
+      {{ data.title || '提示' }}
+    </ng-container>
+    <ng-container *ngSwitchCase="modelType.confirm">
+      <!-- 确认框 -->
+      {{ data.title || '确认' }}
+    </ng-container>
+    <ng-container *ngSwitchCase="modelType.delete">
+      {{ data.title || '删除' }}
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <!-- 默认 -->
+    </ng-container>
+  </ng-container>
+</h5>
+<div mat-dialog-content class="mat-subtitle-2 lh-16 mat-content-wrapper">
+  <ng-container [ngSwitch]="model">
+    <ng-container *ngSwitchCase="modelType.info">
+      <!-- 确认框 -->
+      {{ data.content || '' }}
+    </ng-container>
+    <ng-container *ngSwitchCase="modelType.confirm">
+      <!-- 确认框 -->
+      {{ data.content || '' }}
+    </ng-container>
+    <ng-container *ngSwitchCase="modelType.delete">
+      {{ data.content || '你确定要删除这条记录？'  }}
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <!-- 默认 -->
+    </ng-container>
+  </ng-container>
+</div>
+<div mat-dialog-actions class="text-right p-24 p-t-0">
+  <ng-container [ngSwitch]="model">
+    <ng-container *ngSwitchCase="modelType.info">
+      <!-- 提示框 -->
+      <button mat-flat-button color="primary" type="button" mat-dialog-close cdkFocusInitial>{{ data.sureStr || '好的' }}</button>
+    </ng-container>
+    <ng-container *ngSwitchCase="modelType.confirm">
+      <!-- 确认框 -->
+      <button mat-stroked-button color="primary" type="button" mat-dialog-close>{{ data.cancelStr || '取消' }}</button>
+      <button mat-flat-button color="primary" type="button" [mat-dialog-close]="true" cdkFocusInitial>{{ data.sureStr || '确认' }}</button>
+    </ng-container>
+    <ng-container *ngSwitchCase="modelType.delete">
+      <button mat-stroked-button color="primary" type="button" mat-dialog-close>{{ data.cancelStr || '取消' }}</button>
+      <button mat-flat-button color="warn" type="button" [mat-dialog-close]="true" cdkFocusInitial>{{ data.sureStr || '确认' }}</button>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <!-- 默认 -->
+    </ng-container>
+  </ng-container>
+</div>

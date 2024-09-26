@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule } from '@common/modules/material.module';
+import { MaterialModule } from '@common/material.module';
 import { IconsModule } from '@common/icons/icons.module';
 import { HttpRespone} from '@common/interfaces/HttpRespone';
 import { DataService } from '@common/service/data.service';
@@ -9,12 +9,13 @@ import { OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { takeUntil, Subject } from 'rxjs';
 import { Category, UrlItem } from '@common/interfaces/dataJson';
-import { MatDialogModule } from '@angular/material/dialog';
+import { CmDialogDataModel, CmDialogService } from '@common/modules/dialog';
 import { MatDialog } from '@angular/material/dialog';
+
 import { CategoryDialogComponent } from '../manage/category-dialog/category-dialog.component';
 import { UrlDialogComponent } from '../manage/url-dialog/url-dialog.component';
 import { MySvgComponent } from '@common/my-svg/my-svg.component';  // svg图标组件
-import { DelConfirmDialogComponent } from '../manage/del-confirm-dialog/del-confirm-dialog.component';
+
 
 @Component({
   selector: 'app-manage',
@@ -23,7 +24,7 @@ import { DelConfirmDialogComponent } from '../manage/del-confirm-dialog/del-conf
     CommonModule,
     MaterialModule,
     IconsModule,
-    MatDialogModule,
+
     MySvgComponent,
   ],
   templateUrl: './manage.component.html',
@@ -48,7 +49,8 @@ export class ManageComponent implements OnInit {
   constructor(
     private httpClient: HttpClient,
     public dialog: MatDialog,
-    private dataService: DataService
+    private dataService: DataService,
+    private dialogService:CmDialogService
   ) {}
 
 
@@ -81,33 +83,13 @@ export class ManageComponent implements OnInit {
   }
 
 
-  // 删除分类
-  deleteCategory(categoryId: number) {
-    const dialogRef = this.dialog.open(DelConfirmDialogComponent, {
-      width: '400px',
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.dataCategory = this.data.find(category => category.category_id === categoryId) || null;
-        this.httpClient.delete<HttpRespone<Category[]>>(`/api/delCategory?category_id=${categoryId}`)
-          .pipe(takeUntil(this.destroy$))
-          .subscribe((res) => {
-            if (res.code === 20000) {
-              this.dataService.loadData();
-          }
-          });
-      }
-    });
-  }
-
-
   // 添加编辑分类
   openCategoryDialog(row: Category): void {
     const data = row || null;
     const dialogRef = this.dialog.open(CategoryDialogComponent, {
       width: '400px',
       data,
+      disableClose: false
     });
 
     // 执行对话框关闭后的操作
@@ -122,7 +104,6 @@ export class ManageComponent implements OnInit {
   // 添加编辑网址
   openUrlDialog(event: Event, category_id: number, row?: UrlItem){
     event.preventDefault(); // 阻止链接跳转
-
     const data = {
       categoryId: category_id,
       urlData: row || null, // 如果 row 是可选的，这里将 row 设置为 null 或者你希望的默认值
@@ -131,6 +112,7 @@ export class ManageComponent implements OnInit {
     const dialogRef = this.dialog.open(UrlDialogComponent, {
       width: '400px',
       data,
+      disableClose: false
     });
 
     // 执行对话框关闭后的操作
@@ -142,15 +124,41 @@ export class ManageComponent implements OnInit {
   }
 
 
+  // 删除分类
+  deleteCategory(categoryId: number) {
+    this.dialogService.open({
+      model: CmDialogDataModel.confirm,
+      title: '确认删除',
+      content: `确认删除分类？`,
+      width:'400px'
+    })
+    .afterClosed()
+    .subscribe((result) => {
+      if (result) {
+        this.dataCategory = this.data.find(category => category.category_id === categoryId) || null;
+        this.httpClient.delete<HttpRespone<Category[]>>(`/api/delCategory?category_id=${categoryId}`)
+          .pipe(takeUntil(this.destroy$))
+          .subscribe((res) => {
+            if (res.code === 20000) {
+              this.dataService.loadData();
+          }
+          });
+      }
+    });
+  }
+
 
   // 删除网址
   deleteUrl(event: Event, categoryId: number, urlId: number) {
     event.preventDefault(); // 阻止链接跳转
-    const dialogRef = this.dialog.open(DelConfirmDialogComponent, {
-      width: '400px',
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
+    this.dialogService.open({
+      model: CmDialogDataModel.confirm,
+      title: '确认删除',
+      content: `确认删除网址？`,
+      width:'400px'
+    })
+    .afterClosed()
+    .subscribe((result) => {
       if (result) {
         this.httpClient.delete<HttpRespone<UrlItem[]>>(`/api/delUrl?category_id=${categoryId}&url_id=${urlId}`)
           .pipe(takeUntil(this.destroy$))

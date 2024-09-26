@@ -1,0 +1,99 @@
+$mat-primary: (
+  100: #eff9ff,
+  500: #0074ba,
+  700: #006daf,
+  contrast: (
+    100: rgba(black, 0.87),
+    500: #d1ebfc,
+    700: #c5e7fd,
+  ),
+);
+$mat-secondary: (
+  100: #edfbf7,
+  500: #47d7bc,
+  700: #39c7ad,
+  contrast: (
+    100: white,
+    500: #cbfff5,
+    700: #bdfdf0,
+  ),
+);
+$mat-success: (
+  100: #E6FFFA,
+  500: #12DEB9,
+  700: #2ab898,
+  contrast: (
+    100: white,
+    500: #cbfff5,
+    700: #bdfdf0,
+  ),
+);
+
+$mat-warn: (
+  100: #FEF5E5,
+  500: #FFAE1F,
+  700: #f8a30f,
+  contrast: (
+    100: white,
+    500: #FEF5E5,
+    700: #fdeed4,
+  ),
+);
+
+$mat-error: (
+  100: #FDEDE8,
+  500: #fa896b,
+  700: #f3704d,
+  contrast: (
+    100: white,
+    500: #FFF3ED,
+    700: #ece0d9,
+  ),
+);
+$theme-primary: mat.m2-define-palette($mat-primary, 500);
+$theme-accent: mat.m2-define-palette($mat-secondary, 500);
+$theme-success: mat.m2-define-palette($mat-success, 500);
+$theme-warn: mat.m2-define-palette($mat-warn, 500);
+$theme-error: mat.m2-define-palette($mat-error, 500);
+
+$aquatheme: mat.m2-define-light-theme(
+  (
+    color: (
+      primary: $theme-primary,
+      accent: $theme-accent,
+      success: $theme-success,
+      warn: $theme-warn,
+      error: $theme-error,
+    ),
+    typography:
+      mat.m2-define-typography-config(
+        $font-family: "Plus Jakarta Sans",
+      ),
+  )
+);
+
+$darkaquatheme: mat.m2-define-dark-theme(
+  (
+    color: (
+      primary: $theme-primary,
+      accent: $theme-accent,
+      success: $theme-success,
+      warn: $theme-warn,
+      error: $theme-error,
+    ),
+    typography:
+      mat.m2-define-typography-config(
+        $font-family: "Plus Jakarta Sans",
+        $subtitle-2: mat.m2-define-typography-level(14px, 14px, 400),
+        $subtitle-1: mat.m2-define-typography-level(21px, 26px, 500),
+        $headline-6: mat.m2-define-typography-level(18px, 26px, 600),
+        $headline-5: mat.m2-define-typography-level(24px, 30px, 700),
+        $button: mat.m2-define-typography-level(14px, 14px, 400),
+        $body-1: mat.m2-define-typography-level(14px, 20px, 400),
+        $body-2: mat.m2-define-typography-level(16px, 22px, 400),
+      ),
+  )
+);
+
+
+@import "theme_matcustom/mat_theme";

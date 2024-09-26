@@ -2,16 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TablerIconsModule } from 'angular-tabler-icons';
-import { ImportTableIcons } from './import/import-table-icons';
-
-
+import { CustomTablerIcons } from './import';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    TablerIconsModule.pick(ImportTableIcons)
+    TablerIconsModule.pick(CustomTablerIcons)
   ],
   exports: [
     TablerIconsModule,

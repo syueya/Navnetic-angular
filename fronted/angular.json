@@ -33,6 +33,7 @@
               }
             ],
             "styles": [
+              "src/assets/scss/style.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -57,7 +58,8 @@
                   "maximumError": "12mb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
             },
             "development": {
               "optimization": false,

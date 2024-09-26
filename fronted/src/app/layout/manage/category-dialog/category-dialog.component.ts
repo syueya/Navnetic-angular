@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { MaterialModule } from '@common/material.module';
+import { CommonModule } from '@angular/common';
 import { Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import { CommonModule } from '@angular/common';
 import { HttpRespone} from '@common/interfaces/HttpRespone';
 import { HttpClient } from '@angular/common/http';
 import { takeUntil, Subject } from 'rxjs';
@@ -14,7 +15,13 @@ import { Category } from '@common/interfaces/dataJson';
 @Component({
   selector: 'app-category-dialog',
   standalone: true,
-  imports: [MatFormFieldModule, ReactiveFormsModule, MatInputModule, CommonModule],
+  imports: [
+    MaterialModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    CommonModule
+  ],
   templateUrl: './category-dialog.component.html',
   styleUrl: './category-dialog.component.scss'
 })
@@ -22,7 +29,7 @@ export class CategoryDialogComponent {
 
   isUpdate: boolean; // 是否是编辑模式
 
-  form: FormGroup;
+  editForm: FormGroup;
 
   private destroy$ = new Subject<void>();
   constructor(
@@ -33,7 +40,7 @@ export class CategoryDialogComponent {
   ) {
 
     // 初始化表单
-    this.form = this.fb.group({
+    this.editForm = this.fb.group({
       category_id: [null, []],
       category_name: ['', [Validators.required]],
       category_icon: ['', [Validators.required]]
@@ -43,7 +50,7 @@ export class CategoryDialogComponent {
 
     // 如果是编辑模式,则填充表单
     if (this.isUpdate) {
-      this.form.patchValue(this.data);  // 填充表单
+      this.editForm.patchValue(this.data);  // 填充表单
     }
 
 
@@ -51,22 +58,18 @@ export class CategoryDialogComponent {
 
 
   // 提交表单
-  onSubmit() {
+  submit() {
     // 获取表单数据
-    const formData = this.form.getRawValue();
+    const formData = this.editForm.getRawValue();
 
     this.httpClient.post<HttpRespone<Category[]>>(`/api/addCategory`, formData)
       .pipe(takeUntil(this.destroy$))
       .subscribe((res) => {
         if (res) {
-          this.closeDialog(); // 调用关闭弹窗的方法
+          this.dialogRef.close(true);
         }
       });
 
     }
 
-  // 关闭弹窗
-  closeDialog(): void {
-    this.dialogRef.close(this.form.value); // 传递表单值
-  }
 }

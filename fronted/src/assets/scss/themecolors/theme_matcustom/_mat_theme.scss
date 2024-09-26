@@ -1,0 +1,174 @@
+.bg-primary {
+  background: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}
+
+
+.activeMenu {
+  background-color: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}
+
+.mat-mdc-outlined-button {
+  &.mat-primary {
+    border-color: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+  }
+
+  &.mat-accent {
+    border-color: mat.m2-get-color-from-palette($theme-accent, 500) !important;
+  }
+
+  &.mat-success {
+    border-color: mat.m2-get-color-from-palette($theme-success, 500) !important;
+  }
+
+  &.mat-warn {
+    border-color: mat.m2-get-color-from-palette($theme-warn, 500) !important;
+  }
+
+  &.mat-error {
+    border-color: mat.m2-get-color-from-palette($theme-error, 500) !important;
+  }
+}
+
+// 扩展按钮样式
+
+.mat-primary {
+  &.mat-mdc-raised-button {
+    box-shadow: none !important;
+    background-color: map-get(map-get($mat-primary, contrast), 500) !important;
+    color: map-get($mat-primary, 500) !important;
+
+    &:hover {
+      background-color: map-get(map-get($mat-primary, contrast), 700) !important;
+    }
+  }
+
+}
+
+.mat-accent {
+  &.mat-mdc-raised-button {
+    box-shadow: none !important;
+    background-color: map-get(map-get($mat-secondary, contrast), 500) !important;
+    color: map-get($mat-secondary, 500) !important;
+
+    &:hover {
+      background-color: map-get(map-get($mat-secondary, contrast), 700) !important;
+    }
+  }
+
+}
+
+.mat-warn {
+  &.mat-mdc-raised-button {
+    box-shadow: none !important;
+    background-color: map-get(map-get($mat-warn, contrast), 500) !important;
+    color: map-get($mat-warn, 500) !important;
+
+    &:hover {
+      background-color: map-get(map-get($mat-warn, contrast), 700) !important;
+    }
+  }
+
+}
+
+// Success 按钮样式
+.success {
+
+  &.mat-mdc-button,
+  &.mat-mdc-icon-button {
+    color: map-get($mat-success, 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-success, 100) !important;
+    }
+  }
+
+  &.mat-mdc-raised-button {
+    box-shadow: none !important;
+    background-color: map-get(map-get($mat-success, contrast), 500) !important;
+    color: map-get($mat-success, 500) !important;
+
+    &:hover {
+      background-color: map-get(map-get($mat-success, contrast), 700) !important;
+    }
+  }
+
+  &.mat-mdc-unelevated-button {
+    background-color: map-get($mat-success, 500) !important;
+    color: map-get(map-get($mat-success, contrast), 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-success, 700) !important;
+    }
+  }
+
+  &.mat-mdc-outlined-button {
+    border-color: map-get($mat-success, 500) !important;
+    color: map-get($mat-success, 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-success, 100) !important;
+    }
+  }
+
+  &.mat-mdc-fab,
+  &.mat-mdc-mini-fab {
+    background-color: map-get($mat-success, 500) !important;
+    color: map-get(map-get($mat-success, contrast), 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-success, 700) !important;
+    }
+  }
+}
+
+// Error 按钮样式
+.error {
+
+  &.mat-mdc-button,
+  &.mat-mdc-icon-button {
+    color: map-get($mat-error, 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-error, 100) !important;
+    }
+  }
+
+  &.mat-mdc-raised-button {
+    box-shadow: none !important;
+    background-color: map-get(map-get($mat-error, contrast), 500) !important;
+    color: map-get($mat-error, 500) !important;
+
+    &:hover {
+      background-color: map-get(map-get($mat-error, contrast), 700) !important;
+    }
+  }
+
+  &.mat-mdc-unelevated-button {
+    background-color: map-get($mat-error, 500) !important;
+    color: map-get(map-get($mat-error, contrast), 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-error, 700) !important;
+    }
+  }
+
+  &.mat-mdc-outlined-button {
+    border-color: map-get($mat-error, 500) !important;
+    color: map-get($mat-error, 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-error, 100) !important;
+    }
+  }
+
+  &.mat-mdc-fab,
+  &.mat-mdc-mini-fab {
+    background-color: map-get($mat-error, 500) !important;
+    color: map-get(map-get($mat-error, contrast), 500) !important;
+
+    &:hover {
+      background-color: map-get($mat-error, 700) !important;
+    }
+  }
+}
+

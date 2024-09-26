@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, ChangeDetectorRef, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule } from '@common/modules/material.module';
+import { MaterialModule } from '@common/material.module';
 import { IconsModule } from '@common/icons/icons.module';
 import { ManageComponent } from '../manage/manage.component';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -35,7 +35,7 @@ export class FullComponent {
 
   data: Category[] = []; // json数据
   isSidebarCollapsed: boolean = true; // 切换侧边栏状态是折叠的
-  showButtons: boolean = false; // 控制按钮显示的状态
+  showButtons: boolean = true; // 控制按钮显示的状态
   searchForm: FormGroup; // 搜索表单
   searchData: UrlItem[] = []; // 定义一个属性来存储搜索过滤后的数据
   activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID

@@ -1,0 +1,44 @@
+
+.mat-mdc-form-field {
+  --mat-form-field-container-vertical-padding: 10px;
+  --mat-form-field-container-height: 40px;
+}
+
+.mat-mdc-icon-button.mat-mdc-button-base{
+  --mdc-icon-button-state-layer-size: 40px;
+  padding: 8px;
+}
+span.mat-mdc-icon-button .mat-mdc-button-touch-target{
+  height: 40px;
+  width: 40px;
+}
+
+.mat-mdc-form-field-icon-prefix>i-tabler, .mat-mdc-form-field-icon-suffix>i-tabler {
+  padding: 0 8px;
+  box-sizing: content-box;
+}
+.mat-mdc-option{
+  min-height: 40px !important;
+}
+.mat-mdc-tab-header {
+  --mdc-secondary-navigation-tab-container-height: 36px;
+}
+
+
+div.mat-mdc-dialog-title::before {
+  height: 0px;
+}
+.mdc-card__media{
+  object-fit: cover;
+}
+
+.hide-hint {
+  .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+  }
+}
+
+
+:root{
+  --mdc-list-list-item-one-line-container-height:40px;
+}

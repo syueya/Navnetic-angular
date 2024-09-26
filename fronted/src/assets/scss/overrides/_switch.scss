@@ -1,0 +1,5 @@
+.bg-primary,
+.mdc-switch:enabled .mdc-switch__track::after,
+.mdc-switch .mdc-switch__handle::before {
+  background: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}

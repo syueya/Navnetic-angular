@@ -1,0 +1,75 @@
+.ms-message,
+.ms-notification {
+  z-index: 1010;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  box-sizing: border-box;
+}
+
+.ms-message-notice-content,
+.ms-modal-content,
+.ms-notification-notice {
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.ms-message {
+  margin: 0;
+  padding: 0;
+  color: $textPrimary;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  position: fixed;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.ms-message-notice {
+  padding: 10px;
+  text-align: center;
+}
+.ms-message-notice-content {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #fff;
+  border-radius: $border-radius;
+  pointer-events: all;
+}
+.ms-message-success i-tabler {
+  color: $success;
+}
+.ms-message-error i-tabler {
+  color: $error;
+}
+.ms-message-warning i-tabler {
+  color: $warning;
+}
+.ms-message-info i-tabler {
+  color: $primary;
+}
+.ms-message-loading mat-spinner {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.ms-message i-tabler {
+  position: relative;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.ms-message-notice.ms-move-up-leave.ms-move-up-leave-active {
+  animation-name: MessageMoveOut;
+  animation-duration: 0.3s;
+}
+@keyframes MessageMoveOut {
+  0% {
+    max-height: 150px;
+    padding: 8px;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,215 @@
+
+.ms-notification {
+    margin: 0 24px 0 0;
+    padding: 0;
+    color: $textPrimary;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    position: fixed;
+  }
+  .ms-notification-close-icon {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .ms-notification-hook-holder {
+    position: relative;
+  }
+  .ms-notification-notice {
+    position: relative;
+    width: 384px;
+    max-width: calc(100vw - 24px * 2);
+    margin-bottom: 16px;
+    margin-left: auto;
+    padding: 16px 24px;
+    overflow: hidden;
+    line-height: 1.5715;
+    word-wrap: break-word;
+    background: #fff;
+    border-radius: $border-radius;
+  }
+  .ms-notification-bottom .ms-notification-notice,
+  .ms-notification-top .ms-notification-notice {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ms-notification-bottomLeft .ms-notification-notice,
+  .ms-notification-topLeft .ms-notification-notice {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .ms-notification-notice-message {
+    margin-bottom: 8px;
+    color: var(--tblr-text-primary);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .ms-notification-notice-message-single-line-auto-margin {
+    display: block;
+    width: calc(384px - 24px * 2 - 24px - 48px - 100%);
+    max-width: 4px;
+    background-color: transparent;
+    pointer-events: none;
+  }
+  .ms-notification-notice-message-single-line-auto-margin::before {
+    display: block;
+    content: '';
+  }
+  .ms-notification-notice-description {
+    font-size: 14px;
+  }
+  .ms-notification-notice-closable .ms-notification-notice-message {
+    padding-right: 24px;
+  }
+  .ms-notification-notice-with-icon .ms-notification-notice-message {
+    margin-bottom: 4px;
+    margin-left: 42px;
+    font-size: 16px;
+  }
+  .ms-notification-notice-with-icon .ms-notification-notice-description {
+    margin-left: 42px;
+    font-size: 14px;
+  }
+  .ms-notification-notice-icon {
+    position: absolute;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  i-tabler.ms-notification-notice-icon-success {
+    color: $success;
+  }
+  i-tabler.ms-notification-notice-icon-info {
+    color: $primary;
+  }
+  i-tabler.ms-notification-notice-icon-warning {
+    color: $warning;
+  }
+  i-tabler.ms-notification-notice-icon-error {
+    color: $error;
+  }
+  .ms-notification-notice-close {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    color: rgba(0, 0, 0, 0.45);
+    outline: 0;
+  }
+  .ms-page-header,
+  .ms-pagination-jump-next .ms-pagination-item-container,
+  .ms-pagination-jump-prev .ms-pagination-item-container {
+    position: relative;
+  }
+  .ms-notification-notice-close:hover {
+    color: rgba(0, 0, 0, 0.67);
+  }
+  .ms-notification-notice-btn {
+    float: right;
+    margin-top: 16px;
+  }
+  .ms-notification .notification-fade-effect {
+    animation-duration: 0.24s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: both;
+  }
+  .ms-notification-fade-appear,
+  .ms-notification-fade-enter {
+    animation-duration: 0.24s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-play-state: paused;
+  }
+  .ms-notification-fade-leave {
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-fill-mode: both;
+    animation-duration: 0.2s;
+    animation-play-state: paused;
+  }
+  .ms-notification-fade-appear.ms-notification-fade-appear-active,
+  .ms-notification-fade-enter.ms-notification-fade-enter-active {
+    animation-name: NotificationFadeIn;
+    animation-play-state: running;
+  }
+  .ms-notification-fade-leave.ms-notification-fade-leave-active {
+    animation-name: NotificationFadeOut;
+    animation-play-state: running;
+  }
+  @keyframes NotificationFadeIn {
+    0% {
+      left: 384px;
+      opacity: 0;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes NotificationFadeOut {
+    0% {
+      max-height: 150px;
+      margin-bottom: 16px;
+      opacity: 1;
+    }
+    100% {
+      max-height: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+    }
+  }
+  .ms-notification-bottom,
+  .ms-notification-top {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .ms-notification-top .ms-notification-fade-appear.ms-notification-fade-appear-active,
+  .ms-notification-top .ms-notification-fade-enter.ms-notification-fade-enter-active {
+    animation-name: NotificationTopFadeIn;
+  }
+  .ms-notification-bottom .ms-notification-fade-appear.ms-notification-fade-appear-active,
+  .ms-notification-bottom .ms-notification-fade-enter.ms-notification-fade-enter-active {
+    animation-name: NotificationBottomFadeIn;
+  }
+  .ms-notification-bottomLeft,
+  .ms-notification-topLeft {
+    margin-right: 0;
+    margin-left: 24px;
+  }
+  .ms-notification-bottomLeft .ms-notification-fade-appear.ms-notification-fade-appear-active,
+  .ms-notification-bottomLeft .ms-notification-fade-enter.ms-notification-fade-enter-active,
+  .ms-notification-topLeft .ms-notification-fade-appear.ms-notification-fade-appear-active,
+  .ms-notification-topLeft .ms-notification-fade-enter.ms-notification-fade-enter-active {
+    animation-name: NotificationLeftFadeIn;
+  }
+  @keyframes NotificationTopFadeIn {
+    0% {
+      margin-top: -100%;
+      opacity: 0;
+    }
+    100% {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes NotificationBottomFadeIn {
+    0% {
+      margin-bottom: -100%;
+      opacity: 0;
+    }
+    100% {
+      margin-bottom: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes NotificationLeftFadeIn {
+    0% {
+      right: 384px;
+      opacity: 0;
+    }
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }

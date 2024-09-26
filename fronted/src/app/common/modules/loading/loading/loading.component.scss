@@ -1,0 +1,18 @@
+.loading-spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    align-items: center;
+    background: rgba(192, 192, 192, 0.2);
+    z-index: 1119999;
+    background: transparent;
+
+    mat-spinner {
+        margin: 0 auto;
+    }
+}

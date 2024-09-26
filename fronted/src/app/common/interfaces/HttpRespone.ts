@@ -1,3 +1,5 @@
+import { SortDirection } from "@angular/material/sort";
+
 // 定义了一个简单的JSON值
 export type PlainJsonValue = boolean | number | string | null | undefined;
 
@@ -27,4 +29,52 @@ export interface ListRespone<T extends JsonType | PlainJsonValue | PlainJsonValu
     pageSize:number;
   };
   message?: string | null;
+}
+
+export interface TableSortData {
+
+  // 排序字段
+
+  orderBy: string;
+
+  // 升序还是降序
+
+  orderDirection: SortDirection;
+
+}
+
+/**
+ * 列表查询，基础 query params
+ *
+ * @export
+ * @interface ServiceQueryParams
+ */
+export interface ServiceQueryParams {
+  pageNum: number;
+  pageSize: number;
+}
+
+export const BasicQueryParams: ServiceQueryParams = {
+  pageNum: 1,
+  pageSize: 25
+};
+
+/**
+ * 用于设置table分页表，属性类型
+ *
+ * @export
+ * @interface PaginatorPropsType
+ */
+export interface PaginatorPropsType {
+  pageIndex: number;
+  pageSize: number;
+  length: number;
+}
+
+export function initialPaginatorProps(): PaginatorPropsType {
+  return {
+      pageIndex: 0,
+      pageSize: 25,
+      length: 0,
+  }
 }

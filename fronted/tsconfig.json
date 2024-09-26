@@ -1,18 +1,18 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true, // 强制文件名的大小写与导入语句保持一致
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false, // 没有明确指定类型时，是否允许 TypeScript 编译器自动将变量推断为 any 类型
     "skipLibCheck": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
@@ -20,6 +20,8 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "strictPropertyInitialization": false, // 指定类属性在构造函数中是否必须初始化
+    "strictNullChecks":false,  // 是否启用严格的 null 检查
     "lib": [
       "ES2022",
       "dom"
