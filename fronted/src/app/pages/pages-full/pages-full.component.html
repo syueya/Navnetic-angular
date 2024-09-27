@@ -7,7 +7,7 @@
   <mat-sidenav-content>
     <mat-toolbar class="d-flex row align-items-center justify-content-between bg-white" height="60px">
       <div class="col-6 col-md-4 col-lg-4 p-0">
-        <button mat-icon-button color="primary" type="button" matTooltip="切换侧边栏" (click.debounceTime)="toggleSidebar()">
+        <button mat-icon-button class="color-gray" type="button" matTooltip="切换侧边栏" (click.debounceTime)="toggleSidebar()">
           <i-tabler class="icon-20" [name]="isSidebarCollapsed ? 'layout-sidebar-left-collapse' : 'layout-sidebar-left-expand'"></i-tabler>
         </button>
       </div>
@@ -20,13 +20,13 @@
           </form>
         </div>
 
-        <button mat-icon-button color="primary" type="button" class="m-l-10" matTooltip="是否显示按钮" (click.debounceTime)="toggleButtons()">
+        <button mat-icon-button class="color-gray" type="button" class="m-l-10" matTooltip="是否显示按钮" (click.debounceTime)="toggleButtons()">
           <i-tabler name="menu-2" class="icon-20"></i-tabler>
         </button>
 
         <!-- 根据 showButtons 渲染添加分类按钮 -->
          @if (showButtons) {
-          <button mat-icon-button color="primary" type="button" class="m-l-10" matTooltip="添加分类" (click)="addCategory()">
+          <button mat-icon-button class="color-gray" type="button" class="m-l-10" matTooltip="添加分类" (click)="addCategory()">
             <i-tabler name="plus" class="icon-20"></i-tabler>
           </button>
          }

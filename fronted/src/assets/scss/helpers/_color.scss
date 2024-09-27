@@ -10,6 +10,10 @@
       color: $color !important;
     }
 
+    .color-#{$name} {
+      color: $color !important;
+    }
+
     .border-color-#{$name} {
       border-color: $color !important;
     }
@@ -29,6 +33,7 @@
   $white: $white,
   $black: $textPrimary,
   $light: $light,
+  $gray: $gray,
   $gray-100: $gray-100,
   $light-error: $light-error,
   $light-accent: $light-accent,

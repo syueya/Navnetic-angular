@@ -24,7 +24,7 @@ export class PagesFullComponent extends CmParentFormComponent {
 
   allData: Category[] = []; // 分类网址数据
   isSidebarCollapsed: boolean = true; // 切换侧边栏状态是折叠的
-  showButtons: boolean = true; // 控制按钮显示的状态
+  showButtons: boolean = false; // 控制按钮显示的状态
   searchData: UrlItem[] = []; // 定义一个属性来存储搜索过滤后的数据
 
   constructor(
