@@ -3,7 +3,9 @@
 # 替换 nginx 配置文件中的 PORT 变量
 envsubst '${PORT}' < /etc/nginx/nginx.template.conf > /etc/nginx/nginx.conf
 
-chown -R \
+groupmod -o -g "${PGID}" navnetic
+usermod -o -u "${PUID}" navnetic
+chown navnetic:navnetic -R \
     /app \
     /var/lib/nginx \
     /run/nginx \
@@ -19,4 +21,4 @@ cd /app || exit
 umask "${UMASK}"
 
 # 执行 Navnetic
-exec /app/Navnetic
+exec su-exec navnetic:navnetic /app/Navnetic

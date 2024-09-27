@@ -31,6 +31,8 @@ RUN apk --no-cache add \
         su-exec \
         bash \
         shadow \
+    && addgroup -S navnetic -g 1000 \
+    && adduser -S navnetic -G navnetic -h /app -u 1000 -s /bin/bash \
     # 在容器内创建一个名为/app/config的目录
     && mkdir /app/config \
     # 为/app/Navnetic和/entrypoint.sh文件添加执行权限。
