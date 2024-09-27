@@ -25,35 +25,37 @@
 
       <!-- 网址卡片 -->
       <mat-card-content>
-        @for (url of category.url; track url.id) {
-          <div class="col-24 col-md-8 col-lg-8">
-            <a href="{{ url.href }}" target="_blank" class="m-0 text-none text-decoration-none">
-              <mat-card class="cardWithShadow b-1 cursor-pointer bg-white mat-card-style card-height">
-                <mat-card-content>
-                  <div class="d-flex row align-items-center justify-content-between p-t-6 w-100">
-                    <div class="col-16 col-md-12 col-lg-12 d-flex align-items-center">
-                      <img class="m-r-10 rounded-circle" width="30" height="30" [src]="imagePath(url.icon)"  loading="lazy">
-                      <span class="f-s-14 f-w-600 text-black">{{ url.name }}</span>
-                    </div>
-                    @if (showButtons) {
-                      <div class="d-flex justify-content-end">
-                        <button mat-icon-button class="color-gray" type="button" matTooltip="编辑" (click)="openUrlDialog($event, category.category_id,url)">
-                          <i-tabler name="edit" class="icon-24 align-items-center"></i-tabler>
-                        </button>
-                        <button mat-icon-button class="color-gray" type="button" matTooltip="删除" (click)="deleteUrl($event, category.category_id,url.id)">
-                          <i-tabler name="trash" class="icon-24 align-items-center"></i-tabler>
-                        </button>
+        <div class="row">
+          @for (url of category.url; track url.id) {
+            <div class="col-24 col-md-8 col-lg-8">
+              <a href="{{ url.href }}" target="_blank" class="m-0 text-none text-decoration-none">
+                <mat-card class="cardWithShadow b-1 cursor-pointer bg-white mat-card-style card-height">
+                  <mat-card-content>
+                    <div class="d-flex row align-items-center justify-content-between p-t-6 w-100">
+                      <div class="col-16 col-md-12 col-lg-12 d-flex align-items-center">
+                        <img class="m-r-10 rounded-circle" width="30" height="30" [src]="imagePath(url.icon)"  loading="lazy">
+                        <span class="f-s-14 f-w-600 text-black">{{ url.name }}</span>
                       </div>
-                    }
-                  </div>
-                  <div class="f-s-12 p-x-10 p-t-8 color-description">
-                    {{ url.description }}
-                  </div>
-                </mat-card-content>
-              </mat-card>
-            </a>
-          </div>
-        }
+                      @if (showButtons) {
+                        <div class="d-flex justify-content-end">
+                          <button mat-icon-button class="color-gray" type="button" matTooltip="编辑" (click)="openUrlDialog($event, category.category_id,url)">
+                            <i-tabler name="edit" class="icon-24 align-items-center"></i-tabler>
+                          </button>
+                          <button mat-icon-button class="color-gray" type="button" matTooltip="删除" (click)="deleteUrl($event, category.category_id,url.id)">
+                            <i-tabler name="trash" class="icon-24 align-items-center"></i-tabler>
+                          </button>
+                        </div>
+                      }
+                    </div>
+                    <div class="f-s-12 p-x-10 p-t-8 color-description">
+                      {{ url.description }}
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </a>
+            </div>
+          }
+        </div>
       </mat-card-content>
     </mat-card>
   }

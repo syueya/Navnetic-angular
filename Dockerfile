@@ -4,7 +4,8 @@ FROM alpine:3.20
 ARG TARGETPLATFORM
 
 ENV TZ="Asia/Shanghai" \
-    PORT="8888"
+    PORT="8888" \
+    UMASK=022
 
 # 设置工作目录
 WORKDIR /app
@@ -44,5 +45,5 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 EXPOSE 8888
 VOLUME ["/app/config"]
 VOLUME ["/app/data/data.json"]
-VOLUME ["/app/front/assets/images"]
+VOLUME ["/app/front/assets/logos"]
 VOLUME ["/app/front/assets/svgs"]
