@@ -32,7 +32,7 @@ $sidenav-mini: 80px !default;
 $header-height: 70px !default;
 
 
-//BorderColor
+//边框颜色
 $borderColor: #e5eaef;
 $borderformColor: #dfe5ef;
 
@@ -43,7 +43,7 @@ $warning: #ffae1f;
 $error: #fa896b;
 $success: #13deb9;
 $white: #ffffff;
-
+$black: #000000;
 $light: #f2f6fa;
 
 $gray-100:  #7c8fac;
@@ -68,11 +68,11 @@ $textSecondary: #616876;
     --tblr-error: #fa896b;
     --tblr-success: #13deb9;
     --tblr-white: #ffffff;
-    
+
     --tblr-light: #f2f6fa;
-    
+
     --tblr-gray-100:  #7c8fac;
-    
+
     --tblr-light-primary: #ecf2ff;
     --tblr-light-accent: #e8f7ff;
     --tblr-light-warning: #fef5e5;

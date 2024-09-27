@@ -9,8 +9,14 @@
         "name": "夏夏子blog",
         "icon": "navnetic",
         "href": "https://vdoing.246855.xyz/",
-        "description": ""
+        "description": "测试用的博客"
       }
     ]
+  },
+  {
+    "category_id": 2,
+    "category_name": "test",
+    "category_icon": "other",
+    "url": null
   }
 ]

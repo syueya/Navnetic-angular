@@ -3,18 +3,16 @@ import { Component, Inject } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { HttpRespone } from '@common/interfaces';
-import { CmMessageService } from '@common/modules/message';
 import { CmParentFormComponent } from '@common/parents/parent-form/parent-form.component';
 import { takeUntil } from 'rxjs';
 
-import { Category } from '@common/interfaces/dataJson';
+import { Category } from '../interfaces/dataJson';
 
 @Component({
   selector: 'app-category-update',
   templateUrl: './category-update.component.html',
   styleUrl: './category-update.component.scss'
 })
-
 
 export class CategoryUpdateComponent extends CmParentFormComponent {
 
@@ -24,8 +22,7 @@ export class CategoryUpdateComponent extends CmParentFormComponent {
     private httpClient: HttpClient,
     public dialogRef: MatDialogRef<CategoryUpdateComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Category,
-    private fb: FormBuilder,
-    private message: CmMessageService
+    private fb: FormBuilder
   ) {
     super(); // 调用父类的构造函数
     this.isUpdate = !!this.data; // 判断是否是编辑模式
@@ -54,7 +51,6 @@ export class CategoryUpdateComponent extends CmParentFormComponent {
       .pipe(takeUntil(this.$destroy))
       .subscribe(res => {
         if (res.code === 20000) {
-          this.message.success('分类新增成功');
           this.dialogRef.close(true);
         }
       });

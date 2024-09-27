@@ -1,15 +1,4 @@
 
-/* 分类侧边栏颜色 */
-.colorSidebar {
-  color: #A9B1C7;
-}
-
-/* 分类侧边栏悬停效果 */
-.colorSidebar:hover,
-.active-class {
-  background-color: #222831; /* 点击后的背景颜色 */
-  color: white; /* 点击后文字颜色 */
-}
 
 /* 搜索图标颜色 */
 .iconColor {
@@ -105,4 +94,3 @@ mat-sidenav-content {
   color: #007bff;
   font-weight: bold;
 }
-

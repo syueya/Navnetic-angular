@@ -1,27 +1,8 @@
 <mat-sidenav-container [hasBackdrop]="false" >
   <mat-sidenav #sidenav [mode]="'side'" opened >
-    <div class="d-flex align-items-center m-t-20">
-      <i-tabler class="icon-20 text-white m-r-8" name="brand-telegram"></i-tabler>
-      <span class="text-white f-s-14 f-w-600">夏夏子导航页</span>
-    </div>
-    <mat-nav-list>
-      @for (item of data; track item.category_id) {
-        <mat-list-item class="d-flex align-items-center justify-content-center p-x-8 p-y-14">
-          <div class="d-flex align-items-center f-s-12 colorSidebar"
-          (click)="scrollToCategory(item.category_id)"
-          [ngClass]="{'active-class': isActive(item.category_id)}"
-          >
-            <app-my-svg class="d-flex align-items-center m-r-10 rounded-circle"
-                        [iconId]="'icon-' + item.category_icon" [size]="'20'"
-                        [fillColor]="isActive(item.category_id) ? '#FFFFFF' : '#A9B1C7'">
-            </app-my-svg>
-            <span class="f-s-12">{{ item.category_name }}</span>
-          </div>
-        </mat-list-item>
-      }
-
-    </mat-nav-list>
+    <app-pages-sidenav [allData]="allData" [isSidebarCollapsed]="isSidebarCollapsed"></app-pages-sidenav>
   </mat-sidenav>
+
 
   <mat-sidenav-content>
     <mat-toolbar class="d-flex row align-items-center justify-content-between bg-white" height="60px">
@@ -34,7 +15,7 @@
       <div class="col-12 col-md-10 col-lg-8 d-flex align-items-center justify-content-end">
         <div class="d-flex align-items-center p-6 m-y-10 rounded-pill b-1" width="180px">
           <i-tabler name="search" class="icon-20 iconColor" matPrefix></i-tabler>
-          <form [formGroup]="searchForm" class="d-flex align-items-center">
+          <form [formGroup]="editForm" class="d-flex align-items-center">
             <input type="text" formControlName="searchKeyword" placeholder="搜索" class="b-0 m-l-8" (blur)="clearSearchTerm()"/>
           </form>
         </div>
@@ -44,19 +25,17 @@
         </button>
 
         <!-- 根据 showButtons 渲染添加分类按钮 -->
-        <ng-container *ngIf="showButtons">
+         @if (showButtons) {
           <button mat-icon-button color="primary" type="button" class="m-l-10" matTooltip="添加分类" (click)="addCategory()">
             <i-tabler name="plus" class="icon-20"></i-tabler>
           </button>
-        </ng-container>
-
+         }
       </div>
     </mat-toolbar>
 
 
     <!-- 搜索结果 -->
-     @if (searchForm.get('searchKeyword')?.value && data.length > 0) {
-      <!-- <div class="searchResult"> -->
+     @if (editForm.get('searchKeyword')?.value && allData.length > 0) {
       <div class="searchResult">
         @for (item of searchData; track item.id) {
           <a class="searchResult-content" [href]="item.href" target="_blank">
@@ -70,8 +49,9 @@
 
 
     <ng-container>
-      <app-manage [showButtons]="showButtons" class="m-t-16"></app-manage>
+      <app-pages-card [allData]="allData" [showButtons]="showButtons" (getData)="getData()" class="m-t-16"></app-pages-card>
     </ng-container>
 
   </mat-sidenav-content>
 </mat-sidenav-container>
+

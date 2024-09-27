@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FullComponent } from './pages/full/full.component';
+import { LoadingModule } from '@common/modules/loading/loading.module';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    FullComponent,
+    LoadingModule,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

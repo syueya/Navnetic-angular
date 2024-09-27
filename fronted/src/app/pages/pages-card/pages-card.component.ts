@@ -1,46 +1,31 @@
-import { CommonUseModule } from '@common/commonUse.module';
-import { MaterialModule } from '@common/material.module';
-import { IconsModule } from '@common/icons/icons.module';
 import { takeUntil } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { HttpRespone } from '@common/interfaces';
 import { CmDialogDataModel, CmDialogService } from '@common/modules/dialog';
 import { CmMessageService } from '@common/modules/message';
 import { CmParentComponent } from '@common/parents/parent/parent.component';
 
-
 import { CategoryUpdateComponent } from '../category-update/category-update.component';
 import { UrlUpdateComponent } from '../url-update/url-update.component';
-import { MySvgComponent } from '@common/my-svg/my-svg.component';  // svg图标组件
-import { Category, UrlItem } from '@common/interfaces/dataJson';
+
+import { Category, UrlItem } from '../interfaces/dataJson';
 
 @Component({
-  selector: 'app-manage',
-  standalone: true,
-  imports: [
-    CommonUseModule,
-    MaterialModule,
-    IconsModule,
-    MySvgComponent,
-  ],
-  templateUrl: './manage.component.html',
-  styleUrl: './manage.component.scss'
+  selector: 'app-pages-card',
+  templateUrl: './pages-card.component.html',
+  styleUrl: './pages-card.component.scss'
 })
 
-export class ManageComponent extends CmParentComponent {
+export class PagesCardComponent extends CmParentComponent {
+  // 从父组件获取数据/传出方法
   @Input() showButtons: boolean = false; // 默认为 false
-
-  // json数据
-  allData: Category[] = [];
-
-
+  @Input() allData: Category[];
+  @Output() getData = new EventEmitter<void>();
 
   // 分类数据
   dataCategory: Category | null = null;
-
-
 
   constructor(
     private httpClient: HttpClient,
@@ -49,28 +34,20 @@ export class ManageComponent extends CmParentComponent {
     private dialogService: CmDialogService
   ) {
     super();
-    this.getData();
-  }
-
-  // 获取数据
-  getData(): void {
-    this.httpClient.get<HttpRespone<Category[]>>(`/api/read`)
-      .pipe(takeUntil(this.$destroy))
-      .subscribe((res) => {
-        if (res.code === 20000 && res.data?.length) {
-          this.allData = res.data;
-        } else {
-          this.allData = [];
-        }
-      });
   }
 
   // 网址图片路径
   imagePath(name: string): string {
-    return `assets/images/${name}.png`; // 假设所有图标都是.png格式
+    return `assets/logos/${name}.png`; // 假设所有图标都是.png格式
   }
 
-  // 添加编辑分类
+  // 分类图标路径
+  svgPath(name: string): string {
+    return `assets/svgs/${name}.svg`; // 所有图标都是svg格式
+  }
+
+
+  // 编辑分类
   openCategoryDialog(row: Category): void {
     const data = row || null;
     const dialogRef = this.dialog.open(CategoryUpdateComponent, {
@@ -79,10 +56,9 @@ export class ManageComponent extends CmParentComponent {
       disableClose: false
     });
 
-    // 执行对话框关闭后的操作
     dialogRef.afterClosed().subscribe(result => {
       if(result){
-        this.getData();
+        this.message.success('分类编辑成功');
       }
     });
   }
@@ -101,10 +77,10 @@ export class ManageComponent extends CmParentComponent {
       disableClose: false
     });
 
-    // 执行对话框关闭后的操作
     dialogRef.afterClosed().subscribe(result => {
       if(result){
-        this.getData();
+        this.message.success('操作成功');
+        this.getData.emit();
       }
     });
   }
@@ -127,7 +103,7 @@ export class ManageComponent extends CmParentComponent {
           .subscribe((res) => {
             if (res.code === 20000) {
               this.message.success('分类删除成功');
-              this.getData();
+              this.getData.emit();
           }
         });
       }
@@ -152,7 +128,7 @@ export class ManageComponent extends CmParentComponent {
           .subscribe((res) => {
             if (res.code === 20000) {
               this.message.success('网址删除成功');
-              this.getData();
+              this.getData.emit();
           }
         });
       }

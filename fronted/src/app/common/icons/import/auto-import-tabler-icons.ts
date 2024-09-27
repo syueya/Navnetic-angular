@@ -1,4 +1,8 @@
 import {
+  IconCircleCheck, // 打勾
+  IconInfoCircle, // 信息
+  IconExclamationCircle, // 警告
+  IconCircleX,  // 打叉
   IconMenu2,  // 菜单
   IconSearch,  // 搜索
   IconEdit,   // 编辑
@@ -12,6 +16,10 @@ import {
 } from 'angular-tabler-icons/icons';
 
 export const AutoImportTablerIcons = {
+  IconCircleCheck,
+  IconInfoCircle,
+  IconExclamationCircle,
+  IconCircleX,
   IconMenu2,
   IconSearch,
   IconEdit,

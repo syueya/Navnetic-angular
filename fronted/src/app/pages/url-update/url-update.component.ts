@@ -3,11 +3,10 @@ import { Component, Inject } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { HttpRespone } from '@common/interfaces';
-import { CmMessageService } from '@common/modules/message';
 import { CmParentFormComponent } from '@common/parents/parent-form/parent-form.component';
 import { takeUntil } from 'rxjs';
 
-import { UrlItem } from '@common/interfaces/dataJson';
+import { UrlItem } from '../interfaces/dataJson';
 
 @Component({
   selector: 'app-url-update',
@@ -21,8 +20,7 @@ export class UrlUpdateComponent extends CmParentFormComponent {
     private httpClient: HttpClient,
     public dialogRef: MatDialogRef<UrlUpdateComponent>,
     @Inject(MAT_DIALOG_DATA) public data:  { categoryId: number; urlData: UrlItem },
-    private fb: FormBuilder,
-    private message: CmMessageService
+    private fb: FormBuilder
   ) {
     super(); // 调用父类的构造函数
 
@@ -57,7 +55,6 @@ export class UrlUpdateComponent extends CmParentFormComponent {
       .pipe(takeUntil(this.$destroy))
       .subscribe(res => {
         if (res.code === 20000) {
-          this.message.success('网址新增成功');
           this.dialogRef.close(true);
         }
       });

@@ -45,3 +45,4 @@ EXPOSE 8888
 VOLUME ["/app/config"]
 VOLUME ["/app/data/data.json"]
 VOLUME ["/app/front/assets/images"]
+VOLUME ["/app/front/assets/svgs"]
