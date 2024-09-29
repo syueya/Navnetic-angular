@@ -32,8 +32,8 @@
 2、进入页面后可以看到默认的页面，点击搜索后面的菜单按钮，可以进入编辑页面。
 
 
-![img](./img/pages-1.png.png)
+![img](./img/pages-1.png)
 
 3、编辑页面，可以添加、删除、修改网址，也可以修改分类。
 
-![img](./img/pages-2.png.png)
+![img](./img/pages-2.png)
