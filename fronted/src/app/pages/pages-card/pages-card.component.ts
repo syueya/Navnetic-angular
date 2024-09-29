@@ -37,9 +37,10 @@ export class PagesCardComponent extends CmParentComponent {
   }
 
   // 网址图片路径
-  imagePath(name: string): string {
-    return `assets/logos/${name}.png`; // 假设所有图标都是.png格式
+  imagePath(category: string, name: string): string {
+    return `assets/logos/${category}/${name}.png`; // 假设所有图标都是.png格式
   }
+
 
   // 分类图标路径
   svgPath(name: string): string {

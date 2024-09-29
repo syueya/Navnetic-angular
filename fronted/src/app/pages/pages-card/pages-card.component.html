@@ -27,13 +27,14 @@
       <mat-card-content>
         <div class="row">
           @for (url of category.url; track url.id) {
-            <div class="col-24 col-md-8 col-lg-8">
+            <div class="col-24 col-md-8 col-lg-8 m-b-16">
               <a href="{{ url.href }}" target="_blank" class="m-0 text-none text-decoration-none">
                 <mat-card class="cardWithShadow b-1 cursor-pointer bg-white mat-card-style card-height">
                   <mat-card-content>
                     <div class="d-flex row align-items-center justify-content-between p-t-6 w-100">
                       <div class="col-16 col-md-12 col-lg-12 d-flex align-items-center">
-                        <img class="m-r-10 rounded-circle" width="30" height="30" [src]="imagePath(url.icon)"  loading="lazy">
+                        <img class="m-r-10 rounded-circle" width="30" height="30" loading="lazy"
+                                  [src]="imagePath(category.category_icon, url.icon)">
                         <span class="f-s-14 f-w-600 text-black">{{ url.name }}</span>
                       </div>
                       @if (showButtons) {
