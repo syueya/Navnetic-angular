@@ -1,4 +1,9 @@
-
+/* 父容器样式 */
+.parent-sidebar {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* 分配行高 */
+  height: 100vh; /* 使用视口高度 */
+}
 
 /* 分类侧边栏颜色 */
 .colorSidebar {

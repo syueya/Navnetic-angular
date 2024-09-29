@@ -6,13 +6,12 @@ import { MaterialModule } from '@common/material.module';
 import { IconsModule } from '@common/icons/icons.module';
 
 import { FormFieldErrorComponent } from './form-field-error/form-field-error.component';
-import { CmInputSeletedSearchComponent } from './input-seleted-search/input-seleted-search.component';
 import { NoDataComponent } from './no-data/no-data.component';
 import { RequiredMarkComponent } from './required-mark/required-mark.component';
 
 
 @NgModule({
-  declarations: [FormFieldErrorComponent, RequiredMarkComponent,CmInputSeletedSearchComponent,NoDataComponent],
+  declarations: [FormFieldErrorComponent, RequiredMarkComponent,NoDataComponent],
   imports: [
     CommonModule,
     MaterialModule,
@@ -21,6 +20,6 @@ import { RequiredMarkComponent } from './required-mark/required-mark.component';
     DirectivesModule,
     IconsModule
   ],
-  exports: [FormFieldErrorComponent, RequiredMarkComponent,CmInputSeletedSearchComponent,NoDataComponent],
+  exports: [FormFieldErrorComponent, RequiredMarkComponent,NoDataComponent],
 })
 export class ComponentsModule { }

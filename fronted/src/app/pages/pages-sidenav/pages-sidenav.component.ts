@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Category } from '../interfaces/dataJson';
+import { environment } from '@env/environment';
 
 @Component({
   selector: 'app-pages-sidenav',
@@ -13,7 +14,12 @@ export class PagesSidenavComponent {
   @Input() allData: Category[];
   @Input() isSidebarCollapsed: boolean = true;
 
-  activeCategoryId: number | null = null; // 用于跟踪当前活动的类别ID
+  // 当前版本号
+  currentVersion: string = environment.version;
+
+
+  // 用于跟踪当前活动的类别ID
+  activeCategoryId: number | null = null;
 
   // 分类图标路径
   svgPath(name: string): string {

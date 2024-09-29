@@ -9,7 +9,6 @@ import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from 
 import { LoadingModule } from '@common/modules/loading/loading.module';
 import { defaultInterceptor } from '@common/net';
 import { CmProviders } from '@common/providers';
-import { NgScrollbarModule } from 'ngx-scrollbar';
 import { routes } from './app.routes';
 import { CommonUseModule } from './common/commonUse.module';
 import { MaterialModule } from './common/material.module';
@@ -37,7 +36,6 @@ export const appConfig: ApplicationConfig = {
       FormsModule,
       ReactiveFormsModule,
       MaterialModule,
-      NgScrollbarModule,
     ),
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),

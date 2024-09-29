@@ -46,7 +46,7 @@
 
 //container layout
 @import "overrides/materialoverrides";
-@import "dark/dark";
+
 @import "container";
 @import "layouts/layouts";
 @import "grid/grid";
@@ -54,15 +54,7 @@
 @import "helpers/index";
 
 
-//components
 
-
-// apps
-@import "apps/calendar";
-
-// pages
-@import "pages/dashboards";
-@import "pages/auth";
 
 @import "matcustom";
 

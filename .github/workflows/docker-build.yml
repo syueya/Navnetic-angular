@@ -17,12 +17,15 @@ jobs:
         with:
           ref: 'master'
 
-      - name: Get version
-        id: release_version
+      - name: Get version from file
+        id: get_versionn
         run: |
-          app_version=$(grep "APP_VERSION" version.txt | sed -ne "s/.*= '\(v[0-9]*\.[0-9]*\.[0-9]*\)'.*/\1/p")
-          echo "app_version=$app_version" >> $GITHUB_ENV
+          echo "app_version=$(cat version)" >> $GITHUB_ENV
 
+
+      - name: Update front version in version.ts
+        run: |
+          echo "export const version = '${{ env.app_version }}';" > fronted/version.ts
 
       - name: Setup Node.js
         uses: actions/setup-node@v2

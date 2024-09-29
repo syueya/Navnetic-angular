@@ -1,20 +1,26 @@
-<div class="d-flex align-items-center m-t-20">
-  <i-tabler class="icon-20 text-white m-r-8" name="brand-telegram"></i-tabler>
-  <span class="text-white f-s-14 f-w-600">夏夏子导航页</span>
+<div class="parent-sidebar">
+  <div class="d-flex align-items-center m-t-16">
+    <i-tabler class="icon-20 text-white m-r-8" name="brand-telegram"></i-tabler>
+    <span class="text-white f-s-14 f-w-600">夏夏子导航页</span>
+  </div>
+
+  <mat-nav-list>
+    @for (item of allData; track item.category_id) {
+      <mat-list-item class="d-flex align-items-center justify-content-center p-x-8">
+        <div class="d-flex align-items-center colorSidebar"
+                    (click)="scrollToCategory(item.category_id)"
+                    [ngClass]="{'active-class': isActive(item.category_id)}"
+        >
+          <img class="m-r-4 rounded-circle" width="16" height="16" loading="lazy"
+                      [src]="svgPath(item.category_icon)">
+          <span class="f-s-12">{{ item.category_name }}</span>
+        </div>
+      </mat-list-item>
+    }
+  </mat-nav-list>
+
+  <div class="d-flex align-items-center m-10">
+    <img src="/assets/images/icon-love.svg" class="rounded-circle m-r-8" width="16" />
+    <span class="text-white f-s-12">当前版本：{{ currentVersion || '未知版本' }}</span>
+  </div>
 </div>
-
-<mat-nav-list>
-  @for (item of allData; track item.category_id) {
-    <mat-list-item class="d-flex align-items-center justify-content-center p-x-8">
-      <div class="d-flex align-items-center colorSidebar"
-      (click)="scrollToCategory(item.category_id)"
-      [ngClass]="{'active-class': isActive(item.category_id)}"
-      >
-      <img class="m-r-4 rounded-circle" width="16" height="16" [src]="svgPath(item.category_icon)"  loading="lazy">
-        <span class="f-s-12">{{ item.category_name }}</span>
-      </div>
-    </mat-list-item>
-  }
-</mat-nav-list>
-
-

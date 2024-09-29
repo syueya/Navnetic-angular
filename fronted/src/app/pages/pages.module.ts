@@ -1,6 +1,5 @@
 import { CommonUseModule } from '@common/commonUse.module';
 import { MaterialModule } from '@common/material.module';
-import { IconsModule } from '@common/icons/icons.module';
 import { NgModule } from '@angular/core';
 
 import { PagesRoutingModule } from './pages-routing.module';
@@ -22,7 +21,6 @@ import { PagesFullComponent } from './pages-full/pages-full.component';
   imports: [
     CommonUseModule,
     MaterialModule,
-    IconsModule,
     PagesRoutingModule
   ]
 })
