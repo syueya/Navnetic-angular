@@ -17,6 +17,8 @@ export class PagesSidenavComponent {
   // 当前版本号
   currentVersion: string = environment.version;
 
+  // 自定义导航页名称
+  currentName: string = environment.navName;
 
   // 用于跟踪当前活动的类别ID
   activeCategoryId: number | null = null;

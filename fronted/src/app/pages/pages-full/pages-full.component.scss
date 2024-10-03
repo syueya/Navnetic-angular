@@ -25,13 +25,6 @@ mat-sidenav {
   margin-right: 10px;
 }
 
-/* 隐藏侧边栏抽屉滚动条 */
-:host ::ng-deep .mat-drawer-inner-container {
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 
 /* 列表项高度自适应 */
 .mdc-list-item.mdc-list-item--with-one-line {
@@ -42,9 +35,20 @@ mat-sidenav {
 mat-sidenav-content {
   display: flex;
   flex-direction: column;
-  height: 100%; /* 占据父容器的剩余高度 */
+  height: 100%; /* 占据父容器的高度 */
   background-color: #F3F6F8;
   padding:10px 30px;
+}
+
+/* 卡片内容区域 */
+.card-content {
+  flex-grow: 1; /* 允许内容区域自动填充可用空间 */
+  overflow-y: auto; /* 当内容超出时允许在y轴上滚动 */
+}
+
+/* 隐藏卡片内容滚动条 */
+.card-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari 和 Opera */
 }
 
 

@@ -3,7 +3,6 @@
     <app-pages-sidenav [allData]="allData" [isSidebarCollapsed]="isSidebarCollapsed"></app-pages-sidenav>
   </mat-sidenav>
 
-
   <mat-sidenav-content>
     <mat-toolbar class="d-flex row align-items-center justify-content-between bg-white" height="60px">
       <div class="col-6 col-md-4 col-lg-4 p-0">
@@ -35,22 +34,23 @@
 
 
     <!-- 搜索结果 -->
-     @if (editForm.get('searchKeyword')?.value && allData.length > 0) {
-      <div class="searchResult">
-        @for (item of searchData; track item.id) {
-          <a class="searchResult-content" [href]="item.href" target="_blank">
-            <span class="searchResult-name">{{ item.name }}</span>
-            <span class="searchResult-desc">{{ item.description }}</span>
-          </a>
-        }
-        <span class="f-s-14">共搜到 {{ searchData.length }} 条结果</span>
-      </div>
-     }
+    @if (editForm.get('searchKeyword')?.value && allData.length > 0) {
+    <div class="searchResult">
+      @for (item of searchData; track item.id) {
+        <a class="searchResult-content" [href]="item.href" target="_blank">
+          <span class="searchResult-name">{{ item.name }}</span>
+          <span class="searchResult-desc">{{ item.description }}</span>
+        </a>
+      }
+      <span class="f-s-14">共搜到 {{ searchData.length }} 条结果</span>
+    </div>
+    }
 
 
-    <ng-container>
-      <app-pages-card [allData]="allData" [showButtons]="showButtons" (getData)="getData()" class="m-t-16"></app-pages-card>
-    </ng-container>
+    <div class="card-content m-t-16">
+      <app-pages-card [allData]="allData" [showButtons]="showButtons" (getData)="getData()" class="m-t-16">
+      </app-pages-card>
+    </div>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

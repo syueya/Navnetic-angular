@@ -16,12 +16,13 @@
   --mdc-list-list-item-one-line-container-height: 28px !important;
 }
 
+/* 侧边栏分类列表 */
+.content {
+  flex-grow: 1; /* 允许内容区域自动填充可用空间 */
+  overflow-y: auto; /* 当内容超出时允许在y轴上滚动 */
+}
 
-
-/* 版本固定在侧边栏底部的元素 */
-.fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+/* 隐藏侧边栏分类列表滚动条 */
+.content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari 和 Opera */
 }
