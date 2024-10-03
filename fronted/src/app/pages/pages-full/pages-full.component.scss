@@ -7,7 +7,7 @@ input{
   }
 }
 
-/* 侧边栏容器 */
+/* 整个容器 */
 mat-sidenav-container {
   height: 100vh; /* 确保容器占满可用高度 */
   width: 100vw; /* 占据整个视口宽度 */
@@ -17,8 +17,8 @@ mat-sidenav-container {
 
 /* 侧边栏样式 */
 mat-sidenav {
+  height: 100%;
   width: 200px; /* 根据需要设置侧边栏宽度 */
-  height: 100%; /* 侧边栏占满高度 */
   border-radius: 0; /* 右边不设圆角 */
   background-color: #222831;
   padding: 0px 0px 0px 20px;

@@ -4,6 +4,6 @@ import { version } from 'version';
 
 export const environment = {
   production: true,
-  backEndUrl: 'http://localhost:8880',
+  backEndUrl: '',
   version: version
 } as Environment;

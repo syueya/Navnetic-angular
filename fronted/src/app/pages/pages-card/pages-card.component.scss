@@ -16,13 +16,16 @@
 
 /* 网址分类卡片高度 */
 .card-height {
-  height: 96px;
+  height: 90px;
 }
 
 
 /* 去掉卡片内容的上边距 */
 .mat-mdc-card-content:first-child {
-  padding-top: 0;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 12px;
 }
 
 
