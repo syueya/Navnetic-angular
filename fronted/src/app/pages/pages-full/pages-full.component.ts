@@ -91,13 +91,17 @@ export class PagesFullComponent extends CmParentFormComponent {
 
   // 清空搜索词
   clearSearchTerm() {
-    const searchControl = this.editForm.get('searchKeyword');
-    if (searchControl) {
-      searchControl.setValue('');
-    } else {
-      console.error('未找到搜索表单控件');
-    }
+    setTimeout(() => {
+      const searchControl = this.editForm.get('searchKeyword');
+      if (searchControl) {
+        searchControl.setValue('');
+      } else {
+        console.error('未找到搜索表单控件');
+      }
+    }, 100); // 延迟100毫秒执行
   }
+
+
 
   // 切换侧边栏
   toggleSidebar() {

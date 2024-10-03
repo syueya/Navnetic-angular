@@ -37,7 +37,7 @@
     @if (editForm.get('searchKeyword')?.value && allData.length > 0) {
     <div class="searchResult">
       @for (item of searchData; track item.id) {
-        <a class="searchResult-content" [href]="item.href" target="_blank">
+        <a href="{{ item.href }}" target="_blank" rel="noopener noreferrer" class="searchResult-content">
           <span class="searchResult-name">{{ item.name }}</span>
           <span class="searchResult-desc">{{ item.description }}</span>
         </a>
