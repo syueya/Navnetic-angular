@@ -6,6 +6,8 @@ ARG TARGETPLATFORM
 ENV TZ="Asia/Shanghai" \
     PORT="8888" \
     NavName="夏夏子导航" \
+    PUID=1000 \
+    PGID=1000 \
     UMASK=022
 
 # 设置工作目录

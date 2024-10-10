@@ -4,7 +4,7 @@
 envsubst '${PORT}' < /etc/nginx/nginx.template.conf > /etc/nginx/nginx.conf
 
 # 将环境变量 NavName 的值写入 navName.ts 文件
-echo "export const navName = '$NavName';" > fronted/navName.ts
+echo "export const navName = "${NavName}";" > /app/front/navName.ts
 
 # 修改用户和用户组
 groupmod -o -g "${PGID}" navnetic
