@@ -38,15 +38,11 @@ jobs:
       - name: 安装@angular/cli依赖
         run: npm install -g @angular/cli
 
-      - name: Build前端
+      - name: Build for fronted
         run: |
           cd fronted
           npm install --force
           npm run build
-
-      - name: 检查前端构建后文件
-        run: |
-          ls -al fronted/dist/fronted/browser
 
       - name: Set up Go
         uses: actions/setup-go@v4
@@ -62,12 +58,6 @@ jobs:
         run: |
           cd backend
           CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -a --trimpath -o dist/linux/arm64/Navnetic .
-
-      - name: 检查构建后文件后端文件
-        run: |
-          ls -al backend/dist/linux/amd64
-          ls -al backend/dist/linux/arm64
-
 
       - name: Docker Setup Buildx
         uses: docker/setup-buildx-action@v3.0.0
