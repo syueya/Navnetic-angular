@@ -5,9 +5,8 @@ ARG TARGETPLATFORM
 
 ENV TZ="Asia/Shanghai" \
     PORT="8888" \
-    NavName="夏夏子导航" \
-    PUID=1000 \
-    PGID=1000 \
+    PUID=1007 \
+    PGID=10 \
     UMASK=022
 
 # 设置工作目录
@@ -19,8 +18,13 @@ COPY backend/data/data.json /app/data/data.json
 # 根据 TARGETPLATFORM 变量复制相应平台的可执行文件到工作目录
 COPY backend/dist/$TARGETPLATFORM/Navnetic /app/Navnetic
 
+# 复制前端文件
 COPY fronted/dist/fronted/browser/. /app/front
+
+# 复制nginx配置文件
 COPY nginx.template.conf /etc/nginx/nginx.template.conf
+
+# 复制entrypoint.sh脚本
 COPY entrypoint.sh /entrypoint.sh
 
 # 查看/app目录的内容
